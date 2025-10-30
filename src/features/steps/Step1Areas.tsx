@@ -1,0 +1,48 @@
+import { ArrowRight } from "lucide-react";
+import StepHeader from "../../components/stepheader";
+import { Card } from "../../components/ui";
+
+export default function Step1Areas({
+  categories,
+  activeCategory,
+  setActiveCategory,
+  setSelectedProjects,
+  setStep,
+}: {
+  categories: any[];
+  activeCategory: string | null;
+  setActiveCategory: (id: string) => void;
+  setSelectedProjects: (ids: string[]) => void;
+  setStep: (s: 1 | 2 | 3 | 4) => void;
+}) {
+  return (
+    <section>
+      <div className="p-12">
+        <StepHeader title="Områder" subtitle="Velg ett område for å starte." />
+      </div>
+      <div className="grid grid-cols-2 grid-rows-3 md:grid-cols-3 gap-5">
+        {categories.map((c: any) => (
+          <Card
+            key={c.id}
+            selected={activeCategory === c.id}
+            onClick={() => {
+              setActiveCategory(c.id);
+              setSelectedProjects([]);
+              setStep(2);
+            }}
+          >
+            <div className="flex items-start gap-3">
+              <div className="w-10 h-10 rounded-full bg-black text-white grid place-items-center">
+                <ArrowRight size={18} />
+              </div>
+              <div>
+                <div className="text-xl font-semibold">{c.title}</div>
+                <p className="text-neutral-600 mt-1 text-sm">{c.blurb}</p>
+              </div>
+            </div>
+          </Card>
+        ))}
+      </div>
+    </section>
+  );
+}
