@@ -87,7 +87,7 @@ export default function Step2Projects({
         <button
           disabled={!selectedProjects.length}
           onClick={() => setStep(3)}
-          className="inline-flex items-center gap-2 px-4 py-2 rounded-full border bg-black text-white disabled:bg-neutral-300"
+          className="inline-flex items-center gap-2 px-4 py-2 rounded-full border border-black bg-black text-white disabled:bg-neutral-300"
         >
           Fortsett
         </button>
