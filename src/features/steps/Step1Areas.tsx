@@ -31,14 +31,16 @@ export default function Step1Areas({
               setStep(2);
             }}
           >
-            <div className="flex items-start gap-3">
-              <div className="w-10 h-10 rounded-full bg-black text-white grid place-items-center">
-                <ArrowRight size={18} />
+            <div className="flex flex-col items-start">
+              <div className="flex flex-row items-start gap-3">
+                <div className="w-8 h-8 rounded-full bg-black text-white grid place-items-center">
+                  <ArrowRight size={18} />
+                </div>
+                <div>
+                  <div className="text-xl font-semibold">{c.title}</div>
+                </div>
               </div>
-              <div>
-                <div className="text-xl font-semibold">{c.title}</div>
-                <p className="text-neutral-600 mt-1 text-sm">{c.blurb}</p>
-              </div>
+              <p className=" pl-4 text-neutral-600 mt-1 text-sm">{c.blurb}</p>
             </div>
           </Card>
         ))}
