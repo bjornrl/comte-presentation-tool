@@ -14,12 +14,12 @@ export default function Step4Draft({
   handleGenerate: () => void;
 }) {
   return (
-    <section>
+    <section className="flex flex-col items-center">
       <StepHeader title="Utkast" subtitle="Forhåndsvisning av slides" />
       <SlidesPreview slides={slides} />
-      <div className="mt-6 flex items-center justify-end gap-3">
+      <div className="w-full mt-6 flex items-center justify-end gap-3">
         <button
-          className="px-4 py-2 rounded-full border"
+          className="px-4 py-2 flex flex-row justify-center items-center gap-2 rounded-full border"
           onClick={() => downloadJSON("slides.json", slides)}
         >
           <Download size={16} /> Last ned slides.json

@@ -35,7 +35,7 @@ export default function Step2Projects({
         />
         <Pill>{selectedProjects.length} valgt</Pill>
       </div>
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-1">
         {filteredProjects.map((p: any) => {
           const on = selectedProjects.includes(p.id);
           return (
@@ -51,14 +51,6 @@ export default function Step2Projects({
               }
             >
               <div className="flex items-start gap-3">
-                <div
-                  className={cx(
-                    "w-10 h-10 rounded-full grid place-items-center border",
-                    on ? "bg-black text-white" : "bg-white"
-                  )}
-                >
-                  <Images size={18} />
-                </div>
                 <div>
                   <div className="font-semibold">{p.title}</div>
                   <p className="text-neutral-600 text-sm line-clamp-3">
@@ -78,6 +70,14 @@ export default function Step2Projects({
                     })}
                   </div>
                 </div>
+                <div
+                  className={cx(
+                    "w-30 h-10 rounded-full grid place-items-center border",
+                    on ? "bg-black text-white" : "bg-white"
+                  )}
+                >
+                  <Images size={18} />
+                </div>
               </div>
             </Card>
           );
@@ -87,7 +87,7 @@ export default function Step2Projects({
         <button
           disabled={!selectedProjects.length}
           onClick={() => setStep(3)}
-          className="inline-flex items-center gap-2 px-4 py-2 rounded-full border border-black bg-black text-white disabled:bg-neutral-300"
+          className="inline-flex border border items-center gap-2 px-4 py-2 rounded-full border border-black bg-black text-white disabled:bg-neutral-300 disabled:border-none"
         >
           Fortsett
         </button>

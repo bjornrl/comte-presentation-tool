@@ -30,8 +30,8 @@ function buildSlides(
   const slides: Slide[] = [];
   slides.push({
     kind: "cover",
-    title: "Tilbudsforslag",
-    subtitle: "ComteBureau",
+    title: "Comte Bureau",
+    subtitle: "Innovations that change how we live",
   });
   if (categoryId) {
     slides.push({ kind: "category", categoryId });
@@ -45,6 +45,25 @@ function buildSlides(
     title: output === "report" ? "Takk" : "Spørsmål?",
   });
   return slides;
+}
+
+// Category Helper
+
+function heroForCategory(cms: any, categoryId: string) {
+  // Prefer explicit hero from Categories.csv (optional new column "Hero")
+  const cat = cms.categories.find((c: any) => c.id === categoryId);
+  const explicit = (cat && (cat.hero || cat.Hero)) as string | undefined;
+  if (explicit) return explicit;
+
+  // Otherwise pick first image from first project in this category
+  const proj = cms.projects.find((p: any) =>
+    (p.categories || []).includes(categoryId)
+  );
+  const first = proj?.images?.[0];
+  if (first) return first;
+
+  // Fallback Unsplash
+  return "https://source.unsplash.com/1600x600/?people,illustration";
 }
 
 // Utility to download JSON (used in Step 4)
@@ -78,64 +97,254 @@ function SlideView({
     );
   if (slide.kind === "category") {
     const cat = cms.categories.find((c: any) => c.id === slide.categoryId);
+    const hero =
+      heroForCategory(cms, slide.categoryId) ||
+      "https://images.unsplash.com/photo-1506784983877-45594efa4cbe?auto=format&fit=crop&q=80&w=1740";
+
     return (
-      <div className="h-full w-full p-16 flex flex-col justify-center">
-        <div className="text-7xl font-semibold mb-3">{cat?.title}</div>
-        <p className="text-neutral-700 text-xl max-w-3xl">{cat?.blurb}</p>
+      <div className="relative h-full w-full bg-white">
+        {/* top meta */}
+        <div className="absolute top-6 left-10 right-10 text-sm text-neutral-800 flex items-center justify-between">
+          <div>ComteBureau</div>
+          <div className="font-medium">Tilbudsforslag</div>
+          <div>{new Date().getFullYear()}</div>
+        </div>
+
+        {/* main grid */}
+        <div className="relative px-10 pt-24 pb-10 h-full grid grid-cols-1 md:grid-cols-2 gap-10">
+          {/* text column */}
+          <div className="flex flex-col justify-between text-left">
+            <div className="space-y-4">
+              <h2 className="font-serif text-[clamp(40px,6vw,90px)] leading-[0.95]">
+                {cat?.title ?? "Kategori"}
+              </h2>
+              <p className="text-[clamp(32px,1.5vw,44px)] text-neutral-600 max-w-lg leading-relaxed">
+                I Comte Bureau
+              </p>
+            </div>
+
+            <p className="text-neutral-700 italic text-3xl mt-8">
+              {cat?.blurb ?? "Beskrivelse av kategorien."}
+            </p>
+          </div>
+
+          {/* hero image */}
+          <div className="w-full rounded-2xl overflow-hidden bg-neutral-100 shadow-sm">
+            {/* eslint-disable-next-line @next/next/no-img-element */}
+            <img
+              src={hero}
+              alt={cat?.title ?? "Kategori"}
+              className="w-full h-full object-cover"
+            />
+          </div>
+        </div>
+
+        {/* footer */}
+        <div className="absolute left-10 bottom-6 text-xs text-neutral-600">
+          ComteBureau
+        </div>
       </div>
     );
   }
+
   if (slide.kind === "expertise") {
     const cat = (cms.categories as any[]).find(
       (c: any) => c.id === slide.categoryId
     );
     const expertiseList = (cat?.expertise || []) as string[];
+
+    // pick category hero or fallback
+    const baseHero =
+      cat?.Hero ||
+      "https://source.unsplash.com/1600x600/?creative,workspace,design";
+
+    // Generate placeholder images per expertise item
+    const expertiseImages = expertiseList.map(
+      (item) =>
+        `https://source.unsplash.com/800x400/?${encodeURIComponent(
+          item
+        )},design`
+    );
+
     return (
-      <div className="h-full w-full p-16 flex flex-col justify-center">
-        <div className="text-4xl font-semibold mb-6">Vi kan hjelpe deg med</div>
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-          {expertiseList.map((item, i) => (
-            <div key={i} className="text-xl text-neutral-700">
-              • {item}
+      <div className="relative h-full w-full bg-white">
+        {/* top meta */}
+        <div className="absolute top-6 left-10 right-10 text-sm text-neutral-800 flex items-center justify-between">
+          <div>ComteBureau</div>
+          <div className="font-medium">Tilbudsforslag</div>
+          <div>{new Date().getFullYear()}</div>
+        </div>
+
+        <div className="relative h-full w-full bg-white">
+          {/* top/meta etc... */}
+
+          <div className="relative px-10 pt-24 pb-8 h-full flex flex-col gap-12">
+            {/* headline */}
+            <div className="font-serif text-[clamp(36px,6vw,90px)] leading-[0.95] mb-8">
+              Vi kan <span className="italic">hjelpe deg</span> med
+            </div>
+
+            {/* LIST fills remaining space */}
+
+            <div className="flex-1 grid grid-cols-2 grid-rows-2 gap-1 min-h-0">
+              {Array.from({ length: 4 }).map((_, i) => {
+                const item = expertiseList[i];
+                return (
+                  <div
+                    key={i}
+                    className={`
+          flex flex-col justify-between rounded-sm p-2
+          ${item ? "transition-colors hover:brightness-95" : ""}
+          ${i === 0 ? "bg-neutral-100 text-black" : ""}
+          ${i === 1 ? "bg-neutral-900 text-white" : ""}
+          ${i === 2 ? "bg-neutral-500 text-white" : ""}
+          ${i === 3 ? "bg-sky-300 text-black" : ""}
+        `}
+                  >
+                    {item ? (
+                      <>
+                        {/* label (category title) */}
+                        <p className="uppercase text-xs tracking-wide opacity-70">
+                          {cat?.title ?? "Ekspertise"}
+                        </p>
+
+                        {/* main value (expertise name) */}
+                        <div className="flex flex-row justify-between">
+                          <p className="font-semibold leading-[0.9] text-left text-[clamp(30px,6vw,48px)] break-words">
+                            {item}
+                          </p>
+
+                          {/* optional placeholder for something small */}
+                          <p className="text-right text-sm opacity-70">
+                            jnjnjn{" "}
+                          </p>
+                        </div>
+                      </>
+                    ) : null}
+                  </div>
+                );
+              })}
+            </div>
+
+            {/* footer */}
+            <div className="mt-8 text-xs text-neutral-600">ComteBureau</div>
+          </div>
+        </div>
+      </div>
+    );
+  }
+
+  if (slide.kind === "stats") {
+    const cat = (cms.categories as any[]).find(
+      (c: any) => c.id === slide.categoryId
+    );
+    return (
+      // <div className="h-full w-full p-16 flex flex-col justify-center items-center">
+      //   <div className="text-5xl font-semibold text-center">
+      //     {cat?.stats || ""}
+      //   </div>
+      // </div>
+
+      <div className="flex flex-col h-full">
+        {/* Title section */}
+        <div
+          id="title"
+          className="h-1/3 flex items-center justify-center text-[clamp(2rem,5vw,5rem)] font-semibold"
+        >
+          Stats
+        </div>
+
+        {/* Grid with lines */}
+        <div
+          className="
+      grid grid-cols-3 grid-rows-2 w-full flex-1
+      divide-x divide-y divide-black/20
+    "
+        >
+          {[
+            { label: "69", sub: "projects done" },
+            { label: "350", sub: "people inteviewed" },
+            { label: "21", sub: "years of experience within the field" },
+            { label: "34", sub: "collaborators worked with" },
+            { label: "15", sub: "pitches to members of congress" },
+            { label: "45+", sub: "news articles" },
+          ].map((item, i) => (
+            <div
+              key={i}
+              className="flex flex-col items-center justify-center text-center leading-none p-4"
+            >
+              <p className="font-semibold text-[clamp(1.5rem,6vw,6rem)] leading-none">
+                {item.label}
+              </p>
+              <p className="mt-2 text-[clamp(0.8rem,2vw,1.25rem)] text-neutral-600">
+                {item.sub}
+              </p>
             </div>
           ))}
         </div>
       </div>
     );
   }
-  if (slide.kind === "stats") {
-    const cat = (cms.categories as any[]).find(
-      (c: any) => c.id === slide.categoryId
-    );
+  if (slide.kind === "project") {
+    const proj = cms.projects.find((p: any) => p.id === slide.projectId);
     return (
-      <div className="h-full w-full p-16 flex flex-col justify-center items-center">
-        <div className="text-5xl font-semibold text-center">
-          {cat?.stats || ""}
+      <div className="h-full w-full p-12 grid grid-cols-2 gap-6 items-center">
+        <div className="col-span-6">
+          <div className="text-4xl font-semibold">{proj?.title}</div>
+          <p className="text-neutral-700 mt-3 text-lg">{proj?.excerpt}</p>
+        </div>
+        <div className="col-span-6 grid grid-cols-2 gap-3">
+          <div className="flex flex-col justify-between">
+            <p className="text-left text-2xl">{proj?.excerpt}</p>
+            <div className="flex flex-row justify-between">
+              <div>
+                <div className="flex flex-col gap-[clamp(0.1rem,0.6vw,0.6rem)]">
+                  <p className="text-left font-bold leading-[0.9] text-[clamp(40px,8vw,112px)]">
+                    200
+                  </p>
+                  <p className="text-left text-[clamp(12px,1.2vw,16px)] text-neutral-700">
+                    personer innvolvert
+                  </p>
+                </div>
+                <div className="flex flex-col gap-[clamp(0.1rem,0.6vw,0.6rem)]">
+                  <p className="text-left font-bold leading-[0.9] text-[clamp(40px,8vw,112px)]">
+                    48
+                  </p>
+                  <p className="text-left text-[clamp(12px,1.2vw,16px)] text-neutral-700">
+                    personer innvolvert
+                  </p>
+                </div>
+              </div>
+              <div className="flex flex-col h-full justify-end w-full">
+                <p className="text-right italic">
+                  Client: <strong>Sykehusbygg</strong>
+                </p>
+                <p className="text-right italic">
+                  Area <strong>Stavanger</strong>
+                </p>
+                <p className="text-right italic">
+                  Collaborators <strong>Canoe, Æra</strong>
+                </p>
+                <p className="text-right italic">
+                  Year <strong>2022-2023</strong>
+                </p>
+              </div>
+            </div>
+          </div>
+          {(proj?.images ?? []).slice(0, 1).map((src: string, i: number) => (
+            <div
+              key={i}
+              className="aspect-[4/3] bg-neutral-200 rounded-xl overflow-hidden"
+            >
+              {/* eslint-disable-next-line @next/next/no-img-element */}
+              <img src={src} alt="" className="w-full h-full object-cover" />
+            </div>
+          ))}
         </div>
       </div>
     );
   }
-  const proj = cms.projects.find((p: any) => p.id === slide.projectId);
-  return (
-    <div className="h-full w-full p-12 grid grid-cols-2 gap-6 items-center">
-      <div className="col-span-6">
-        <div className="text-4xl font-semibold">{proj?.title}</div>
-        <p className="text-neutral-700 mt-3 text-lg">{proj?.excerpt}</p>
-        <p className="text-neutral-700 mt-3 text-lg">{proj?.categories}</p>
-      </div>
-      <div className="col-span-6 grid grid-cols-2 gap-3">
-        {(proj?.images ?? []).slice(0, 2).map((src: string, i: number) => (
-          <div
-            key={i}
-            className="aspect-[4/3] bg-neutral-200 rounded-xl overflow-hidden"
-          >
-            {/* eslint-disable-next-line @next/next/no-img-element */}
-            <img src={src} alt="" className="w-full h-full object-cover" />
-          </div>
-        ))}
-      </div>
-    </div>
-  );
+  return null;
 }
 
 // ===== Deck (Presentation) Overlay =====
@@ -295,19 +504,22 @@ function renderSlideHTML(slide: Slide, cms: any): string {
       cat?.stats || ""
     }</div></div>`;
   }
-  const proj = cms.projects.find((p: any) => p.id === slide.projectId);
-  const imgs = (proj?.images ?? [])
-    .slice(0, 2)
-    .map(
-      (src: string) =>
-        `<div style="background:#eee;border-radius:12px;overflow:hidden;aspect-ratio:4/3"><img src="${src}" style="width:100%;height:100%;object-fit:cover"/></div>`
-    )
-    .join("\n");
-  return `<div style="display:grid;grid-template-columns:1fr 1fr;gap:16px;align-items:center"><div><div style="font-size:24px;font-weight:600">${
-    proj?.title ?? "Prosjekt"
-  }</div><p style="margin-top:8px;color:#444;font-size:18px">${
-    proj?.excerpt ?? ""
-  }</p></div><div style="display:grid;grid-template-columns:1fr 1fr;gap:12px">${imgs}</div></div>`;
+  if (slide.kind === "project") {
+    const proj = cms.projects.find((p: any) => p.id === slide.projectId);
+    const imgs = (proj?.images ?? [])
+      .slice(0, 2)
+      .map(
+        (src: string) =>
+          `<div style="background:#eee;border-radius:12px;overflow:hidden;aspect-ratio:4/3"><img src="${src}" style="width:100%;height:100%;object-fit:cover"/></div>`
+      )
+      .join("\n");
+    return `<div style="display:grid;grid-template-columns:1fr 1fr;gap:16px;align-items:center"><div><div style="font-size:24px;font-weight:600">${
+      proj?.title ?? "Prosjekt"
+    }</div><p style="margin-top:8px;color:#444;font-size:18px">${
+      proj?.excerpt ?? ""
+    }</p></div><div style="display:grid;grid-template-columns:1fr 1fr;gap:12px">${imgs}</div></div>`;
+  }
+  return "";
 }
 
 // (SlidesPreview moved to ./steps/SlidesPreview)
@@ -347,7 +559,7 @@ export default function PresentationBuilder() {
   };
 
   return (
-    <div className="w-full min-h-screen bg-neutral-50 text-neutral-900">
+    <div className="w-full min-w-[1280px] min-h-screen bg-neutral-50 text-neutral-900">
       <div className="max-w-6xl mx-auto px-4 md:px-6 py-6 md:py-10">
         <header className="flex items-center justify-between mb-8">
           <div className="text-sm uppercase tracking-wider opacity-60">

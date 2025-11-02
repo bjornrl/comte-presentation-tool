@@ -5,6 +5,7 @@ export type Slide =
   | { kind: "category"; categoryId: string }
   | { kind: "expertise"; categoryId: string }
   | { kind: "stats"; categoryId: string }
+  | { kind: "clients"; categoryId: string }
   | { kind: "project"; projectId: string }
   | { kind: "outro"; title?: string };
 
@@ -25,6 +26,7 @@ export default function buildSlides(
     slides.push({ kind: "category", categoryId });
     slides.push({ kind: "expertise", categoryId });
     slides.push({ kind: "stats", categoryId });
+    slides.push({ kind: "clients", categoryId });
   }
   for (const pid of projectIds)
     slides.push({ kind: "project", projectId: pid });

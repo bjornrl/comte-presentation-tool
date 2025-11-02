@@ -4,9 +4,9 @@ import type { Slide } from "../../components/buildSlides";
 export default function SlidesPreview({ slides }: { slides: Slide[] }) {
   const cms = useCMS();
   return (
-    <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
+    <div className="grid grid-cols-1 md:grid-cols-3 gap-1">
       {slides.map((s, i) => {
-        const base = "rounded-4xl border p-4 min-h-[140px] bg-white";
+        const base = "rounded-sm border p-4 min-h-[140px] bg-white";
         if (s.kind === "cover")
           return (
             <div key={i} className={base}>
@@ -65,17 +65,20 @@ export default function SlidesPreview({ slides }: { slides: Slide[] }) {
             </div>
           );
         }
-        const cmsNow = cms as any;
-        const proj = cmsNow.projects.find((p: any) => p.id === s.projectId);
-        return (
-          <div key={i} className={base}>
-            <div className="text-sm opacity-60">Prosjekt</div>
-            <div className="mt-2 font-semibold">{proj?.title}</div>
-            <p className="text-neutral-600 text-sm line-clamp-3">
-              {proj?.excerpt}
-            </p>
-          </div>
-        );
+        if (s.kind === "project") {
+          const cmsNow = cms as any;
+          const proj = cmsNow.projects.find((p: any) => p.id === s.projectId);
+          return (
+            <div key={i} className={base}>
+              <div className="text-sm opacity-60">Prosjekt</div>
+              <div className="mt-2 font-semibold">{proj?.title}</div>
+              <p className="text-neutral-600 text-sm line-clamp-3">
+                {proj?.excerpt}
+              </p>
+            </div>
+          );
+        }
+        return null;
       })}
     </div>
   );

@@ -13,14 +13,17 @@ export function Card({
   onClick?: () => void;
 }) {
   return (
-    <button
-      onClick={onClick}
-      className={cx(
-        "text-left w-full bg-white border rounded-xl p-5 md:p-6 transition border-red-500",
-        selected ? "border-black" : "border-neutral-300 hover:border-black/50"
-      )}
-    >
-      {children}
-    </button>
+    // <div className="border border-black">
+    <div>
+      <button
+        onClick={onClick}
+        className={cx(
+          "text-left w-full border border-red-300 bg-red transition appearance-none focus:outline-none hover:cursor-pointer",
+          selected ? "bg-gray-200" : "hover:bg-gray-100"
+        )}
+      >
+        {children}
+      </button>
+    </div>
   );
 }

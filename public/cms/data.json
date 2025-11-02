@@ -1,13 +1,6 @@
 {
   "categories": [
     {
-      "id": "Arkitektur og urbanisme",
-      "title": "Arkitektur og urbanisme",
-      "blurb": "",
-      "expertise": [],
-      "stats": ""
-    },
-    {
       "id": "Tjenestedesign",
       "title": "Tjenestedesign",
       "blurb": "Utforsker og forbedrer tjenester på tvers av kanaler.",
@@ -41,359 +34,1014 @@
       "stats": "100+ identiteter"
     },
     {
-      "id": "Organisasjonsendring",
-      "title": "Organisasjonsendring",
-      "blurb": "",
-      "expertise": [],
-      "stats": ""
+      "id": "Strategi",
+      "title": "Strategi",
+      "blurb": "Retning, prioriteringer og målbare effekter.",
+      "expertise": [
+        "Målbilde",
+        "KPI/OKR",
+        "Porteføljestyring"
+      ],
+      "stats": "80+ strategiske oppdrag"
     },
     {
-      "id": "Creative Direction",
-      "title": "Creative Direction",
-      "blurb": "",
-      "expertise": [],
-      "stats": ""
+      "id": "Innsikt",
+      "title": "Innsikt",
+      "blurb": "Forstår brukere, behov og marked.",
+      "expertise": [
+        "Dybdeintervjuer",
+        "Kvantitativ",
+        "Feltstudier"
+      ],
+      "stats": "3000+ respondenter analysert"
     },
     {
-      "id": "Web Design",
-      "title": "Web Design",
-      "blurb": "",
-      "expertise": [],
-      "stats": ""
+      "id": "Produktdesign",
+      "title": "Produktdesign",
+      "blurb": "Digitale produkter fra idé til lansering.",
+      "expertise": [
+        "UX",
+        "UI",
+        "Designsystem"
+      ],
+      "stats": "60+ produkter"
     }
   ],
   "projects": [
     {
       "id": "1",
-      "slug": "dgv",
-      "title": "Samskaping av fremtiden for Den Gamle Veterinærhøgskolen",
-      "excerpt": "Project Echo",
+      "slug": "tjenestedesign-prosjekt-1-2024",
+      "title": "Tjenestedesign prosjekt 1",
+      "excerpt": "Prosjektet fokuserte på tjenestedesign for Byrom Oslo. Leveransen inkluderte Måling, Pilotering.",
       "categories": [
-        "Arkitektur og urbanisme",
         "Tjenestedesign"
       ],
       "images": [
-        "https://framerusercontent.com/images/AEkA7pOAwrTsK7Zxh5Ng6gQNqk.webp",
-        "https://framerusercontent.com/images/UdBOaxS1D0sU0omCR7XpR8GPkU.png",
-        "https://framerusercontent.com/images/Bx1quNmSq3WAGgalj8geHdgHLw.webp",
-        "https://framerusercontent.com/images/PXBx0hu4JLv62EUdBv6DvbMrAts.webp"
+        "https://source.unsplash.com/1600x900/?Tjenestedesign",
+        "https://source.unsplash.com/1600x900/?Tjenestedesign,design",
+        "https://source.unsplash.com/1600x900/?Tjenestedesign,prototype",
+        "https://source.unsplash.com/1600x900/?Tjenestedesign,team",
+        "https://source.unsplash.com/1600x900/?Tjenestedesign,workshop"
       ],
-      "client": "Oslo Bygg KF",
+      "client": "Byrom Oslo",
       "year": "2024",
       "services": [
-        "Urbanisme\nEldrebølgen",
-        "Elderly Wave"
+        "Tjenestekartlegging",
+        "Brukerreiser",
+        "Pilotering",
+        "Måling",
+        "Brukerreiser"
       ],
-      "next": [
-        "2",
-        "3",
-        "4"
-      ],
-      "created": "",
-      "edited": ""
+      "next": [],
+      "created": "2025-10-31",
+      "edited": "2025-10-31"
     },
     {
       "id": "2",
-      "slug": "helse-og-omsorg-i-luster-kommune-2030",
-      "title": "Helse og omsorg i Luster kommune 2030",
-      "excerpt": "Studio Atlas",
+      "slug": "tjenestedesign-prosjekt-2-2020",
+      "title": "Tjenestedesign prosjekt 2",
+      "excerpt": "Prosjektet fokuserte på tjenestedesign for Nordic Rail. Leveransen inkluderte Måling, Brukerreiser.",
       "categories": [
-        "Arkitektur & Urbanisme",
         "Tjenestedesign"
       ],
       "images": [
-        "https://framerusercontent.com/images/ymhyWGCYjTNb8kGdIs2kYNsTP4.webp",
-        "https://framerusercontent.com/images/6zqnwXyr4onzUdhyPM6zshSeEU.webp",
-        "https://framerusercontent.com/images/a0ZbDLEkgZc3DSggstwdudCO1Q.webp",
-        "https://framerusercontent.com/images/dI4MZ5e9KZvNHj6Fx2MJRGvbARg.webp"
+        "https://source.unsplash.com/1600x900/?Tjenestedesign",
+        "https://source.unsplash.com/1600x900/?Tjenestedesign,design",
+        "https://source.unsplash.com/1600x900/?Tjenestedesign,prototype",
+        "https://source.unsplash.com/1600x900/?Tjenestedesign,team",
+        "https://source.unsplash.com/1600x900/?Tjenestedesign,workshop"
       ],
-      "client": "Luster Kommune",
-      "year": "2025",
+      "client": "Nordic Rail",
+      "year": "2020",
       "services": [
-        "Helse & Omsorg\nInnovasjon i offentlig sektor",
-        "Health"
+        "Pilotering",
+        "Tjenestekartlegging",
+        "Brukerreiser",
+        "Prototyping",
+        "Tjenestekartlegging"
       ],
-      "next": [
-        "3",
-        "4",
-        "5"
-      ],
-      "created": "",
-      "edited": ""
+      "next": [],
+      "created": "2025-10-31",
+      "edited": "2025-10-31"
     },
     {
       "id": "3",
-      "slug": "visuell-profil-strategisk-kommunikasjon-austevoll",
-      "title": "En visuell identitet for et samlet Austevoll",
-      "excerpt": "En visuell identitet for et samlet Austevoll",
-      "categories": [
-        "Branding",
-        "Organisasjonsendring"
-      ],
-      "images": [
-        "https://framerusercontent.com/images/F0Gq9ULS9qPRD72wtFFhuoQrfqs.webp",
-        "https://framerusercontent.com/images/3zL9gxJGI2EOvt7GDMLSUbV4.webp",
-        "https://framerusercontent.com/images/AtF1HC37fx1qz2StbleccrGluB0.webp"
-      ],
-      "client": "Austevoll Kommune",
-      "year": "2025",
-      "services": [
-        "Branding\nOrganisasjonsendring og strategi",
-        "Health"
-      ],
-      "next": [
-        "4",
-        "5",
-        "6"
-      ],
-      "created": "",
-      "edited": ""
-    },
-    {
-      "id": "4",
-      "slug": "future-archive",
-      "title": "Morgendagens utdanning møter fremtidens kompetansebehov",
-      "excerpt": "Morgendagens utdanning møter fremtidens kompetansebehov",
+      "slug": "tjenestedesign-prosjekt-3-2021",
+      "title": "Tjenestedesign prosjekt 3",
+      "excerpt": "Prosjektet fokuserte på tjenestedesign for Ventus Mobility. Leveransen inkluderte Måling, Prototyping.",
       "categories": [
         "Tjenestedesign"
       ],
       "images": [
-        "https://framerusercontent.com/images/K2EB98Ag96YwsbJcuGUR7IwArk.webp",
-        "https://framerusercontent.com/images/YgTlQIQYX3Dbs1RM0IsXUNqwNzQ.webp",
-        "https://framerusercontent.com/images/NrOW6cqCVkDpuGeVpvi3Affs.webp"
+        "https://source.unsplash.com/1600x900/?Tjenestedesign",
+        "https://source.unsplash.com/1600x900/?Tjenestedesign,design",
+        "https://source.unsplash.com/1600x900/?Tjenestedesign,prototype",
+        "https://source.unsplash.com/1600x900/?Tjenestedesign,team",
+        "https://source.unsplash.com/1600x900/?Tjenestedesign,workshop"
       ],
-      "client": "Utdanningsdirektoratet",
-      "year": "2023",
+      "client": "Ventus Mobility",
+      "year": "2021",
       "services": [
-        "Tjenestedesign",
-        "Green Shift"
+        "Brukerreiser",
+        "Tjenestekartlegging",
+        "Prototyping",
+        "Brukerreiser",
+        "Prototyping"
       ],
-      "next": [
-        "5",
-        "6",
-        "7"
+      "next": [],
+      "created": "2025-10-31",
+      "edited": "2025-10-31"
+    },
+    {
+      "id": "4",
+      "slug": "tjenestedesign-prosjekt-4-2020",
+      "title": "Tjenestedesign prosjekt 4",
+      "excerpt": "Prosjektet fokuserte på tjenestedesign for Havn & Fjord. Leveransen inkluderte Pilotering, Måling.",
+      "categories": [
+        "Tjenestedesign"
       ],
-      "created": "",
-      "edited": ""
+      "images": [
+        "https://source.unsplash.com/1600x900/?Tjenestedesign",
+        "https://source.unsplash.com/1600x900/?Tjenestedesign,design",
+        "https://source.unsplash.com/1600x900/?Tjenestedesign,prototype",
+        "https://source.unsplash.com/1600x900/?Tjenestedesign,team",
+        "https://source.unsplash.com/1600x900/?Tjenestedesign,workshop"
+      ],
+      "client": "Havn & Fjord",
+      "year": "2020",
+      "services": [
+        "Måling",
+        "Pilotering",
+        "Tjenestekartlegging",
+        "Prototyping",
+        "Måling"
+      ],
+      "next": [],
+      "created": "2025-10-31",
+      "edited": "2025-10-31"
     },
     {
       "id": "5",
-      "slug": "nardovegen-sit",
-      "title": "En studentbolig som motvirker ensomhet",
-      "excerpt": "En studentbolig som motvirker ensomhet",
+      "slug": "tjenestedesign-prosjekt-5-2021",
+      "title": "Tjenestedesign prosjekt 5",
+      "excerpt": "Prosjektet fokuserte på tjenestedesign for Arctic Health. Leveransen inkluderte Måling, Brukerreiser.",
+      "categories": [
+        "Tjenestedesign"
+      ],
+      "images": [
+        "https://source.unsplash.com/1600x900/?Tjenestedesign",
+        "https://source.unsplash.com/1600x900/?Tjenestedesign,design",
+        "https://source.unsplash.com/1600x900/?Tjenestedesign,prototype",
+        "https://source.unsplash.com/1600x900/?Tjenestedesign,team",
+        "https://source.unsplash.com/1600x900/?Tjenestedesign,workshop"
+      ],
+      "client": "Arctic Health",
+      "year": "2021",
+      "services": [
+        "Pilotering",
+        "Prototyping",
+        "Tjenestekartlegging",
+        "Brukerreiser",
+        "Måling"
+      ],
+      "next": [],
+      "created": "2025-10-31",
+      "edited": "2025-10-31"
+    },
+    {
+      "id": "6",
+      "slug": "arkitektur-urbanisme-prosjekt-1-2020",
+      "title": "Arkitektur & Urbanisme prosjekt 1",
+      "excerpt": "Prosjektet fokuserte på arkitektur & urbanisme for Havn & Fjord. Leveransen inkluderte Medvirkning, Mulighetsstudie.",
       "categories": [
         "Arkitektur & Urbanisme"
       ],
       "images": [
-        "https://framerusercontent.com/images/eh5vmNkiGcf7o6sD5jYZHdPj4oE.webp",
-        "https://framerusercontent.com/images/DnsOUV76NGxmHp7djQU9iV2dPo.webp",
-        "https://framerusercontent.com/images/V6dm07LDdB2Z2bL8Hl4wkGdOf3A.webp",
-        "https://framerusercontent.com/images/eU79dnn52lv6rmt8EEeoVmd6VLA.webp",
-        "https://framerusercontent.com/images/2BQVwqBPCGZQV6Udr9L3i7Sqyg.webp"
+        "https://source.unsplash.com/1600x900/?Arkitektur",
+        "https://source.unsplash.com/1600x900/?Arkitektur,design",
+        "https://source.unsplash.com/1600x900/?Arkitektur,prototype",
+        "https://source.unsplash.com/1600x900/?Arkitektur,team",
+        "https://source.unsplash.com/1600x900/?Arkitektur,workshop"
       ],
-      "client": "Studenterskipnaden i Trondhjem (SiT)",
-      "year": "2023",
+      "client": "Havn & Fjord",
+      "year": "2020",
       "services": [
-        "Arkitektur & Urbanisme\nTjenestedesign",
-        "Urbanism"
+        "Medvirkning",
+        "Stedsanalyse",
+        "Mulighetsstudie",
+        "ROM-program",
+        "Stedsanalyse"
       ],
-      "next": [
-        "6",
-        "7",
-        "8"
-      ],
-      "created": "",
-      "edited": ""
-    },
-    {
-      "id": "6",
-      "slug": "silent-motif",
-      "title": "Planlegging av operasjoner med maskinlæring",
-      "excerpt": "Planlegging av operasjoner med maskinlæring",
-      "categories": [
-        "Creative Direction"
-      ],
-      "images": [
-        "https://framerusercontent.com/images/ibefBkb80QQlWjMNOSNraTtsDLg.webp",
-        "https://framerusercontent.com/images/Vx0DkdccXPivrt7EM3QNA9vQCIY.webp",
-        "https://framerusercontent.com/images/Zje7tNJXnjhmHq8wBFaWd6Kn0Tk.webp",
-        "https://framerusercontent.com/images/Dbv0MmsNWviWsYER0VAV87C9j4.webp",
-        "https://framerusercontent.com/images/ibefBkb80QQlWjMNOSNraTtsDLg.webp"
-      ],
-      "client": "Helse- og Omsorgsdepartementet",
-      "year": "2025",
-      "services": [
-        "Systemdesign\nWebdesign",
-        "Elderly Wave"
-      ],
-      "next": [
-        "7",
-        "8",
-        "1"
-      ],
-      "created": "",
-      "edited": ""
+      "next": [],
+      "created": "2025-10-31",
+      "edited": "2025-10-31"
     },
     {
       "id": "7",
-      "slug": "pattern-language",
-      "title": "Pattern Language",
-      "excerpt": "Pattern Language",
+      "slug": "arkitektur-urbanisme-prosjekt-2-2022",
+      "title": "Arkitektur & Urbanisme prosjekt 2",
+      "excerpt": "Prosjektet fokuserte på arkitektur & urbanisme for Nordic Rail. Leveransen inkluderte Mulighetsstudie, Stedsanalyse.",
       "categories": [
-        "Branding",
-        "Web Design"
+        "Arkitektur & Urbanisme"
       ],
       "images": [
-        "https://framerusercontent.com/images/c9iimi6kZ641ejjzaNtbkvMnO0.png",
-        "https://framerusercontent.com/images/wVZ9vsfFg3GOqa3EB2l0LmcVXLU.png",
-        "https://framerusercontent.com/images/rTSM4xbqUXkFj9TOFw7RZooTKQ.png",
-        "https://framerusercontent.com/images/aUHTkRa7iGYJcRPO7rydeORcKm4.png",
-        "https://framerusercontent.com/images/P8Kr0p44PUutiPyuMTsK9BjVA0.png"
+        "https://source.unsplash.com/1600x900/?Arkitektur",
+        "https://source.unsplash.com/1600x900/?Arkitektur,design",
+        "https://source.unsplash.com/1600x900/?Arkitektur,prototype",
+        "https://source.unsplash.com/1600x900/?Arkitektur,team",
+        "https://source.unsplash.com/1600x900/?Arkitektur,workshop"
       ],
-      "client": "Lurex Agency",
-      "year": "2025",
+      "client": "Nordic Rail",
+      "year": "2022",
       "services": [
-        "Branding\nArt & Design Direction\nMotion\nWeb design",
-        "Elderly Wave"
+        "Mulighetsstudie",
+        "Byutvikling",
+        "ROM-program",
+        "ROM-program",
+        "Stedsanalyse"
       ],
-      "next": [
-        "8",
-        "1",
-        "2"
-      ],
-      "created": "",
-      "edited": ""
+      "next": [],
+      "created": "2025-10-31",
+      "edited": "2025-10-31"
     },
     {
       "id": "8",
-      "slug": "spectrum-project",
-      "title": "Spectrum Project",
-      "excerpt": "Spectrum Project",
+      "slug": "arkitektur-urbanisme-prosjekt-3-2024",
+      "title": "Arkitektur & Urbanisme prosjekt 3",
+      "excerpt": "Prosjektet fokuserte på arkitektur & urbanisme for Glimt Media. Leveransen inkluderte Stedsanalyse, Mulighetsstudie.",
       "categories": [
-        "Branding",
-        "Web Design"
+        "Arkitektur & Urbanisme"
       ],
       "images": [
-        "https://framerusercontent.com/images/UX7ngYgCS2YpvdKLGicLstB9A.jpg",
-        "https://framerusercontent.com/images/OjuZRhWi5mLtvltvZNC9oRzLucI.png",
-        "https://framerusercontent.com/images/u1dvsiZfc5uJFFKRgm0nuaQYdU.png",
-        "https://framerusercontent.com/images/JEGqcPvadTPqS5duSb1hWGZ51Y.png",
-        "https://framerusercontent.com/images/i8eU7zJIahPdJiAMyeIP017oWjk.png"
+        "https://source.unsplash.com/1600x900/?Arkitektur",
+        "https://source.unsplash.com/1600x900/?Arkitektur,design",
+        "https://source.unsplash.com/1600x900/?Arkitektur,prototype",
+        "https://source.unsplash.com/1600x900/?Arkitektur,team",
+        "https://source.unsplash.com/1600x900/?Arkitektur,workshop"
       ],
-      "client": "Mirell Works",
+      "client": "Glimt Media",
+      "year": "2024",
+      "services": [
+        "Medvirkning",
+        "Byutvikling",
+        "Mulighetsstudie",
+        "Medvirkning",
+        "ROM-program"
+      ],
+      "next": [],
+      "created": "2025-10-31",
+      "edited": "2025-10-31"
+    },
+    {
+      "id": "9",
+      "slug": "arkitektur-urbanisme-prosjekt-4-2019",
+      "title": "Arkitektur & Urbanisme prosjekt 4",
+      "excerpt": "Prosjektet fokuserte på arkitektur & urbanisme for Arctic Health. Leveransen inkluderte ROM-program, Medvirkning.",
+      "categories": [
+        "Arkitektur & Urbanisme"
+      ],
+      "images": [
+        "https://source.unsplash.com/1600x900/?Arkitektur",
+        "https://source.unsplash.com/1600x900/?Arkitektur,design",
+        "https://source.unsplash.com/1600x900/?Arkitektur,prototype",
+        "https://source.unsplash.com/1600x900/?Arkitektur,team",
+        "https://source.unsplash.com/1600x900/?Arkitektur,workshop"
+      ],
+      "client": "Arctic Health",
+      "year": "2019",
+      "services": [
+        "Mulighetsstudie",
+        "Byutvikling",
+        "Medvirkning",
+        "ROM-program",
+        "Medvirkning"
+      ],
+      "next": [],
+      "created": "2025-10-31",
+      "edited": "2025-10-31"
+    },
+    {
+      "id": "10",
+      "slug": "arkitektur-urbanisme-prosjekt-5-2025",
+      "title": "Arkitektur & Urbanisme prosjekt 5",
+      "excerpt": "Prosjektet fokuserte på arkitektur & urbanisme for Arctic Health. Leveransen inkluderte Stedsanalyse, Medvirkning.",
+      "categories": [
+        "Arkitektur & Urbanisme"
+      ],
+      "images": [
+        "https://source.unsplash.com/1600x900/?Arkitektur",
+        "https://source.unsplash.com/1600x900/?Arkitektur,design",
+        "https://source.unsplash.com/1600x900/?Arkitektur,prototype",
+        "https://source.unsplash.com/1600x900/?Arkitektur,team",
+        "https://source.unsplash.com/1600x900/?Arkitektur,workshop"
+      ],
+      "client": "Arctic Health",
       "year": "2025",
       "services": [
-        "Branding\nArt & Design Direction\nMotion\nWeb design",
-        "Elderly Wave"
+        "Mulighetsstudie",
+        "Byutvikling",
+        "ROM-program",
+        "Medvirkning",
+        "ROM-program"
       ],
-      "next": [
-        "1",
-        "2",
-        "3"
+      "next": [],
+      "created": "2025-10-31",
+      "edited": "2025-10-31"
+    },
+    {
+      "id": "11",
+      "slug": "branding-prosjekt-1-2024",
+      "title": "Branding prosjekt 1",
+      "excerpt": "Prosjektet fokuserte på branding for Havn & Fjord. Leveransen inkluderte Designsystem, Retningslinjer.",
+      "categories": [
+        "Branding"
       ],
-      "created": "",
-      "edited": ""
+      "images": [
+        "https://source.unsplash.com/1600x900/?Branding",
+        "https://source.unsplash.com/1600x900/?Branding,design",
+        "https://source.unsplash.com/1600x900/?Branding,prototype",
+        "https://source.unsplash.com/1600x900/?Branding,team",
+        "https://source.unsplash.com/1600x900/?Branding,workshop"
+      ],
+      "client": "Havn & Fjord",
+      "year": "2024",
+      "services": [
+        "Designsystem",
+        "Merkevarestrategi",
+        "Retningslinjer",
+        "Retningslinjer",
+        "Visuell identitet"
+      ],
+      "next": [],
+      "created": "2025-10-31",
+      "edited": "2025-10-31"
+    },
+    {
+      "id": "12",
+      "slug": "branding-prosjekt-2-2019",
+      "title": "Branding prosjekt 2",
+      "excerpt": "Prosjektet fokuserte på branding for Aurora Foods. Leveransen inkluderte Designsystem, Visuell identitet.",
+      "categories": [
+        "Branding"
+      ],
+      "images": [
+        "https://source.unsplash.com/1600x900/?Branding",
+        "https://source.unsplash.com/1600x900/?Branding,design",
+        "https://source.unsplash.com/1600x900/?Branding,prototype",
+        "https://source.unsplash.com/1600x900/?Branding,team",
+        "https://source.unsplash.com/1600x900/?Branding,workshop"
+      ],
+      "client": "Aurora Foods",
+      "year": "2019",
+      "services": [
+        "Visuell identitet",
+        "Retningslinjer",
+        "Navneutvikling",
+        "Navneutvikling",
+        "Retningslinjer"
+      ],
+      "next": [],
+      "created": "2025-10-31",
+      "edited": "2025-10-31"
+    },
+    {
+      "id": "13",
+      "slug": "branding-prosjekt-3-2024",
+      "title": "Branding prosjekt 3",
+      "excerpt": "Prosjektet fokuserte på branding for Ventus Mobility. Leveransen inkluderte Visuell identitet, Designsystem.",
+      "categories": [
+        "Branding"
+      ],
+      "images": [
+        "https://source.unsplash.com/1600x900/?Branding",
+        "https://source.unsplash.com/1600x900/?Branding,design",
+        "https://source.unsplash.com/1600x900/?Branding,prototype",
+        "https://source.unsplash.com/1600x900/?Branding,team",
+        "https://source.unsplash.com/1600x900/?Branding,workshop"
+      ],
+      "client": "Ventus Mobility",
+      "year": "2024",
+      "services": [
+        "Designsystem",
+        "Merkevarestrategi",
+        "Navneutvikling",
+        "Designsystem",
+        "Navneutvikling"
+      ],
+      "next": [],
+      "created": "2025-10-31",
+      "edited": "2025-10-31"
+    },
+    {
+      "id": "14",
+      "slug": "branding-prosjekt-4-2021",
+      "title": "Branding prosjekt 4",
+      "excerpt": "Prosjektet fokuserte på branding for Polaris Energi. Leveransen inkluderte Retningslinjer, Navneutvikling.",
+      "categories": [
+        "Branding"
+      ],
+      "images": [
+        "https://source.unsplash.com/1600x900/?Branding",
+        "https://source.unsplash.com/1600x900/?Branding,design",
+        "https://source.unsplash.com/1600x900/?Branding,prototype",
+        "https://source.unsplash.com/1600x900/?Branding,team",
+        "https://source.unsplash.com/1600x900/?Branding,workshop"
+      ],
+      "client": "Polaris Energi",
+      "year": "2021",
+      "services": [
+        "Retningslinjer",
+        "Navneutvikling",
+        "Designsystem",
+        "Merkevarestrategi",
+        "Retningslinjer"
+      ],
+      "next": [],
+      "created": "2025-10-31",
+      "edited": "2025-10-31"
+    },
+    {
+      "id": "15",
+      "slug": "branding-prosjekt-5-2023",
+      "title": "Branding prosjekt 5",
+      "excerpt": "Prosjektet fokuserte på branding for Ventus Mobility. Leveransen inkluderte Merkevarestrategi, Navneutvikling.",
+      "categories": [
+        "Branding"
+      ],
+      "images": [
+        "https://source.unsplash.com/1600x900/?Branding",
+        "https://source.unsplash.com/1600x900/?Branding,design",
+        "https://source.unsplash.com/1600x900/?Branding,prototype",
+        "https://source.unsplash.com/1600x900/?Branding,team",
+        "https://source.unsplash.com/1600x900/?Branding,workshop"
+      ],
+      "client": "Ventus Mobility",
+      "year": "2023",
+      "services": [
+        "Retningslinjer",
+        "Visuell identitet",
+        "Designsystem",
+        "Navneutvikling",
+        "Designsystem"
+      ],
+      "next": [],
+      "created": "2025-10-31",
+      "edited": "2025-10-31"
+    },
+    {
+      "id": "16",
+      "slug": "strategi-prosjekt-1-2019",
+      "title": "Strategi prosjekt 1",
+      "excerpt": "Prosjektet fokuserte på strategi for Polaris Energi. Leveransen inkluderte Virkemiddelkart, Målbilde.",
+      "categories": [
+        "Strategi"
+      ],
+      "images": [
+        "https://source.unsplash.com/1600x900/?Strategi",
+        "https://source.unsplash.com/1600x900/?Strategi,design",
+        "https://source.unsplash.com/1600x900/?Strategi,prototype",
+        "https://source.unsplash.com/1600x900/?Strategi,team",
+        "https://source.unsplash.com/1600x900/?Strategi,workshop"
+      ],
+      "client": "Polaris Energi",
+      "year": "2019",
+      "services": [
+        "KPI/OKR",
+        "Målbilde",
+        "Porteføljestyring",
+        "Forretningsmål",
+        "KPI/OKR"
+      ],
+      "next": [],
+      "created": "2025-10-31",
+      "edited": "2025-10-31"
+    },
+    {
+      "id": "17",
+      "slug": "strategi-prosjekt-2-2019",
+      "title": "Strategi prosjekt 2",
+      "excerpt": "Prosjektet fokuserte på strategi for Glimt Media. Leveransen inkluderte Målbilde, Virkemiddelkart.",
+      "categories": [
+        "Strategi"
+      ],
+      "images": [
+        "https://source.unsplash.com/1600x900/?Strategi",
+        "https://source.unsplash.com/1600x900/?Strategi,design",
+        "https://source.unsplash.com/1600x900/?Strategi,prototype",
+        "https://source.unsplash.com/1600x900/?Strategi,team",
+        "https://source.unsplash.com/1600x900/?Strategi,workshop"
+      ],
+      "client": "Glimt Media",
+      "year": "2019",
+      "services": [
+        "Virkemiddelkart",
+        "Målbilde",
+        "Porteføljestyring",
+        "KPI/OKR",
+        "Virkemiddelkart"
+      ],
+      "next": [],
+      "created": "2025-10-31",
+      "edited": "2025-10-31"
+    },
+    {
+      "id": "18",
+      "slug": "strategi-prosjekt-3-2019",
+      "title": "Strategi prosjekt 3",
+      "excerpt": "Prosjektet fokuserte på strategi for Ventus Mobility. Leveransen inkluderte KPI/OKR, Porteføljestyring.",
+      "categories": [
+        "Strategi"
+      ],
+      "images": [
+        "https://source.unsplash.com/1600x900/?Strategi",
+        "https://source.unsplash.com/1600x900/?Strategi,design",
+        "https://source.unsplash.com/1600x900/?Strategi,prototype",
+        "https://source.unsplash.com/1600x900/?Strategi,team",
+        "https://source.unsplash.com/1600x900/?Strategi,workshop"
+      ],
+      "client": "Ventus Mobility",
+      "year": "2019",
+      "services": [
+        "Porteføljestyring",
+        "Virkemiddelkart",
+        "KPI/OKR",
+        "Porteføljestyring",
+        "KPI/OKR"
+      ],
+      "next": [],
+      "created": "2025-10-31",
+      "edited": "2025-10-31"
+    },
+    {
+      "id": "19",
+      "slug": "strategi-prosjekt-4-2024",
+      "title": "Strategi prosjekt 4",
+      "excerpt": "Prosjektet fokuserte på strategi for Glimt Media. Leveransen inkluderte Målbilde, Virkemiddelkart.",
+      "categories": [
+        "Strategi"
+      ],
+      "images": [
+        "https://source.unsplash.com/1600x900/?Strategi",
+        "https://source.unsplash.com/1600x900/?Strategi,design",
+        "https://source.unsplash.com/1600x900/?Strategi,prototype",
+        "https://source.unsplash.com/1600x900/?Strategi,team",
+        "https://source.unsplash.com/1600x900/?Strategi,workshop"
+      ],
+      "client": "Glimt Media",
+      "year": "2024",
+      "services": [
+        "Målbilde",
+        "Forretningsmål",
+        "Porteføljestyring",
+        "Målbilde",
+        "KPI/OKR"
+      ],
+      "next": [],
+      "created": "2025-10-31",
+      "edited": "2025-10-31"
+    },
+    {
+      "id": "20",
+      "slug": "strategi-prosjekt-5-2023",
+      "title": "Strategi prosjekt 5",
+      "excerpt": "Prosjektet fokuserte på strategi for Aurora Foods. Leveransen inkluderte Forretningsmål, Porteføljestyring.",
+      "categories": [
+        "Strategi"
+      ],
+      "images": [
+        "https://source.unsplash.com/1600x900/?Strategi",
+        "https://source.unsplash.com/1600x900/?Strategi,design",
+        "https://source.unsplash.com/1600x900/?Strategi,prototype",
+        "https://source.unsplash.com/1600x900/?Strategi,team",
+        "https://source.unsplash.com/1600x900/?Strategi,workshop"
+      ],
+      "client": "Aurora Foods",
+      "year": "2023",
+      "services": [
+        "Forretningsmål",
+        "Porteføljestyring",
+        "KPI/OKR",
+        "Porteføljestyring",
+        "KPI/OKR"
+      ],
+      "next": [],
+      "created": "2025-10-31",
+      "edited": "2025-10-31"
+    },
+    {
+      "id": "21",
+      "slug": "innsikt-prosjekt-1-2023",
+      "title": "Innsikt prosjekt 1",
+      "excerpt": "Prosjektet fokuserte på innsikt for Ventus Mobility. Leveransen inkluderte Desk research, Kvantitativ.",
+      "categories": [
+        "Innsikt"
+      ],
+      "images": [
+        "https://source.unsplash.com/1600x900/?Innsikt",
+        "https://source.unsplash.com/1600x900/?Innsikt,design",
+        "https://source.unsplash.com/1600x900/?Innsikt,prototype",
+        "https://source.unsplash.com/1600x900/?Innsikt,team",
+        "https://source.unsplash.com/1600x900/?Innsikt,workshop"
+      ],
+      "client": "Ventus Mobility",
+      "year": "2023",
+      "services": [
+        "Analyse",
+        "Feltstudier",
+        "Dybdeintervjuer",
+        "Desk research",
+        "Analyse"
+      ],
+      "next": [],
+      "created": "2025-10-31",
+      "edited": "2025-10-31"
+    },
+    {
+      "id": "22",
+      "slug": "innsikt-prosjekt-2-2025",
+      "title": "Innsikt prosjekt 2",
+      "excerpt": "Prosjektet fokuserte på innsikt for Kystverket. Leveransen inkluderte Kvantitativ, Analyse.",
+      "categories": [
+        "Innsikt"
+      ],
+      "images": [
+        "https://source.unsplash.com/1600x900/?Innsikt",
+        "https://source.unsplash.com/1600x900/?Innsikt,design",
+        "https://source.unsplash.com/1600x900/?Innsikt,prototype",
+        "https://source.unsplash.com/1600x900/?Innsikt,team",
+        "https://source.unsplash.com/1600x900/?Innsikt,workshop"
+      ],
+      "client": "Kystverket",
+      "year": "2025",
+      "services": [
+        "Analyse",
+        "Dybdeintervjuer",
+        "Desk research",
+        "Dybdeintervjuer",
+        "Desk research"
+      ],
+      "next": [],
+      "created": "2025-10-31",
+      "edited": "2025-10-31"
+    },
+    {
+      "id": "23",
+      "slug": "innsikt-prosjekt-3-2020",
+      "title": "Innsikt prosjekt 3",
+      "excerpt": "Prosjektet fokuserte på innsikt for Aquila Bank. Leveransen inkluderte Feltstudier, Desk research.",
+      "categories": [
+        "Innsikt"
+      ],
+      "images": [
+        "https://source.unsplash.com/1600x900/?Innsikt",
+        "https://source.unsplash.com/1600x900/?Innsikt,design",
+        "https://source.unsplash.com/1600x900/?Innsikt,prototype",
+        "https://source.unsplash.com/1600x900/?Innsikt,team",
+        "https://source.unsplash.com/1600x900/?Innsikt,workshop"
+      ],
+      "client": "Aquila Bank",
+      "year": "2020",
+      "services": [
+        "Desk research",
+        "Kvantitativ",
+        "Feltstudier",
+        "Dybdeintervjuer",
+        "Analyse"
+      ],
+      "next": [],
+      "created": "2025-10-31",
+      "edited": "2025-10-31"
+    },
+    {
+      "id": "24",
+      "slug": "innsikt-prosjekt-4-2024",
+      "title": "Innsikt prosjekt 4",
+      "excerpt": "Prosjektet fokuserte på innsikt for Aurora Foods. Leveransen inkluderte Desk research, Feltstudier.",
+      "categories": [
+        "Innsikt"
+      ],
+      "images": [
+        "https://source.unsplash.com/1600x900/?Innsikt",
+        "https://source.unsplash.com/1600x900/?Innsikt,design",
+        "https://source.unsplash.com/1600x900/?Innsikt,prototype",
+        "https://source.unsplash.com/1600x900/?Innsikt,team",
+        "https://source.unsplash.com/1600x900/?Innsikt,workshop"
+      ],
+      "client": "Aurora Foods",
+      "year": "2024",
+      "services": [
+        "Dybdeintervjuer",
+        "Desk research",
+        "Analyse",
+        "Desk research",
+        "Analyse"
+      ],
+      "next": [],
+      "created": "2025-10-31",
+      "edited": "2025-10-31"
+    },
+    {
+      "id": "25",
+      "slug": "innsikt-prosjekt-5-2023",
+      "title": "Innsikt prosjekt 5",
+      "excerpt": "Prosjektet fokuserte på innsikt for Frame Robotics. Leveransen inkluderte Feltstudier, Dybdeintervjuer.",
+      "categories": [
+        "Innsikt"
+      ],
+      "images": [
+        "https://source.unsplash.com/1600x900/?Innsikt",
+        "https://source.unsplash.com/1600x900/?Innsikt,design",
+        "https://source.unsplash.com/1600x900/?Innsikt,prototype",
+        "https://source.unsplash.com/1600x900/?Innsikt,team",
+        "https://source.unsplash.com/1600x900/?Innsikt,workshop"
+      ],
+      "client": "Frame Robotics",
+      "year": "2023",
+      "services": [
+        "Feltstudier",
+        "Kvantitativ",
+        "Dybdeintervjuer",
+        "Analyse",
+        "Desk research"
+      ],
+      "next": [],
+      "created": "2025-10-31",
+      "edited": "2025-10-31"
+    },
+    {
+      "id": "26",
+      "slug": "produktdesign-prosjekt-1-2023",
+      "title": "Produktdesign prosjekt 1",
+      "excerpt": "Prosjektet fokuserte på produktdesign for Glimt Media. Leveransen inkluderte UI, Designsystem.",
+      "categories": [
+        "Produktdesign"
+      ],
+      "images": [
+        "https://source.unsplash.com/1600x900/?Produktdesign",
+        "https://source.unsplash.com/1600x900/?Produktdesign,design",
+        "https://source.unsplash.com/1600x900/?Produktdesign,prototype",
+        "https://source.unsplash.com/1600x900/?Produktdesign,team",
+        "https://source.unsplash.com/1600x900/?Produktdesign,workshop"
+      ],
+      "client": "Glimt Media",
+      "year": "2023",
+      "services": [
+        "UI",
+        "Prototyping",
+        "Designsystem",
+        "Prototyping",
+        "UI"
+      ],
+      "next": [],
+      "created": "2025-10-31",
+      "edited": "2025-10-31"
+    },
+    {
+      "id": "27",
+      "slug": "produktdesign-prosjekt-2-2019",
+      "title": "Produktdesign prosjekt 2",
+      "excerpt": "Prosjektet fokuserte på produktdesign for Kystverket. Leveransen inkluderte UI, UX.",
+      "categories": [
+        "Produktdesign"
+      ],
+      "images": [
+        "https://source.unsplash.com/1600x900/?Produktdesign",
+        "https://source.unsplash.com/1600x900/?Produktdesign,design",
+        "https://source.unsplash.com/1600x900/?Produktdesign,prototype",
+        "https://source.unsplash.com/1600x900/?Produktdesign,team",
+        "https://source.unsplash.com/1600x900/?Produktdesign,workshop"
+      ],
+      "client": "Kystverket",
+      "year": "2019",
+      "services": [
+        "UX",
+        "Designsystem",
+        "Brukertester",
+        "Prototyping",
+        "Brukertester"
+      ],
+      "next": [],
+      "created": "2025-10-31",
+      "edited": "2025-10-31"
+    },
+    {
+      "id": "28",
+      "slug": "produktdesign-prosjekt-3-2021",
+      "title": "Produktdesign prosjekt 3",
+      "excerpt": "Prosjektet fokuserte på produktdesign for Aquila Bank. Leveransen inkluderte Brukertester, Prototyping.",
+      "categories": [
+        "Produktdesign"
+      ],
+      "images": [
+        "https://source.unsplash.com/1600x900/?Produktdesign",
+        "https://source.unsplash.com/1600x900/?Produktdesign,design",
+        "https://source.unsplash.com/1600x900/?Produktdesign,prototype",
+        "https://source.unsplash.com/1600x900/?Produktdesign,team",
+        "https://source.unsplash.com/1600x900/?Produktdesign,workshop"
+      ],
+      "client": "Aquila Bank",
+      "year": "2021",
+      "services": [
+        "Designsystem",
+        "Brukertester",
+        "UI",
+        "UI",
+        "Designsystem"
+      ],
+      "next": [],
+      "created": "2025-10-31",
+      "edited": "2025-10-31"
+    },
+    {
+      "id": "29",
+      "slug": "produktdesign-prosjekt-4-2022",
+      "title": "Produktdesign prosjekt 4",
+      "excerpt": "Prosjektet fokuserte på produktdesign for Kystverket. Leveransen inkluderte UI, UX.",
+      "categories": [
+        "Produktdesign"
+      ],
+      "images": [
+        "https://source.unsplash.com/1600x900/?Produktdesign",
+        "https://source.unsplash.com/1600x900/?Produktdesign,design",
+        "https://source.unsplash.com/1600x900/?Produktdesign,prototype",
+        "https://source.unsplash.com/1600x900/?Produktdesign,team",
+        "https://source.unsplash.com/1600x900/?Produktdesign,workshop"
+      ],
+      "client": "Kystverket",
+      "year": "2022",
+      "services": [
+        "UX",
+        "Prototyping",
+        "UI",
+        "UI",
+        "UX"
+      ],
+      "next": [],
+      "created": "2025-10-31",
+      "edited": "2025-10-31"
+    },
+    {
+      "id": "30",
+      "slug": "produktdesign-prosjekt-5-2023",
+      "title": "Produktdesign prosjekt 5",
+      "excerpt": "Prosjektet fokuserte på produktdesign for Aurora Foods. Leveransen inkluderte UX, UI.",
+      "categories": [
+        "Produktdesign"
+      ],
+      "images": [
+        "https://source.unsplash.com/1600x900/?Produktdesign",
+        "https://source.unsplash.com/1600x900/?Produktdesign,design",
+        "https://source.unsplash.com/1600x900/?Produktdesign,prototype",
+        "https://source.unsplash.com/1600x900/?Produktdesign,team",
+        "https://source.unsplash.com/1600x900/?Produktdesign,workshop"
+      ],
+      "client": "Aurora Foods",
+      "year": "2023",
+      "services": [
+        "UI",
+        "Brukertester",
+        "Prototyping",
+        "UX",
+        "Prototyping"
+      ],
+      "next": [],
+      "created": "2025-10-31",
+      "edited": "2025-10-31"
     }
   ],
   "blog": [
     {
-      "id": "speculative-interfaces-imagining-the-next-wave-of-interaction",
-      "slug": "speculative-interfaces-imagining-the-next-wave-of-interaction",
-      "title": "Speculative Interfaces: Imagining the Next Wave of Interaction",
-      "cover": "https://framerusercontent.com/images/cv0GSIJ3COKkdSf6z3Ru7LgTio.png",
-      "coverAlt": "",
-      "date": "2026-12-30T00:00:00.000Z",
-      "author": "James Mitchell",
-      "contentHTML": "<p>Design has always been about anticipating the future, but speculative design takes this principle further by creating scenarios that challenge our assumptions about how technology might evolve. In the realm of interfaces, speculation is no longer just an academic exercise. As digital interactions permeate nearly every aspect of life, imagining new forms of interface becomes an essential way to explore both possibilities and consequences. Speculative interfaces—whether they appear as prototypes, installations, or conceptual experiments—ask what it would mean to interact with technology differently. They invite us to imagine gestures beyond the touchscreen, voices beyond the keyboard, or systems that respond not only to input but to context, mood, and cultural nuance. In doing so, they reveal both the potential and the limitations of our current paradigms, highlighting the ways in which design can question, rather than simply reinforce, dominant technological narratives.</p><p><br></p><p>Speculative interfaces often serve as cultural critique. By exaggerating trends or imagining extreme scenarios, they make visible the values embedded in our current tools. For example, a speculative project might explore what happens when interfaces anticipate user needs too aggressively, blurring the line between assistance and control. Another might imagine what it means to have interfaces that respond emotionally, creating machines that mirror our affective states. These designs may never be commercial products, but their purpose is not functionality—it is reflection. They hold a mirror to society, asking us to consider what kind of relationships we want with our technologies. In this sense, speculative interfaces extend design beyond problem-solving into a broader cultural conversation. They remind us that every interface encodes values, and that the future of interaction is as much about ethics and agency as it is about efficiency.</p><p><br></p><p>What makes speculative interfaces particularly powerful is their ability to expand the vocabulary of interaction. Mainstream digital culture has largely been dominated by screens, taps, and swipes, but speculative work introduces new modalities: spatial computing, haptic feedback, biometric sensing, or even interfaces that operate invisibly in the background. By experimenting with these possibilities, designers not only expand the range of what is technically imaginable but also prepare audiences to accept and interpret new forms of interaction. In many ways, speculative interfaces function like prototypes for cultural imagination. They offer us glimpses of futures that are not yet here but may arrive sooner than expected. For practitioners, they provide a sandbox in which to test ideas without the constraints of market demands, while for audiences, they open space to question what feels natural, desirable, or even threatening in emerging technologies.</p><p><br></p><p>Ultimately, speculative interfaces underscore the importance of design as a form of foresight. They demonstrate that interaction is never neutral—it is always shaped by assumptions about users, society, and power. By exploring alternative futures, designers can surface overlooked possibilities and warn against unexamined risks. The next wave of interaction may involve interfaces that are adaptive, invisible, or even symbiotic, but whether these futures empower or disempower us depends on the choices we make today. Speculative design is thus not about predicting the future but about preparing us to engage with it critically. It encourages a mindset where design is less about perfecting existing paradigms and more about questioning them, making space for creativity, ethics, and cultural dialogue. In this sense, speculative interfaces are not just futuristic curiosities—they are vital tools for shaping a digital world that reflects the diversity, complexity, and aspirations of human experience.</p>",
-      "next": [
-        "ai-and-the-future-of-visual-storytelling",
-        "designing-for-digital-culture-how-aesthetics-shape-interaction",
-        "generative-art-and-its-impact-on-contemporary-design"
-      ],
-      "created": "",
-      "edited": ""
-    },
-    {
-      "id": "the-language-of-motion-visual-design-beyond-static-forms",
-      "slug": "the-language-of-motion-visual-design-beyond-static-forms",
-      "title": "The Language of Motion: Visual Design Beyond Static Forms",
-      "cover": "https://framerusercontent.com/images/i7pn67PJO8YD9pr3v7MYjsAOx5c.png",
-      "coverAlt": "",
-      "date": "2026-12-17T00:00:00.000Z",
-      "author": "Olivia Brooks",
-      "contentHTML": "<p>For much of design history, visual communication was tied to the static page, the printed poster, or the fixed symbol. Yet in today’s digital culture, motion has become a primary language through which design communicates. Motion is not simply an embellishment or afterthought; it is increasingly the grammar by which digital products, identities, and experiences make sense. The swipe, the fade, the parallax scroll—all of these gestures have become as integral to design as typography or color. Motion gives rhythm to interaction, directs attention, and imbues meaning into transitions that would otherwise be invisible. More importantly, it aligns with how people experience contemporary life: dynamic, fast-paced, constantly shifting. To design without motion today is to ignore one of the central forces shaping how audiences perceive and interpret visual content.</p><p><br></p><p>The emergence of motion as a design language raises new challenges and opportunities. Unlike static design, where composition can be evaluated in a single glance, motion unfolds over time, requiring careful orchestration. Designers must think not only about what a screen looks like, but how it behaves—how elements enter, interact, and leave the field of vision. A logo that animates subtly can suggest elegance and refinement, while a jarring or exaggerated animation can undermine credibility. This means motion is not just about spectacle but about tone, voice, and identity. In practice, motion guides the user, creates hierarchy, and builds an emotional connection. It transforms interaction from a functional exchange into a narrative experience, where even micro-interactions carry symbolic weight. For brands, this has become particularly powerful, as motion allows identities to live fluidly across platforms, adapting to contexts without losing coherence.</p><p><br></p><p>Culturally, the shift toward motion in design reflects broader changes in how we consume information. Social media platforms prioritize video, streaming, and animated content; audiences expect things to move, react, and engage. Static images feel increasingly insufficient in a landscape saturated with dynamic media. At the same time, the language of motion is evolving quickly. What felt fresh and delightful five years ago—like bouncing icons or flashy transitions—now risks feeling dated or intrusive. This highlights the need for designers to cultivate sensitivity not only to technical execution but also to cultural resonance. Motion design is not a universal language; it carries different associations in different contexts. A restrained animation may feel sophisticated in one cultural setting but cold or disengaged in another. Designers must therefore balance the universality of motion as a design tool with the specificity of cultural meaning.</p><p><br></p><p>Ultimately, embracing motion as a core element of visual design demands that we expand our understanding of what design is and does. It is no longer sufficient to craft static artifacts; designers must think in terms of systems that breathe, adapt, and evolve in real time. This requires new skills—storyboarding, choreography, prototyping—and a willingness to collaborate with technologists, animators, and developers. But more importantly, it requires a shift in mindset: motion is not an add-on but a fundamental part of how brands, interfaces, and cultural messages are communicated. The language of motion challenges us to see design as an unfolding narrative, one that resonates precisely because it mirrors the way we live—constantly in flux, shaped by rhythm, movement, and transformation. In doing so, motion positions design not just as a visual discipline but as a temporal one, where meaning is crafted through both what we see and how it changes before our eyes.</p>",
-      "next": [
-        "speculative-interfaces-imagining-the-next-wave-of-interaction",
-        "ai-and-the-future-of-visual-storytelling",
-        "designing-for-digital-culture-how-aesthetics-shape-interaction"
-      ],
-      "created": "",
-      "edited": ""
-    },
-    {
-      "id": "between-human-and-machine-collaboration-in-creative-processes",
-      "slug": "between-human-and-machine-collaboration-in-creative-processes",
-      "title": "Between Human and Machine: Collaboration in Creative Processes",
-      "cover": "https://framerusercontent.com/images/Ex0Ix9O58PMuvXCbYqpT4lPdxY0.png",
-      "coverAlt": "",
-      "date": "2026-12-15T00:00:00.000Z",
+      "id": "motion-i-grensesnitt",
+      "slug": "motion-i-grensesnitt",
+      "title": "Motion i grensesnitt",
+      "cover": "https://source.unsplash.com/1600x900/?motion-i-grensesnitt,design",
+      "coverAlt": "Motion i grensesnitt",
+      "date": "2025-10-19T00:00:00.000Z",
       "author": "Daniel Harris",
-      "contentHTML": "<p>The relationship between human creativity and machine intelligence has long been characterized by tension, oscillating between fascination and fear. In the current moment, that tension is increasingly productive. As AI and algorithmic tools become embedded in creative workflows, the question is no longer whether machines can “make” art or design, but how their involvement reshapes the process of creation itself. Human–machine collaboration redefines what it means to be a designer or artist. Instead of acting as solitary authors, creatives become facilitators of dialogue between intuition and computation. Machines excel at scale, speed, and pattern recognition, while humans provide context, narrative, and cultural sensitivity. The interplay of these strengths opens up new territories of practice, where the final work reflects not one mind but the dynamic relationship between organic imagination and mechanical iteration.</p><p><br></p><p>One of the most compelling aspects of this collaboration is the way it reframes authorship. When a designer works with generative algorithms, neural networks, or interactive systems, the resulting output is rarely something that could have been conceived in isolation. The machine introduces variation, unpredictability, and even serendipity. For some, this raises uncomfortable questions: if the system contributes to the creative outcome, who owns the authorship? Yet for others, it is liberating to acknowledge creativity as a distributed act, no longer tied to the myth of the solitary genius. In practice, this often means shifting from perfectionist control to iterative exploration. Designers might generate hundreds of variations, not to choose a single “correct” solution but to embrace diversity and multiplicity as inherent parts of the process. Authorship becomes less about control and more about curation, framing, and storytelling.</p><p><br></p><p>Collaboration between humans and machines also foregrounds the ethics of design. Machines are not neutral actors; they embody the biases of their training data and the priorities of their developers. When designers work with AI systems, they must reckon with the cultural and political weight of those systems. A generative model that reproduces stereotypes is not just a technical flaw but a cultural one. Human collaborators, therefore, play a critical role in interrogating, correcting, and contextualizing machine outputs. This requires critical literacy: understanding not only how to use the tool but how to question its assumptions. In this way, human–machine collaboration is less about outsourcing creativity and more about augmenting it with a critical awareness of technology’s limits. The responsibility of the designer is not diminished but amplified—every collaboration is also an act of critique, shaping how these systems will be understood and used by others.</p><p><br></p><p>Looking ahead, human–machine collaboration invites us to imagine creativity as an expanded field. In music, AI can generate compositions that inspire new performances. In architecture, data-driven models can propose structures that respond dynamically to their environments. In graphic design, algorithms can generate infinite variations, while designers curate those results into coherent identities. Across disciplines, the thread that unites these practices is hybridity: a willingness to let go of rigid boundaries between human and machine, control and chance, authorship and collaboration. This hybridity suggests that the future of design will not be about choosing between human or machine but about cultivating practices where both work in tandem. The creative process becomes less a linear path from idea to execution and more an ecosystem of dialogue, iteration, and adaptation. In this sense, the most innovative work will emerge not from rejecting machines or surrendering to them, but from negotiating a space where their strengths amplify human imagination.</p>",
+      "contentHTML": "<p><strong>Motion i grensesnitt.</strong> Når bevegelse styrker budskapet – og når det forstyrrer.</p><p>Vi ser ofte at team starter med en løsning før problemet er forstått. I dette innlegget deler vi en praktisk mal for å gå fra innsikt til tydelige hypoteser, og hvordan du tester dem med lav risiko.</p><p>Trikset er å gjøre det lett å prøve og lett å snu. Små eksperimenter, synliggjorte beslutninger og målinger som er nær produktet.</p>",
       "next": [
-        "the-language-of-motion-visual-design-beyond-static-forms",
-        "speculative-interfaces-imagining-the-next-wave-of-interaction",
-        "ai-and-the-future-of-visual-storytelling"
+        "designsystemer-i-praksis",
+        "fra-innsikt-til-effekt",
+        "prototyping-som-kultur"
       ],
       "created": "",
       "edited": ""
     },
     {
-      "id": "generative-art-and-its-impact-on-contemporary-design",
-      "slug": "generative-art-and-its-impact-on-contemporary-design",
-      "title": "Generative Art and Its Impact on Contemporary Design",
-      "cover": "https://framerusercontent.com/images/pjsxqNfsa4UU1uyXSyetQKIOxpU.png",
-      "coverAlt": "",
-      "date": "2026-11-10T00:00:00.000Z",
-      "author": "Sophia Bennett",
-      "contentHTML": "<p>Generative art is not a new phenomenon, but its rise in the digital age has radically transformed how designers think about authorship, form, and process. From early algorithmic experiments in the 1960s to today’s machine learning–powered visuals, the principle has remained the same: systems create outcomes that exceed the direct control of the designer. What has shifted is accessibility. With modern tools, designers can write a few lines of code, adjust a set of parameters, or train a model, and suddenly they have an entire visual universe at their fingertips. This shift forces us to rethink creativity. Instead of being solely about the production of static objects, design becomes about setting conditions, defining constraints, and letting the system generate endless variations. The designer’s role shifts from maker to curator, from handcrafting to orchestrating, and this reframing is altering the DNA of contemporary design practice.</p><p><br></p><p>One of the most profound impacts of generative art on design is the way it destabilizes the idea of originality. In a generative system, no single output is “the original”; instead, originality emerges from the framework itself, the logic that governs creation. This challenges the long-standing model in design where a single logo, layout, or poster is considered the definitive artifact. Instead, brands and projects can now embrace identities that are fluid, where the logo never looks the same twice, or where a poster series is generated algorithmically in response to context. For some, this feels liberating—it mirrors the complexity of contemporary life and creates identities that are adaptive and dynamic. For others, it is disorienting, as it destabilizes the security of fixed symbols. Either way, generative systems demand that designers and audiences alike reconsider what authenticity means in a world of infinite variation.</p><p><br></p><p>Generative art also introduces new possibilities for collaboration between humans and machines. While traditional design has often centered on individual vision and authorship, generative processes foreground systems thinking and collective authorship. Designers define parameters, but the system introduces outcomes that surprise even their creators. This collaboration can be playful and open-ended, but it also raises questions about control, responsibility, and value. Who “owns” the design when much of it is produced by an algorithm? How should credit be attributed in an era when machine processes play such a central role? These questions are not just legal or technical but philosophical, touching on the very core of how we value creativity in society. For many practitioners, embracing generative methods has been an opportunity to release some of the ego tied to authorship and instead focus on the relationships between rules, systems, and emergent form.</p><p><br></p><p>The broader impact of generative art on contemporary design is its invitation to think of design not as a static product but as a living process. In architecture, this might mean facades that shift with environmental data; in graphic design, it could mean posters that adapt to local cultural references; in digital platforms, it might translate into interfaces that morph based on user behavior. Generative art encourages us to think beyond fixed solutions and embrace systems that evolve, adapt, and respond. This orientation aligns closely with the realities of the digital world, where culture and technology are in constant flux. For contemporary design, generative art is not just another aesthetic trend but a fundamental shift in mindset: one that asks designers to become system-builders, cultural interpreters, and curators of possibility. It challenges the boundaries between design, art, and technology, pointing toward a future where creation is continuous, adaptive, and shared between human intention and computational logic.</p>",
+      "id": "service-blueprints-riktig-brukt",
+      "slug": "service-blueprints-riktig-brukt",
+      "title": "Service blueprints, riktig brukt",
+      "cover": "https://source.unsplash.com/1600x900/?service-blueprints-riktig-brukt,design",
+      "coverAlt": "Service blueprints, riktig brukt",
+      "date": "2025-10-07T00:00:00.000Z",
+      "author": "Elena Rossi",
+      "contentHTML": "<p><strong>Service blueprints, riktig brukt.</strong> Fallgruver og tips fra feltet.</p><p>Vi ser ofte at team starter med en løsning før problemet er forstått. I dette innlegget deler vi en praktisk mal for å gå fra innsikt til tydelige hypoteser, og hvordan du tester dem med lav risiko.</p><p>Trikset er å gjøre det lett å prøve og lett å snu. Små eksperimenter, synliggjorte beslutninger og målinger som er nær produktet.</p>",
       "next": [
-        "between-human-and-machine-collaboration-in-creative-processes",
-        "the-language-of-motion-visual-design-beyond-static-forms",
-        "speculative-interfaces-imagining-the-next-wave-of-interaction"
+        "motion-i-grensesnitt",
+        "designsystemer-i-praksis",
+        "fra-innsikt-til-effekt"
       ],
       "created": "",
       "edited": ""
     },
     {
-      "id": "designing-for-digital-culture-how-aesthetics-shape-interaction",
-      "slug": "designing-for-digital-culture-how-aesthetics-shape-interaction",
-      "title": "Designing for Digital Culture: How Aesthetics Shape Interaction",
-      "cover": "https://framerusercontent.com/images/d5ljbmDW9FoyCSGwTHmz2Tuh2aE.png",
-      "coverAlt": "",
-      "date": "2026-10-08T00:00:00.000Z",
-      "author": "Michael Turner",
-      "contentHTML": "<p>Digital culture is no longer an extension of the physical world; it has become the dominant space where identities are formed, communities are built, and stories are shared. In this context, aesthetics are not just surface decoration but the very foundation of how people experience interaction. A button’s color, a typeface’s rhythm, or the motion of a transition all signal cultural values and expectations. For designers, the challenge is not only to make things “usable” but to recognize that every visual decision contributes to shaping digital behavior. A sterile interface might communicate efficiency, but it may also feel alienating. A playful visual style might invite exploration, but it could also undermine trust in a financial service. These tensions reveal that aesthetics are both functional and cultural, deeply tied to how digital culture itself evolves.</p><p><br></p><p>The most compelling aspect of designing for digital culture is that aesthetics become a language of participation. Think of platforms like TikTok, Instagram, or even Discord: their visual systems are not neutral but actively teach users how to behave. The infinite scroll, the looping video, the ephemeral story—all of these are not just technical features but aesthetic constructs that shape attention and expectation. Aesthetics in digital design are thus performative: they encourage certain gestures, reinforce norms, and even create new forms of cultural literacy. Designers who understand this dynamic can move beyond “making things pretty” to creating systems that acknowledge how people negotiate identity, community, and power within digital space.</p><p><br></p><p>Of course, aesthetics are never static; they shift rapidly in response to cultural and technological change. The gradients and glossy icons of Web 2.0 gave way to the flat minimalism of the smartphone era, which in turn is being replaced by more expressive, hybrid visual systems that acknowledge both nostalgia and futurism. This fluidity is not merely a trend cycle but reflects how societies adjust their relationship to technology. Minimalism once reassured users overwhelmed by complexity, but today expressive design offers relief from the monotony of standardized grids. For designers, the key is to recognize when aesthetics function as a stabilizing force and when they act as a disruption, and to align these choices with the cultural context of their audience.</p><p><br></p><p>Ultimately, designing for digital culture requires designers to think critically about aesthetics as more than ornamentation. Visual form is a lens through which people interpret systems, assign trust, and decide whether to belong. In an era where digital platforms mediate nearly every aspect of life, aesthetics shape not only interaction but also the values that underpin digital society. The responsibility for designers is therefore both creative and ethical: to craft visual experiences that are accessible, culturally aware, and capable of fostering meaningful interaction. The future of digital culture will not be written solely in code, but also in color, type, motion, and form—and the way these elements work together to tell stories that resonate in a networked world.</p>",
+      "id": "data-drevet-prioritering",
+      "slug": "data-drevet-prioritering",
+      "title": "Data-drevet prioritering",
+      "cover": "https://source.unsplash.com/1600x900/?data-drevet-prioritering,design",
+      "coverAlt": "Data-drevet prioritering",
+      "date": "2025-09-25T00:00:00.000Z",
+      "author": "Daniel Harris",
+      "contentHTML": "<p><strong>Data-drevet prioritering.</strong> Slik lager du KPI/OKR som faktisk styrer valg.</p><p>Vi ser ofte at team starter med en løsning før problemet er forstått. I dette innlegget deler vi en praktisk mal for å gå fra innsikt til tydelige hypoteser, og hvordan du tester dem med lav risiko.</p><p>Trikset er å gjøre det lett å prøve og lett å snu. Små eksperimenter, synliggjorte beslutninger og målinger som er nær produktet.</p>",
       "next": [
-        "generative-art-and-its-impact-on-contemporary-design",
-        "between-human-and-machine-collaboration-in-creative-processes",
-        "the-language-of-motion-visual-design-beyond-static-forms"
+        "service-blueprints-riktig-brukt",
+        "motion-i-grensesnitt",
+        "designsystemer-i-praksis"
       ],
       "created": "",
       "edited": ""
     },
     {
-      "id": "ai-and-the-future-of-visual-storytelling",
-      "slug": "ai-and-the-future-of-visual-storytelling",
-      "title": "AI and the Future of Visual Storytelling",
-      "cover": "https://framerusercontent.com/images/Xu1XLA2LOqQYrrhL5HAd4ivpT6I.jpg",
-      "coverAlt": "",
-      "date": "2026-09-04T00:00:00.000Z",
+      "id": "merkevare-som-produkt",
+      "slug": "merkevare-som-produkt",
+      "title": "Merkevare som produkt",
+      "cover": "https://source.unsplash.com/1600x900/?merkevare-som-produkt,design",
+      "coverAlt": "Merkevare som produkt",
+      "date": "2025-09-13T00:00:00.000Z",
+      "author": "Arne Sunde",
+      "contentHTML": "<p><strong>Merkevare som produkt.</strong> Når identitet og produktutvikling smelter sammen.</p><p>Vi ser ofte at team starter med en løsning før problemet er forstått. I dette innlegget deler vi en praktisk mal for å gå fra innsikt til tydelige hypoteser, og hvordan du tester dem med lav risiko.</p><p>Trikset er å gjøre det lett å prøve og lett å snu. Små eksperimenter, synliggjorte beslutninger og målinger som er nær produktet.</p>",
+      "next": [
+        "data-drevet-prioritering",
+        "service-blueprints-riktig-brukt",
+        "motion-i-grensesnitt"
+      ],
+      "created": "",
+      "edited": ""
+    },
+    {
+      "id": "byrom-for-mennesker",
+      "slug": "byrom-for-mennesker",
+      "title": "Byrom for mennesker",
+      "cover": "https://source.unsplash.com/1600x900/?byrom-for-mennesker,design",
+      "coverAlt": "Byrom for mennesker",
+      "date": "2025-09-01T00:00:00.000Z",
       "author": "Lina Kovács",
-      "contentHTML": "<p>In the past decade, visual storytelling has been reshaped by a series of technological disruptions, yet none have been as significant—or as polarizing—as artificial intelligence. When we talk about AI in the context of visual design, it is no longer an abstract discussion reserved for researchers in labs or speculative futurists at conferences. Instead, AI has rapidly entered the everyday workflow of designers, photographers, filmmakers, and illustrators. It has become a tool that is as accessible as Photoshop or Figma, and its influence has expanded across every aspect of how stories are created, told, and consumed. This immediacy is perhaps what excites and frightens the design community in equal measure: AI promises efficiency, novelty, and limitless possibility, but it also raises existential questions about authorship, originality, and the cultural weight of creative labor. To understand the future of visual storytelling, we need to examine not only the capabilities of these tools but also the cultural frameworks in which they operate.</p><p><br></p><p>Consider, for instance, the rapid adoption of generative models like Midjourney, Stable Diffusion, or OpenAI’s DALL·E. Designers are no longer limited to what they can photograph, draw, or 3D-render by hand. A few words can conjure entire worlds—visions that might have taken weeks to prototype can now appear in seconds. The efficiency of this process cannot be overstated. For a brand strategist tasked with producing speculative mood boards, for an art director prototyping campaign directions, or for a filmmaker visualizing speculative scenes, AI reduces the friction between concept and output dramatically. The result is that visual storytelling has shifted from being primarily constrained by technical ability to being constrained by imagination and curatorial sensibility. In other words, the designer’s role is not diminished but reframed: no longer the sole maker of forms, but rather the orchestrator of a dialogue between human intention and machine capability.</p><p><br></p><p>However, this reframing does not come without tension. One of the central questions is authenticity. If a story is told through images generated by a machine, does it carry the same weight as a story told through a camera lens or a brushstroke? Historically, design movements have often emerged as a reaction to technology—Bauhaus, for example, responded to the rise of industrialization, while digital minimalism arose alongside the explosion of screen-based interfaces. Today, the “AI aesthetic” is still in flux, often recognizable by its surreal excess, its dreamlike blending of references, and its occasionally uncanny treatment of the human form. Critics argue that this aesthetic risks homogenization, where everything begins to look like everything else—a cascade of infinite, frictionless visuals that lack depth. Yet optimists see this as a transitional phase, much like the early days of photography when manipulated exposures and blurred portraits were dismissed as novelties before evolving into legitimate art forms.</p><p><br></p><p>What is particularly fascinating about AI’s role in visual storytelling is its ability to collapse the boundaries between disciplines. A designer can act like a painter, a filmmaker, or an architect without needing to master those crafts in the traditional sense. This fluidity democratizes creation, enabling individuals with limited resources to participate in visual culture at scales that were previously unimaginable. At the same time, it raises questions about the dilution of expertise. If everyone can create “professional-looking” images at the click of a button, what differentiates the work of a trained designer? The answer, I believe, lies not in rejecting AI, but in doubling down on the human aspects of design: storytelling, context, cultural awareness, and critical framing. Tools may change, but the narrative structures that make stories resonate remain deeply human. As AI becomes a partner in the creative process, the challenge for designers will not be whether they can use the tool, but whether they can imbue the resulting visuals with meaning, coherence, and cultural relevance.</p>",
+      "contentHTML": "<p><strong>Byrom for mennesker.</strong> Metoder for å vekte opplevelse og bruk i byutvikling.</p><p>Vi ser ofte at team starter med en løsning før problemet er forstått. I dette innlegget deler vi en praktisk mal for å gå fra innsikt til tydelige hypoteser, og hvordan du tester dem med lav risiko.</p><p>Trikset er å gjøre det lett å prøve og lett å snu. Små eksperimenter, synliggjorte beslutninger og målinger som er nær produktet.</p>",
       "next": [
-        "designing-for-digital-culture-how-aesthetics-shape-interaction",
-        "generative-art-and-its-impact-on-contemporary-design",
-        "between-human-and-machine-collaboration-in-creative-processes"
+        "merkevare-som-produkt",
+        "data-drevet-prioritering",
+        "service-blueprints-riktig-brukt"
+      ],
+      "created": "",
+      "edited": ""
+    },
+    {
+      "id": "prototyping-som-kultur",
+      "slug": "prototyping-som-kultur",
+      "title": "Prototyping som kultur",
+      "cover": "https://source.unsplash.com/1600x900/?prototyping-som-kultur,design",
+      "coverAlt": "Prototyping som kultur",
+      "date": "2025-08-20T00:00:00.000Z",
+      "author": "Michael Turner",
+      "contentHTML": "<p><strong>Prototyping som kultur.</strong> Hvorfor raske prototyper gir bedre beslutninger.</p><p>Vi ser ofte at team starter med en løsning før problemet er forstått. I dette innlegget deler vi en praktisk mal for å gå fra innsikt til tydelige hypoteser, og hvordan du tester dem med lav risiko.</p><p>Trikset er å gjøre det lett å prøve og lett å snu. Små eksperimenter, synliggjorte beslutninger og målinger som er nær produktet.</p>",
+      "next": [
+        "byrom-for-mennesker",
+        "merkevare-som-produkt",
+        "data-drevet-prioritering"
+      ],
+      "created": "",
+      "edited": ""
+    },
+    {
+      "id": "fra-innsikt-til-effekt",
+      "slug": "fra-innsikt-til-effekt",
+      "title": "Fra innsikt til effekt",
+      "cover": "https://source.unsplash.com/1600x900/?fra-innsikt-til-effekt,design",
+      "coverAlt": "Fra innsikt til effekt",
+      "date": "2025-08-08T00:00:00.000Z",
+      "author": "James Mitchell",
+      "contentHTML": "<p><strong>Fra innsikt til effekt.</strong> Koble funn til handling og målbilde uten å miste fart.</p><p>Vi ser ofte at team starter med en løsning før problemet er forstått. I dette innlegget deler vi en praktisk mal for å gå fra innsikt til tydelige hypoteser, og hvordan du tester dem med lav risiko.</p><p>Trikset er å gjøre det lett å prøve og lett å snu. Små eksperimenter, synliggjorte beslutninger og målinger som er nær produktet.</p>",
+      "next": [
+        "prototyping-som-kultur",
+        "byrom-for-mennesker",
+        "merkevare-som-produkt"
+      ],
+      "created": "",
+      "edited": ""
+    },
+    {
+      "id": "designsystemer-i-praksis",
+      "slug": "designsystemer-i-praksis",
+      "title": "Designsystemer i praksis",
+      "cover": "https://source.unsplash.com/1600x900/?designsystemer-i-praksis,design",
+      "coverAlt": "Designsystemer i praksis",
+      "date": "2025-07-27T00:00:00.000Z",
+      "author": "Arne Sunde",
+      "contentHTML": "<p><strong>Designsystemer i praksis.</strong> Hvordan bygge et skalerbart designsystem som faktisk blir brukt.</p><p>Vi ser ofte at team starter med en løsning før problemet er forstått. I dette innlegget deler vi en praktisk mal for å gå fra innsikt til tydelige hypoteser, og hvordan du tester dem med lav risiko.</p><p>Trikset er å gjøre det lett å prøve og lett å snu. Små eksperimenter, synliggjorte beslutninger og målinger som er nær produktet.</p>",
+      "next": [
+        "fra-innsikt-til-effekt",
+        "prototyping-som-kultur",
+        "byrom-for-mennesker"
       ],
       "created": "",
       "edited": ""
@@ -431,60 +1079,256 @@
   ],
   "team": [
     {
-      "name": "Bjørn Ravlo-Leira",
-      "slug": "bj-rn-ravlo-leira",
-      "role": "Designer",
-      "expertise": [],
-      "linkedin": "",
-      "mail": "",
-      "images": [
-        "https://framerusercontent.com/images/HE8pWKmg6qtJmOUDSWtObdTX6P8.png",
-        "https://framerusercontent.com/images/gzTu59TgDrPAk0OOgOAS2RB9Y0.png"
+      "name": "Sofia Andersen",
+      "slug": "sofia-andersen",
+      "role": "Rådgiver",
+      "expertise": [
+        "Strategi",
+        "Fasilitering",
+        "KPI/OKR"
       ],
-      "created": "",
-      "edited": ""
+      "linkedin": "https://www.linkedin.com/in/sofia-andersen/",
+      "mail": "sofia.andersen@example.com",
+      "images": [
+        "https://source.unsplash.com/800x1000/?portrait,professional,studio",
+        "https://source.unsplash.com/1200x800/?team,workshop"
+      ],
+      "created": "2025-10-31",
+      "edited": "2025-10-31"
     },
     {
-      "name": "Herman Billett",
-      "slug": "herman-billett",
-      "role": "Designer",
-      "expertise": [],
-      "linkedin": "",
-      "mail": "",
-      "images": [
-        "https://framerusercontent.com/images/HE8pWKmg6qtJmOUDSWtObdTX6P8.png",
-        "https://framerusercontent.com/images/gzTu59TgDrPAk0OOgOAS2RB9Y0.png"
+      "name": "Sindre Jensen",
+      "slug": "sindre-jensen",
+      "role": "UI-designer",
+      "expertise": [
+        "UI",
+        "Designsystem",
+        "Komponenter"
       ],
-      "created": "",
-      "edited": ""
+      "linkedin": "https://www.linkedin.com/in/sindre-jensen/",
+      "mail": "sindre.jensen@example.com",
+      "images": [
+        "https://source.unsplash.com/800x1000/?portrait,professional,studio",
+        "https://source.unsplash.com/1200x800/?team,workshop"
+      ],
+      "created": "2025-10-31",
+      "edited": "2025-10-31"
     },
     {
-      "name": "Joana Sa Lima",
-      "slug": "joana-sa-lima",
-      "role": "Arkitekt",
-      "expertise": [],
-      "linkedin": "",
-      "mail": "",
-      "images": [
-        "https://framerusercontent.com/images/HE8pWKmg6qtJmOUDSWtObdTX6P8.png",
-        "https://framerusercontent.com/images/gzTu59TgDrPAk0OOgOAS2RB9Y0.png"
+      "name": "Emil Hagen",
+      "slug": "emil-hagen",
+      "role": "UX-designer",
+      "expertise": [
+        "UX",
+        "Interaksjon",
+        "Uttesting"
       ],
-      "created": "",
-      "edited": ""
+      "linkedin": "https://www.linkedin.com/in/emil-hagen/",
+      "mail": "emil.hagen@example.com",
+      "images": [
+        "https://source.unsplash.com/800x1000/?portrait,professional,studio",
+        "https://source.unsplash.com/1200x800/?team,workshop"
+      ],
+      "created": "2025-10-31",
+      "edited": "2025-10-31"
     },
     {
-      "name": "Jan Bjørkelo",
-      "slug": "jan-bj-rkelo",
-      "role": "COO",
-      "expertise": [],
-      "linkedin": "",
-      "mail": "",
-      "images": [
-        "https://framerusercontent.com/images/HE8pWKmg6qtJmOUDSWtObdTX6P8.png",
-        "https://framerusercontent.com/images/gzTu59TgDrPAk0OOgOAS2RB9Y0.png"
+      "name": "Marius Solheim",
+      "slug": "marius-solheim",
+      "role": "Urbanist",
+      "expertise": [
+        "Byutvikling",
+        "Stedsanalyse",
+        "Medvirkning"
       ],
-      "created": "",
-      "edited": ""
+      "linkedin": "https://www.linkedin.com/in/marius-solheim/",
+      "mail": "marius.solheim@example.com",
+      "images": [
+        "https://source.unsplash.com/800x1000/?portrait,professional,studio",
+        "https://source.unsplash.com/1200x800/?team,workshop"
+      ],
+      "created": "2025-10-31",
+      "edited": "2025-10-31"
+    },
+    {
+      "name": "Sindre Johansen",
+      "slug": "sindre-johansen",
+      "role": "Tjenestedesigner",
+      "expertise": [
+        "Brukerreiser",
+        "Prototyping",
+        "Workshop"
+      ],
+      "linkedin": "https://www.linkedin.com/in/sindre-johansen/",
+      "mail": "sindre.johansen@example.com",
+      "images": [
+        "https://source.unsplash.com/800x1000/?portrait,professional,studio",
+        "https://source.unsplash.com/1200x800/?team,workshop"
+      ],
+      "created": "2025-10-31",
+      "edited": "2025-10-31"
+    },
+    {
+      "name": "Kaja Johansen",
+      "slug": "kaja-johansen",
+      "role": "UX-designer",
+      "expertise": [
+        "UX",
+        "Interaksjon",
+        "Uttesting"
+      ],
+      "linkedin": "https://www.linkedin.com/in/kaja-johansen/",
+      "mail": "kaja.johansen@example.com",
+      "images": [
+        "https://source.unsplash.com/800x1000/?portrait,professional,studio",
+        "https://source.unsplash.com/1200x800/?team,workshop"
+      ],
+      "created": "2025-10-31",
+      "edited": "2025-10-31"
+    },
+    {
+      "name": "Martin Moe",
+      "slug": "martin-moe",
+      "role": "Rådgiver",
+      "expertise": [
+        "Strategi",
+        "Fasilitering",
+        "KPI/OKR"
+      ],
+      "linkedin": "https://www.linkedin.com/in/martin-moe/",
+      "mail": "martin.moe@example.com",
+      "images": [
+        "https://source.unsplash.com/800x1000/?portrait,professional,studio",
+        "https://source.unsplash.com/1200x800/?team,workshop"
+      ],
+      "created": "2025-10-31",
+      "edited": "2025-10-31"
+    },
+    {
+      "name": "Jonas Karlsen",
+      "slug": "jonas-karlsen",
+      "role": "Urbanist",
+      "expertise": [
+        "Byutvikling",
+        "Stedsanalyse",
+        "Medvirkning"
+      ],
+      "linkedin": "https://www.linkedin.com/in/jonas-karlsen/",
+      "mail": "jonas.karlsen@example.com",
+      "images": [
+        "https://source.unsplash.com/800x1000/?portrait,professional,studio",
+        "https://source.unsplash.com/1200x800/?team,workshop"
+      ],
+      "created": "2025-10-31",
+      "edited": "2025-10-31"
+    },
+    {
+      "name": "Tarjei Johansen",
+      "slug": "tarjei-johansen",
+      "role": "Merkevarerådgiver",
+      "expertise": [
+        "Identitet",
+        "Tone of Voice",
+        "Konsepter"
+      ],
+      "linkedin": "https://www.linkedin.com/in/tarjei-johansen/",
+      "mail": "tarjei.johansen@example.com",
+      "images": [
+        "https://source.unsplash.com/800x1000/?portrait,professional,studio",
+        "https://source.unsplash.com/1200x800/?team,workshop"
+      ],
+      "created": "2025-10-31",
+      "edited": "2025-10-31"
+    },
+    {
+      "name": "Sofia Nygård",
+      "slug": "sofia-nygard",
+      "role": "UI-designer",
+      "expertise": [
+        "UI",
+        "Designsystem",
+        "Komponenter"
+      ],
+      "linkedin": "https://www.linkedin.com/in/sofia-nygård/",
+      "mail": "sofia.nygård@example.com",
+      "images": [
+        "https://source.unsplash.com/800x1000/?portrait,professional,studio",
+        "https://source.unsplash.com/1200x800/?team,workshop"
+      ],
+      "created": "2025-10-31",
+      "edited": "2025-10-31"
+    },
+    {
+      "name": "Henrik Moe",
+      "slug": "henrik-moe",
+      "role": "Tjenestedesigner",
+      "expertise": [
+        "Brukerreiser",
+        "Prototyping",
+        "Workshop"
+      ],
+      "linkedin": "https://www.linkedin.com/in/henrik-moe/",
+      "mail": "henrik.moe@example.com",
+      "images": [
+        "https://source.unsplash.com/800x1000/?portrait,professional,studio",
+        "https://source.unsplash.com/1200x800/?team,workshop"
+      ],
+      "created": "2025-10-31",
+      "edited": "2025-10-31"
+    },
+    {
+      "name": "Oda Hagen",
+      "slug": "oda-hagen",
+      "role": "Urbanist",
+      "expertise": [
+        "Byutvikling",
+        "Stedsanalyse",
+        "Medvirkning"
+      ],
+      "linkedin": "https://www.linkedin.com/in/oda-hagen/",
+      "mail": "oda.hagen@example.com",
+      "images": [
+        "https://source.unsplash.com/800x1000/?portrait,professional,studio",
+        "https://source.unsplash.com/1200x800/?team,workshop"
+      ],
+      "created": "2025-10-31",
+      "edited": "2025-10-31"
+    },
+    {
+      "name": "Amalie Johansen",
+      "slug": "amalie-johansen",
+      "role": "Rådgiver",
+      "expertise": [
+        "Strategi",
+        "Fasilitering",
+        "KPI/OKR"
+      ],
+      "linkedin": "https://www.linkedin.com/in/amalie-johansen/",
+      "mail": "amalie.johansen@example.com",
+      "images": [
+        "https://source.unsplash.com/800x1000/?portrait,professional,studio",
+        "https://source.unsplash.com/1200x800/?team,workshop"
+      ],
+      "created": "2025-10-31",
+      "edited": "2025-10-31"
+    },
+    {
+      "name": "Elin Johansen",
+      "slug": "elin-johansen",
+      "role": "Tjenestedesigner",
+      "expertise": [
+        "Brukerreiser",
+        "Prototyping",
+        "Workshop"
+      ],
+      "linkedin": "https://www.linkedin.com/in/elin-johansen/",
+      "mail": "elin.johansen@example.com",
+      "images": [
+        "https://source.unsplash.com/800x1000/?portrait,professional,studio",
+        "https://source.unsplash.com/1200x800/?team,workshop"
+      ],
+      "created": "2025-10-31",
+      "edited": "2025-10-31"
     }
   ]
 }

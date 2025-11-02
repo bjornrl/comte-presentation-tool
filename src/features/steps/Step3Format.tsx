@@ -19,7 +19,7 @@ export default function Step3Format({
         title="Hva vil du presentere?"
         subtitle="Velg formatet – levende presentasjon eller PDF-rapport."
       />
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-5">
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-1">
         <Card
           selected={outputType === "presentation"}
           onClick={() => setOutputType("presentation")}

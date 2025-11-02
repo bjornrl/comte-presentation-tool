@@ -17,13 +17,13 @@ export default function Step1Areas({
 }) {
   return (
     <section>
-      <div className="p-12 flex flex-col justify-center items-center">
+      <div className=" min-w-[1280px]p-12 flex flex-col justify-center items-center">
         <StepHeader
           title="Områder"
           subtitle="Velg ett område for å lage presentasjon"
         />
       </div>
-      <div className="grid grid-cols-2 grid-rows-3 md:grid-cols-3 gap-5">
+      <div className="grid grid-cols-2 grid-rows-3 md:grid-cols-3 gap-1">
         {categories.map((c: any) => (
           <Card
             key={c.id}
@@ -35,12 +35,12 @@ export default function Step1Areas({
             }}
           >
             {/* <div className="flex flex-col items-start justify-start"> */}
-            <div className="flex flex-row items-start gap-3 p-4">
+            <div className="flex flex-row items-start gap-3 p-8 min-h-20">
               <div className="w-8 h-8 rounded-full bg-black text-white grid place-items-center">
                 <ArrowRight size={18} />
               </div>
               <div>
-                <div className="text-xl font-semibold">{c.title}</div>
+                <div className="text-xl font-semibold min-h-20">{c.title}</div>
               </div>
             </div>
             {/* <p className=" pl-4 text-neutral-600 mt-1 text-sm">{c.blurb}</p>
