@@ -63,7 +63,7 @@ function heroForCategory(cms: any, categoryId: string) {
   if (first) return first;
 
   // Fallback Unsplash
-  return "https://source.unsplash.com/1600x600/?people,illustration";
+  return "https://images.unsplash.com/photo-1761872936374-ec038c00d705?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=1740";
 }
 
 // Utility to download JSON (used in Step 4)
@@ -132,7 +132,10 @@ function SlideView({
           <div className="w-full rounded-2xl overflow-hidden bg-neutral-100 shadow-sm">
             {/* eslint-disable-next-line @next/next/no-img-element */}
             <img
-              src={hero}
+              // src={hero}
+              src={
+                "https://images.unsplash.com/photo-1761872936374-ec038c00d705?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=1740"
+              }
               alt={cat?.title ?? "Kategori"}
               className="w-full h-full object-cover"
             />
@@ -154,17 +157,17 @@ function SlideView({
     const expertiseList = (cat?.expertise || []) as string[];
 
     // pick category hero or fallback
-    const baseHero =
-      cat?.Hero ||
-      "https://source.unsplash.com/1600x600/?creative,workspace,design";
+    // const baseHero =
+    //   cat?.Hero ||
+    //   "https://source.unsplash.com/1600x600/?creative,workspace,design";
 
     // Generate placeholder images per expertise item
-    const expertiseImages = expertiseList.map(
-      (item) =>
-        `https://source.unsplash.com/800x400/?${encodeURIComponent(
-          item
-        )},design`
-    );
+    // const expertiseImages = expertiseList.map(
+    //   (item) =>
+    //     `https://source.unsplash.com/800x400/?${encodeURIComponent(
+    //       item
+    //     )},design`
+    // );
 
     return (
       <div className="relative h-full w-full bg-white">
@@ -186,8 +189,8 @@ function SlideView({
 
             {/* LIST fills remaining space */}
 
-            <div className="flex-1 grid grid-cols-2 grid-rows-2 gap-1 min-h-0">
-              {Array.from({ length: 4 }).map((_, i) => {
+            <div className="flex-1 grid grid-cols-4 grid-rows-2 gap-1 min-h-0">
+              {Array.from({ length: 8 }).map((_, i) => {
                 const item = expertiseList[i];
                 return (
                   <div
@@ -195,10 +198,14 @@ function SlideView({
                     className={`
           flex flex-col justify-between rounded-sm p-2
           ${item ? "transition-colors hover:brightness-95" : ""}
-          ${i === 0 ? "bg-neutral-100 text-black" : ""}
-          ${i === 1 ? "bg-neutral-900 text-white" : ""}
-          ${i === 2 ? "bg-neutral-500 text-white" : ""}
-          ${i === 3 ? "bg-sky-300 text-black" : ""}
+          ${i === 0 ? "bg-stone-100 text-black" : ""}
+          ${i === 1 ? "bg-red-600 text-white" : ""}
+          ${i === 2 ? "bg-yellow-400 text-white" : ""}
+          ${i === 3 ? "bg-purple-300 text-black" : ""}
+          ${i === 4 ? "bg-purple-300 text-black" : ""}
+          ${i === 5 ? "bg-stone-100 text-black" : ""}
+          ${i === 6 ? "bg-black text-white" : ""}
+          ${i === 7 ? "bg-orange-300 text-black" : ""}
         `}
                   >
                     {item ? (
@@ -209,14 +216,14 @@ function SlideView({
                         </p>
 
                         {/* main value (expertise name) */}
-                        <div className="flex flex-row justify-between">
-                          <p className="font-semibold leading-[0.9] text-left text-[clamp(30px,6vw,48px)] break-words">
+                        <div className="flex flex-row justify-between items-end">
+                          <p className="font-semibold leading-[0.9] text-left text-[clamp(25px,6vw,14px)] break-words">
                             {item}
                           </p>
 
                           {/* optional placeholder for something small */}
                           <p className="text-right text-sm opacity-70">
-                            jnjnjn{" "}
+                            8 prosjekter{" "}
                           </p>
                         </div>
                       </>
@@ -235,9 +242,9 @@ function SlideView({
   }
 
   if (slide.kind === "stats") {
-    const cat = (cms.categories as any[]).find(
-      (c: any) => c.id === slide.categoryId
-    );
+    // const cat = (cms.categories as any[]).find(
+    //   (c: any) => c.id === slide.categoryId
+    // );
     return (
       // <div className="h-full w-full p-16 flex flex-col justify-center items-center">
       //   <div className="text-5xl font-semibold text-center">

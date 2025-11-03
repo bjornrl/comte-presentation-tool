@@ -7,10 +7,12 @@ export function Card({
   children,
   selected = false,
   onClick,
+  hoverColor = "hover:bg-red-100",
 }: {
   children: React.ReactNode;
   selected?: boolean;
   onClick?: () => void;
+  hoverColor?: string;
 }) {
   return (
     // <div className="border border-black">
@@ -19,7 +21,7 @@ export function Card({
         onClick={onClick}
         className={cx(
           "text-left w-full border border-red-300 bg-red transition appearance-none focus:outline-none hover:cursor-pointer",
-          selected ? "bg-gray-200" : "hover:bg-gray-100"
+          selected ? "bg-gray-200" : hoverColor
         )}
       >
         {children}

@@ -18,7 +18,12 @@
       "expertise": [
         "Byutvikling",
         "Bymiljøanalyse",
-        "Romprogrammering"
+        "Visualiseringer",
+        "Samfunnsanalyse",
+        "Arealstrategi",
+        "Stedsutvikling",
+        "Bærekraftig design",
+        "Byrom"
       ],
       "stats": "50+ prosjekter"
     },
@@ -210,143 +215,138 @@
     },
     {
       "id": "6",
-      "slug": "arkitektur-urbanisme-prosjekt-1-2020",
+      "slug": "2025-10-31",
       "title": "Arkitektur & Urbanisme prosjekt 1",
-      "excerpt": "Prosjektet fokuserte på arkitektur & urbanisme for Havn & Fjord. Leveransen inkluderte Medvirkning, Mulighetsstudie.",
+      "excerpt": "Medvirkning, Stedsanalyse, Mulighetsstudie",
       "categories": [
         "Arkitektur & Urbanisme"
       ],
       "images": [
-        "https://source.unsplash.com/1600x900/?Arkitektur",
-        "https://source.unsplash.com/1600x900/?Arkitektur,design",
+        "https://images.unsplash.com/photo-1690387802514-8bd134387fc5?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=774",
         "https://source.unsplash.com/1600x900/?Arkitektur,prototype",
         "https://source.unsplash.com/1600x900/?Arkitektur,team",
         "https://source.unsplash.com/1600x900/?Arkitektur,workshop"
       ],
-      "client": "Havn & Fjord",
-      "year": "2020",
+      "client": "Prosjektet fokuserte på arkitektur & urbanisme for Havn & Fjord. Leveransen inkluderte Medvirkning, Mulighetsstudie.",
+      "year": "https://source.unsplash.com/1600x900/?Arkitektur,design",
       "services": [
-        "Medvirkning",
-        "Stedsanalyse",
-        "Mulighetsstudie",
         "ROM-program",
-        "Stedsanalyse"
+        "Stedsanalyse",
+        "2020"
       ],
-      "next": [],
+      "next": [
+        "arkitektur-urbanisme-prosjekt-1-2020"
+      ],
       "created": "2025-10-31",
-      "edited": "2025-10-31"
+      "edited": ""
     },
     {
       "id": "7",
-      "slug": "arkitektur-urbanisme-prosjekt-2-2022",
+      "slug": "2025-10-31",
       "title": "Arkitektur & Urbanisme prosjekt 2",
-      "excerpt": "Prosjektet fokuserte på arkitektur & urbanisme for Nordic Rail. Leveransen inkluderte Mulighetsstudie, Stedsanalyse.",
+      "excerpt": "Mulighetsstudie, Byutvikling, ROM-program",
       "categories": [
         "Arkitektur & Urbanisme"
       ],
       "images": [
-        "https://source.unsplash.com/1600x900/?Arkitektur",
-        "https://source.unsplash.com/1600x900/?Arkitektur,design",
+        "https://images.unsplash.com/photo-1690387802514-8bd134387fc5?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=774",
         "https://source.unsplash.com/1600x900/?Arkitektur,prototype",
         "https://source.unsplash.com/1600x900/?Arkitektur,team",
         "https://source.unsplash.com/1600x900/?Arkitektur,workshop"
       ],
-      "client": "Nordic Rail",
-      "year": "2022",
+      "client": "Prosjektet fokuserte på arkitektur & urbanisme for Nordic Rail. Leveransen inkluderte Mulighetsstudie, Stedsanalyse.",
+      "year": "https://source.unsplash.com/1600x900/?Arkitektur,design",
       "services": [
-        "Mulighetsstudie",
-        "Byutvikling",
         "ROM-program",
-        "ROM-program",
-        "Stedsanalyse"
+        "Stedsanalyse",
+        "2022"
       ],
-      "next": [],
+      "next": [
+        "arkitektur-urbanisme-prosjekt-2-2022"
+      ],
       "created": "2025-10-31",
-      "edited": "2025-10-31"
+      "edited": ""
     },
     {
       "id": "8",
-      "slug": "arkitektur-urbanisme-prosjekt-3-2024",
+      "slug": "2025-10-31",
       "title": "Arkitektur & Urbanisme prosjekt 3",
-      "excerpt": "Prosjektet fokuserte på arkitektur & urbanisme for Glimt Media. Leveransen inkluderte Stedsanalyse, Mulighetsstudie.",
+      "excerpt": "Medvirkning, Byutvikling, Mulighetsstudie",
       "categories": [
         "Arkitektur & Urbanisme"
       ],
       "images": [
-        "https://source.unsplash.com/1600x900/?Arkitektur",
-        "https://source.unsplash.com/1600x900/?Arkitektur,design",
+        "https://images.unsplash.com/photo-1690387802514-8bd134387fc5?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=774",
         "https://source.unsplash.com/1600x900/?Arkitektur,prototype",
         "https://source.unsplash.com/1600x900/?Arkitektur,team",
         "https://source.unsplash.com/1600x900/?Arkitektur,workshop"
       ],
-      "client": "Glimt Media",
-      "year": "2024",
+      "client": "Prosjektet fokuserte på arkitektur & urbanisme for Glimt Media. Leveransen inkluderte Stedsanalyse, Mulighetsstudie.",
+      "year": "https://source.unsplash.com/1600x900/?Arkitektur,design",
       "services": [
         "Medvirkning",
-        "Byutvikling",
-        "Mulighetsstudie",
-        "Medvirkning",
-        "ROM-program"
+        "ROM-program",
+        "2024"
       ],
-      "next": [],
+      "next": [
+        "arkitektur-urbanisme-prosjekt-3-2024"
+      ],
       "created": "2025-10-31",
-      "edited": "2025-10-31"
+      "edited": ""
     },
     {
       "id": "9",
-      "slug": "arkitektur-urbanisme-prosjekt-4-2019",
+      "slug": "2025-10-31",
       "title": "Arkitektur & Urbanisme prosjekt 4",
-      "excerpt": "Prosjektet fokuserte på arkitektur & urbanisme for Arctic Health. Leveransen inkluderte ROM-program, Medvirkning.",
+      "excerpt": "Mulighetsstudie, Byutvikling, Medvirkning",
       "categories": [
         "Arkitektur & Urbanisme"
       ],
       "images": [
-        "https://source.unsplash.com/1600x900/?Arkitektur",
-        "https://source.unsplash.com/1600x900/?Arkitektur,design",
+        "https://images.unsplash.com/photo-1690387802514-8bd134387fc5?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=774",
         "https://source.unsplash.com/1600x900/?Arkitektur,prototype",
         "https://source.unsplash.com/1600x900/?Arkitektur,team",
         "https://source.unsplash.com/1600x900/?Arkitektur,workshop"
       ],
-      "client": "Arctic Health",
-      "year": "2019",
+      "client": "Prosjektet fokuserte på arkitektur & urbanisme for Arctic Health. Leveransen inkluderte ROM-program, Medvirkning.",
+      "year": "https://source.unsplash.com/1600x900/?Arkitektur,design",
       "services": [
-        "Mulighetsstudie",
-        "Byutvikling",
-        "Medvirkning",
         "ROM-program",
-        "Medvirkning"
+        "Medvirkning",
+        "2019"
       ],
-      "next": [],
+      "next": [
+        "arkitektur-urbanisme-prosjekt-4-2019"
+      ],
       "created": "2025-10-31",
-      "edited": "2025-10-31"
+      "edited": ""
     },
     {
       "id": "10",
-      "slug": "arkitektur-urbanisme-prosjekt-5-2025",
+      "slug": "2025-10-31",
       "title": "Arkitektur & Urbanisme prosjekt 5",
-      "excerpt": "Prosjektet fokuserte på arkitektur & urbanisme for Arctic Health. Leveransen inkluderte Stedsanalyse, Medvirkning.",
+      "excerpt": "Mulighetsstudie, Byutvikling, ROM-program",
       "categories": [
         "Arkitektur & Urbanisme"
       ],
       "images": [
-        "https://source.unsplash.com/1600x900/?Arkitektur",
-        "https://source.unsplash.com/1600x900/?Arkitektur,design",
+        "https://images.unsplash.com/photo-1690387802514-8bd134387fc5?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=774",
         "https://source.unsplash.com/1600x900/?Arkitektur,prototype",
         "https://source.unsplash.com/1600x900/?Arkitektur,team",
         "https://source.unsplash.com/1600x900/?Arkitektur,workshop"
       ],
-      "client": "Arctic Health",
-      "year": "2025",
+      "client": "Prosjektet fokuserte på arkitektur & urbanisme for Arctic Health. Leveransen inkluderte Stedsanalyse, Medvirkning.",
+      "year": "https://source.unsplash.com/1600x900/?Arkitektur,design",
       "services": [
-        "Mulighetsstudie",
-        "Byutvikling",
-        "ROM-program",
         "Medvirkning",
-        "ROM-program"
+        "ROM-program",
+        "2025"
       ],
-      "next": [],
+      "next": [
+        "arkitektur-urbanisme-prosjekt-5-2025"
+      ],
       "created": "2025-10-31",
-      "edited": "2025-10-31"
+      "edited": ""
     },
     {
       "id": "11",
