@@ -49,22 +49,22 @@ function buildSlides(
 
 // Category Helper
 
-function heroForCategory(cms: any, categoryId: string) {
-  // Prefer explicit hero from Categories.csv (optional new column "Hero")
-  const cat = cms.categories.find((c: any) => c.id === categoryId);
-  const explicit = (cat && (cat.hero || cat.Hero)) as string | undefined;
-  if (explicit) return explicit;
+// function heroForCategory(cms: any, categoryId: string) {
+//   // Prefer explicit hero from Categories.csv (optional new column "Hero")
+//   const cat = cms.categories.find((c: any) => c.id === categoryId);
+//   const explicit = (cat && (cat.hero || cat.Hero)) as string | undefined;
+//   if (explicit) return explicit;
 
-  // Otherwise pick first image from first project in this category
-  const proj = cms.projects.find((p: any) =>
-    (p.categories || []).includes(categoryId)
-  );
-  const first = proj?.images?.[0];
-  if (first) return first;
+//   // Otherwise pick first image from first project in this category
+//   const proj = cms.projects.find((p: any) =>
+//     (p.categories || []).includes(categoryId)
+//   );
+//   const first = proj?.images?.[0];
+//   if (first) return first;
 
-  // Fallback Unsplash
-  return "https://images.unsplash.com/photo-1761872936374-ec038c00d705?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=1740";
-}
+//   // Fallback Unsplash
+//   return "https://images.unsplash.com/photo-1761872936374-ec038c00d705?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=1740";
+// }
 
 // Utility to download JSON (used in Step 4)
 
