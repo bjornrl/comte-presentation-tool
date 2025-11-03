@@ -97,9 +97,9 @@ function SlideView({
     );
   if (slide.kind === "category") {
     const cat = cms.categories.find((c: any) => c.id === slide.categoryId);
-    const hero =
-      heroForCategory(cms, slide.categoryId) ||
-      "https://images.unsplash.com/photo-1506784983877-45594efa4cbe?auto=format&fit=crop&q=80&w=1740";
+    // const hero =
+    //   heroForCategory(cms, slide.categoryId) ||
+    //   "https://images.unsplash.com/photo-1506784983877-45594efa4cbe?auto=format&fit=crop&q=80&w=1740";
 
     return (
       <div className="relative h-full w-full bg-white">
