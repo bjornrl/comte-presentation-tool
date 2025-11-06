@@ -103,7 +103,7 @@ function SlideView({
     //   "https://images.unsplash.com/photo-1506784983877-45594efa4cbe?auto=format&fit=crop&q=80&w=1740";
 
     return (
-      <div className="relative h-full w-full bg-white">
+      <div className="relative h-full w-full bg-[#eaeae5]">
         {/* top meta */}
         <div className="absolute top-6 left-10 right-10 text-sm text-neutral-800 flex items-center justify-between">
           <div>ComteBureau</div>
@@ -171,7 +171,7 @@ function SlideView({
     // );
 
     return (
-      <div className="relative h-full w-full bg-white">
+      <div className="relative h-full w-full bg-[#eaeae5]">
         {/* top meta */}
         <div className="absolute top-6 left-10 right-10 text-sm text-neutral-800 flex items-center justify-between">
           <div>ComteBureau</div>
@@ -179,14 +179,14 @@ function SlideView({
           <div>{new Date().getFullYear()}</div>
         </div>
 
-        <div className="relative h-full w-full bg-white">
+        <div className="relative h-full w-full bg-[#eaeae5]">
           {/* top/meta etc... */}
 
           <div className="relative px-10 pt-24 pb-8 h-full flex flex-col gap-12">
             {/* headline */}
-            <div className="font-serif text-[clamp(36px,6vw,90px)] leading-[0.95] mb-8">
+            <h2 className="font-serif text-[clamp(36px,6vw,90px)] leading-[0.95] mb-8">
               Vi kan <span className="italic">hjelpe deg</span> med
-            </div>
+            </h2>
 
             {/* LIST fills remaining space */}
 
@@ -199,14 +199,14 @@ function SlideView({
                     className={`
           flex flex-col justify-between rounded-sm p-2
           ${item ? "transition-colors hover:brightness-95" : ""}
-          ${i === 0 ? "bg-stone-100 text-black" : ""}
-          ${i === 1 ? "bg-red-600 text-white" : ""}
-          ${i === 2 ? "bg-yellow-400 text-white" : ""}
-          ${i === 3 ? "bg-purple-300 text-black" : ""}
-          ${i === 4 ? "bg-purple-300 text-black" : ""}
-          ${i === 5 ? "bg-stone-100 text-black" : ""}
-          ${i === 6 ? "bg-black text-white" : ""}
-          ${i === 7 ? "bg-orange-300 text-black" : ""}
+          ${i === 0 ? "bg-stone-100 text-[#032435]" : ""}
+          ${i === 1 ? "bg-red-600 text-[#eaeae5]" : ""}
+          ${i === 2 ? "bg-yellow-400 text-[#eaeae5]" : ""}
+          ${i === 3 ? "bg-purple-300 text-[#032435]" : ""}
+          ${i === 4 ? "bg-purple-300 text-[#032435]" : ""}
+          ${i === 5 ? "bg-stone-100 text-[#032435]" : ""}
+          ${i === 6 ? "bg-[#032435] text-[#eaeae5]" : ""}
+          ${i === 7 ? "bg-orange-300 text-[#032435]" : ""}
         `}
                   >
                     {item ? (
@@ -266,7 +266,7 @@ function SlideView({
         <div
           className="
       grid grid-cols-3 grid-rows-2 w-full flex-1
-      divide-x divide-y divide-black/20
+      divide-x divide-y divide-[#032435]/20
     "
         >
           {[
@@ -294,48 +294,65 @@ function SlideView({
     );
   }
   if (slide.kind === "project") {
-    const proj = cms.projects.find((p: any) => p.id === slide.projectId);
+    const proj = cms.projects.find((p: any) => p.id === slide.projectId) as any;
     return (
       <div className="h-full w-full p-12 grid grid-cols-2 gap-6 items-center">
         <div className="col-span-6">
-          <div className="text-4xl font-semibold">{proj?.title}</div>
-          <p className="text-neutral-700 mt-3 text-lg">{proj?.excerpt}</p>
+          <h2
+            className="text-6xl font-bold"
+            style={{ fontFamily: "'Instrument Serif', serif" }}
+          >
+            {proj?.title}
+          </h2>
         </div>
-        <div className="col-span-6 grid grid-cols-2 gap-3">
-          <div className="flex flex-col justify-between">
-            <p className="text-left text-2xl">{proj?.excerpt}</p>
-            <div className="flex flex-row justify-between">
-              <div>
-                <div className="flex flex-col gap-[clamp(0.1rem,0.6vw,0.6rem)]">
-                  <p className="text-left font-bold leading-[0.9] text-[clamp(40px,8vw,112px)]">
-                    200
-                  </p>
-                  <p className="text-left text-[clamp(12px,1.2vw,16px)] text-neutral-700">
-                    personer innvolvert
-                  </p>
-                </div>
-                <div className="flex flex-col gap-[clamp(0.1rem,0.6vw,0.6rem)]">
-                  <p className="text-left font-bold leading-[0.9] text-[clamp(40px,8vw,112px)]">
-                    48
-                  </p>
-                  <p className="text-left text-[clamp(12px,1.2vw,16px)] text-neutral-700">
-                    personer innvolvert
-                  </p>
-                </div>
+        <div className="col-span-6 grid grid-cols-2 mt-3 text-lg gap-3">
+          <div className="flex flex-col justify-between text-left">
+            <div
+              className="text-neutral-700"
+              dangerouslySetInnerHTML={{ __html: proj?.excerpt || "" }}
+            />
+            {proj?.solution && (
+              <div
+                className="text-neutral-700"
+                dangerouslySetInnerHTML={{ __html: proj.solution }}
+              />
+            )}
+            <div className="flex flex-row h-full justify-between w-full mt-4">
+              <div className="flex flex-col text-left h-full justify-end w-full mt-4">
+                <ul>
+                  <li className="text-7xl">
+                    <strong>aaa</strong>
+                  </li>
+                  <li>ddd</li>
+                </ul>
+                <ul>
+                  <li className="text-7xl">
+                    <strong>aaa</strong>
+                  </li>
+                  <li>ddd</li>
+                </ul>
               </div>
-              <div className="flex flex-col h-full justify-end w-full">
-                <p className="text-right italic">
-                  Client: <strong>Sykehusbygg</strong>
-                </p>
-                <p className="text-right italic">
-                  Area <strong>Stavanger</strong>
-                </p>
-                <p className="text-right italic">
-                  Collaborators <strong>Canoe, Æra</strong>
-                </p>
-                <p className="text-right italic">
-                  Year <strong>2022-2023</strong>
-                </p>
+              <div className="flex flex-col h-full justify-end w-full mt-4">
+                {proj?.client && (
+                  <p className="text-right italic text-sm">
+                    Klient: <strong>{proj.client}</strong>
+                  </p>
+                )}
+                {proj?.location && (
+                  <p className="text-right italic text-sm">
+                    Lokasjon: <strong>{proj.location}</strong>
+                  </p>
+                )}
+                {proj?.year && (
+                  <p className="text-right italic text-sm">
+                    År: <strong>{proj.year}</strong>
+                  </p>
+                )}
+                {proj?.industry && (
+                  <p className="text-right italic text-sm">
+                    Industri: <strong>{proj.industry}</strong>
+                  </p>
+                )}
               </div>
             </div>
           </div>
@@ -379,10 +396,10 @@ function DeckOverlay({
     return () => window.removeEventListener("keydown", onKey);
   }, [onClose, total]);
   return (
-    <div className="fixed inset-0 z-50 bg-black/95 text-white">
+    <div className="fixed inset-0 z-50 bg-[#032435]/95 text-[#eaeae5]">
       <div className="absolute top-3 left-3 flex items-center gap-2">
         <button
-          className="px-3 py-2 rounded-full border border-white/30"
+          className="px-3 py-2 rounded-full border border-[#eaeae5]/30"
           onClick={onClose}
         >
           <X size={16} />
@@ -390,7 +407,7 @@ function DeckOverlay({
         </button>
       </div>
       <div className="h-full w-full grid place-items-center">
-        <div className="w-[95vw] h-[90vh] bg-white text-neutral-900 rounded-sm shadow-2xl overflow-hidden">
+        <div className="w-[95vw] h-[90vh] bg-[#eaeae5] text-neutral-900 rounded-sm shadow-2xl overflow-hidden">
           <SlideView slide={slides[index]} cms={cms} />
         </div>
       </div>
@@ -423,7 +440,7 @@ function ReportOverlay({
     URL.revokeObjectURL(a.href);
   };
   return (
-    <div className="fixed inset-0 z-50 bg-white">
+    <div className="fixed inset-0 z-50 bg-[#eaeae5]">
       <div className="flex items-center justify-between p-3 border-b">
         <div className="flex items-center gap-2 text-sm">
           <button className="px-3 py-2 rounded-full border" onClick={onClose}>
@@ -451,7 +468,7 @@ function ReportOverlay({
         {slides.map((s, i) => (
           <div
             key={i}
-            className="bg-white w-[210mm] h-[297mm] shadow rounded-xl overflow-hidden print:shadow-none print:rounded-none"
+            className="bg-[#eaeae5] w-[210mm] h-[297mm] shadow rounded-xl overflow-hidden print:shadow-none print:rounded-none"
           >
             <div className="p-16">
               <SlideView slide={s} cms={cms} />
@@ -467,7 +484,7 @@ function ReportOverlay({
 
 // ===== Self-contained HTML export for reports =====
 function renderSelfContainedHTML(slides: Slide[], cms: any) {
-  const styles = `*{box-sizing:border-box} body{margin:0;background:#f5f5f5;font-family:system-ui,-apple-system,Segoe UI,Roboto} .page{width:210mm;height:297mm;background:#fff;margin:8mm auto;padding:16mm;page-break-after:always;border-radius:12px;box-shadow:0 5px 30px rgba(0,0,0,.08)} @media print{body{background:#fff} .page{margin:0;box-shadow:none;border-radius:0}}`;
+  const styles = `*{box-sizing:border-box} body{margin:0;background:#f5f5f5;font-family:system-ui,-apple-system,Segoe UI,Roboto} .page{width:210mm;height:297mm;background:#eaeae5;margin:8mm auto;padding:16mm;page-break-after:always;border-radius:12px;box-shadow:0 5px 30px rgba(0,0,0,.08)} @media print{body{background:#eaeae5} .page{margin:0;box-shadow:none;border-radius:0}}`;
   const slideHTML = slides
     .map((s) => `<div class="page">${renderSlideHTML(s, cms)}</div>`)
     .join("");
@@ -577,7 +594,7 @@ export default function PresentationBuilder() {
           <div className="flex items-center gap-3">
             {step > 1 && (
               <button
-                className="inline-flex items-center gap-2 px-3 py-2 rounded-full border bg-white"
+                className="inline-flex items-center gap-2 px-3 py-2 rounded-full border bg-[#eaeae5]"
                 onClick={() => setStep((s) => (s > 1 ? ((s - 1) as any) : s))}
                 aria-label="Tilbake"
               >

@@ -1,39 +1,6 @@
 {
   "categories": [
     {
-      "id": "Strategi",
-      "title": "Strategi",
-      "blurb": "Retning, prioriteringer og målbare effekter.",
-      "expertise": [
-        "Målbilde",
-        "KPI/OKR",
-        "Porteføljestyring"
-      ],
-      "stats": "80+ strategiske oppdrag"
-    },
-    {
-      "id": "Produktdesign",
-      "title": "Produktdesign",
-      "blurb": "Digitale produkter fra idé til lansering.",
-      "expertise": [
-        "UX",
-        "UI",
-        "Designsystem"
-      ],
-      "stats": "60+ produkter"
-    },
-    {
-      "id": "Innsikt",
-      "title": "Innsikt",
-      "blurb": "Forstår brukere, behov og marked.",
-      "expertise": [
-        "Dybdeintervjuer",
-        "Kvantitativ",
-        "Feltstudier"
-      ],
-      "stats": "3000+ respondenter analysert"
-    },
-    {
       "id": "Tjenestedesign",
       "title": "Tjenestedesign",
       "blurb": "Utforsker og forbedrer tjenester på tvers av kanaler.",
@@ -43,124 +10,143 @@
         "Prototyping"
       ],
       "stats": "200+ tjenester designet"
+    },
+    {
+      "id": "Arkitektur og Urbanisme",
+      "title": "Arkitektur og Urbanisme",
+      "blurb": "Byrom, bygg og langsiktige arealstrategier.",
+      "expertise": [
+        "Byutvikling",
+        "Bymiljøanalyse",
+        "Visualiseringer",
+        "Samfunnsanalyse",
+        "Arealstrategi",
+        "Stedsutvikling",
+        "Bærekraftig design",
+        "Byrom"
+      ],
+      "stats": "50+ prosjekter"
+    },
+    {
+      "id": "Innovasjon i offentlig sektor",
+      "title": "Innovasjon i offentlig sektor",
+      "blurb": "Utvikler bedre offentlige tjenester gjennom innsikt, samskaping og smidig gjennomføring.",
+      "expertise": [
+        "Medvirkning",
+        "Prosessforbedring",
+        "Endringsledelse",
+        "Policy- og regelverksforståelse",
+        "Effektmåling",
+        "Offentlige anskaffelser"
+      ],
+      "stats": "70+ oppdrag i stat og kommune"
     }
   ],
   "projects": [
     {
-      "id": "example-project-1",
-      "slug": "example-project-1",
-      "title": "Example Project 1",
-      "excerpt": "GrønnEnergi ønsket å effektivisere energiforbruket og øke bærekraften i sine kunders bygninger, men sto overfor manuelle rutiner og manglende innsikt i faktisk energibruk. Uten automatiserte målinger og analyser, ble energioptimalisering ofte basert på antakelser og periodiske manuelt innsamlede data. Dette førte til tapt besparelsespotensial og unødig høye driftskostnader.",
+      "id": "dgv",
+      "slug": "dgv",
+      "title": "Samskaping av fremtiden for Den Gamle Veterinærhøgskolen",
+      "excerpt": "Den gamle veterinærhøgskolen på Adamstuen i Oslo er en av Oslo kommunes største eiendomskjøp noen sinne. Tomten, de gamle byggene og nybygg skal skape et grønt, varmt og skapende sted i sentrum av byen. Vi har støttet kommunen og Linstow AS med å involvere innbyggere, naboer og interessenter for å finne ut hvordan Linstow og Oslo kommune kan oppnå denne visjonen sammen.",
+      "solution": "Gjennom 2024 ledet vi en todelt medvirknings- og samskapingsprosess. Vi startet med offentlig utstilling og fire workshops med ulike innbyggergrupper, oversatte innsikt til personas og tematiske behov, og fasiliterte syv samskapingsworkshops med Oslo kommune, Linstow og offentlige aktører. Vi brukte scenarioverktøy og samfunnsfloker for å utvikle forslag på tvers av sektorer.",
       "categories": [
-        "Strategi",
-        "Produktdesign",
-        "Innsikt"
+        "Tjenestedesign",
+        "Arkitektur og Urbanisme"
       ],
       "images": [
-        "https://framerusercontent.com/images/7T3BQunjPKUmwTmGb3WpWbpK4.png"
+        "https://images.squarespace-cdn.com/content/v1/64e366db2607f31b2c125e32/1754488681564-0KCDQ9ASY8AJ85PGTCT8/DSCF0450.JPG",
+        "https://images.squarespace-cdn.com/content/v1/64e366db2607f31b2c125e32/1737120348669-HMZ0AFHSFDYYXWM3ED6I/DSCF0467.JPG",
+        "https://images.squarespace-cdn.com/content/v1/64e366db2607f31b2c125e32/1754488682137-VXZCCFLON7CCILV44VOO/DSCF0407.JPG",
+        "https://images.squarespace-cdn.com/content/v1/64e366db2607f31b2c125e32/1754488687192-TQRKKC7OMBFN0DBZDFEZ/DSCF0572.JPG",
+        "https://images.squarespace-cdn.com/content/v1/64e366db2607f31b2c125e32/1737121914446-WE1JO34VYVO2D3MUVKE5/Skjermbilde%2B2025-01-17%2Bkl.%2B14.51.17.png"
       ],
-      "client": "GrønnEnergi AS",
+      "client": "Oslo kommune og Linstow AS",
       "year": "2024",
+      "location": "Adamstuen, Oslo",
+      "industry": "Bygg- og byutvikling",
       "services": [
-        "Målbilde",
-        "KPI/OKR",
-        "Porteføljestyring",
-        "UX",
-        "UI",
-        "Designsystem",
-        "Dybdeintervjuer",
-        "Kvantitativ",
-        "Feltstudier"
+        "Brukerreiser",
+        "Tjenestekartlegging",
+        "Prototyping",
+        "Byutvikling",
+        "Bymiljøanalyse",
+        "Visualiseringer",
+        "Samfunnsanalyse",
+        "Arealstrategi",
+        "Stedsutvikling",
+        "Bærekraftig design",
+        "Byrom"
       ],
       "next": [],
       "created": "",
       "edited": ""
     },
     {
-      "id": "example-project-1-copy",
-      "slug": "example-project-1-copy",
-      "title": "Example Project 1 Copy",
-      "excerpt": "GrønnEnergi ønsket å effektivisere energiforbruket og øke bærekraften i sine kunders bygninger, men sto overfor manuelle rutiner og manglende innsikt i faktisk energibruk. Uten automatiserte målinger og analyser, ble energioptimalisering ofte basert på antakelser og periodiske manuelt innsamlede data. Dette førte til tapt besparelsespotensial og unødig høye driftskostnader.",
+      "id": "nardovegen-sit",
+      "slug": "nardovegen-sit",
+      "title": "En studentbolig som motvirker ensomhet",
+      "excerpt": "Sammen med SiT utforsket vi hvordan arkitektur kan redusere ensomhet blant studenter. Prosjektet viste hvordan sosial design og fellesarealer kan styrke tilhørighet og trivsel i studentboliger.",
+      "solution": "Vi designet fleksible og multifunksjonelle fellesområder i de nye studentboligene i Nardovegen, med fokus på deltakelse, sosial kontakt og eierskap til rommene. Gjennom workshops med studenter og ansatte utviklet vi konsept og en håndbok for brukermedvirkning som nå brukes i SiTs videre byggeprosjekter.",
       "categories": [
-        "Strategi",
-        "Produktdesign",
-        "Innsikt"
-      ],
-      "images": [
-        "https://framerusercontent.com/images/7T3BQunjPKUmwTmGb3WpWbpK4.png"
-      ],
-      "client": "GrønnEnergi AS",
-      "year": "2024",
-      "services": [
-        "Målbilde",
-        "KPI/OKR",
-        "Porteføljestyring",
-        "UX",
-        "UI",
-        "Designsystem",
-        "Dybdeintervjuer",
-        "Kvantitativ",
-        "Feltstudier"
-      ],
-      "next": [],
-      "created": "",
-      "edited": ""
-    },
-    {
-      "id": "example-project-1-copy-copy",
-      "slug": "example-project-1-copy-copy",
-      "title": "Example Project 1 Copy Copy",
-      "excerpt": "GrønnEnergi ønsket å effektivisere energiforbruket og øke bærekraften i sine kunders bygninger, men sto overfor manuelle rutiner og manglende innsikt i faktisk energibruk. Uten automatiserte målinger og analyser, ble energioptimalisering ofte basert på antakelser og periodiske manuelt innsamlede data. Dette førte til tapt besparelsespotensial og unødig høye driftskostnader.",
-      "categories": [
-        "Strategi",
-        "Produktdesign",
-        "Innsikt"
-      ],
-      "images": [
-        "https://framerusercontent.com/images/7T3BQunjPKUmwTmGb3WpWbpK4.png"
-      ],
-      "client": "GrønnEnergi AS",
-      "year": "2024",
-      "services": [
-        "Målbilde",
-        "KPI/OKR",
-        "Porteføljestyring",
-        "UX",
-        "UI",
-        "Designsystem",
-        "Dybdeintervjuer",
-        "Kvantitativ",
-        "Feltstudier"
-      ],
-      "next": [],
-      "created": "",
-      "edited": ""
-    },
-    {
-      "id": "example-project-1-copy-copy-copy",
-      "slug": "example-project-1-copy-copy-copy",
-      "title": "Example Project 1 Copy Copy Copy",
-      "excerpt": "GrønnEnergi ønsket å effektivisere energiforbruket og øke bærekraften i sine kunders bygninger, men sto overfor manuelle rutiner og manglende innsikt i faktisk energibruk. Uten automatiserte målinger og analyser, ble energioptimalisering ofte basert på antakelser og periodiske manuelt innsamlede data. Dette førte til tapt besparelsespotensial og unødig høye driftskostnader.",
-      "categories": [
-        "Strategi",
-        "Produktdesign",
+        "Arkitektur og Urbanisme",
         "Tjenestedesign"
       ],
       "images": [
-        "https://framerusercontent.com/images/7T3BQunjPKUmwTmGb3WpWbpK4.png"
+        "https://www.comte.no/_next/image?url=%2Fimages%2FA4%20-%20139.png&w=3840&q=75",
+        "https://www.comte.no/_next/image?url=%2Fimages%2FA4%20-%2031.png&w=3840&q=75",
+        "https://www.comte.no/_next/image?url=%2Fimages%2FA4%20-%20111.png&w=3840&q=75",
+        "https://www.comte.no/_next/image?url=%2Fimages%2FA4%20-%20113.png&w=3840&q=75",
+        "https://www.comte.no/_next/image?url=%2Fimages%2FA4%20-%20136.png&w=3840&q=75"
       ],
-      "client": "GrønnEnergi AS",
-      "year": "2024",
+      "client": "Studentsamskipnaden i Trondheim (SiT)",
+      "year": "2023",
+      "location": "Trondheim",
+      "industry": "Utdanning og bolig",
       "services": [
-        "Målbilde",
-        "KPI/OKR",
-        "Porteføljestyring",
-        "UX",
-        "UI",
-        "Designsystem",
+        "Byutvikling",
+        "Bymiljøanalyse",
+        "Visualiseringer",
+        "Samfunnsanalyse",
+        "Arealstrategi",
+        "Stedsutvikling",
+        "Bærekraftig design",
+        "Byrom",
         "Brukerreiser",
         "Tjenestekartlegging",
         "Prototyping"
+      ],
+      "next": [],
+      "created": "",
+      "edited": ""
+    },
+    {
+      "id": "hjemveien",
+      "slug": "hjemveien",
+      "title": "Hjemveien: Fra 186 til 10 personer i kø for kommunal bolig",
+      "excerpt": "Sammen med Sarpsborg kommune utviklet vi Hjemveien – en ny måte å støtte innbyggere i kommunale boliger. Tjenesten ble nominert til både Innovasjonsprisen og Østfoldprisen.",
+      "solution": "Vi utviklet Hjemveien – et veiledningsverktøy og en samtalemetodikk som hjelper brukerne å forstå og navigere i boligtjenestene. Mappen samler informasjon på ett sted, gir lik oppfølging og frigjør tid for ansatte. Den leder brukerne mot Startlån og overgangen til egen bolig.",
+      "categories": [
+        "Tjenestedesign",
+        "Innovasjon i offentlig sektor"
+      ],
+      "images": [
+        "https://www.comte.no/_next/image?url=%2Fimages%2Fboligsosialt.jpg&w=3840&q=75",
+        "https://www.comte.no/_next/image?url=%2Fimages%2Fboligsosialt%202.jpg&w=3840&q=75"
+      ],
+      "client": "Sarpsborg kommune",
+      "year": "2022",
+      "location": "Fullført",
+      "industry": "Offentlig sektor, Bolig og velferd",
+      "services": [
+        "Brukerreiser",
+        "Tjenestekartlegging",
+        "Prototyping",
+        "Medvirkning",
+        "Prosessforbedring",
+        "Endringsledelse",
+        "Policy- og regelverksforståelse",
+        "Effektmåling",
+        "Offentlige anskaffelser"
       ],
       "next": [],
       "created": "",

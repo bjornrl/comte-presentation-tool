@@ -112,6 +112,7 @@ const projects = workRows.map((row) => {
     slugify(get(row, ["slug", "Slug"]));
   const title = get(row, ["title", "Title"]);
   const excerpt = get(row, ["project", "Project", "Innledning"]);
+  const solution = get(row, ["Løsningen"]);
 
   // Categories: try old format first, then derive from services if needed
   let categories = splitList(get(row, ["categories", "Categories"]));
@@ -127,6 +128,8 @@ const projects = workRows.map((row) => {
   ].filter(Boolean);
 
   const client = get(row, ["client", "Client", "Kunde"]);
+  const location = get(row, ["Lokasjon", "Location", "location"]);
+  const industry = get(row, ["Industri", "Industry", "industry"]);
 
   // Get Tjenester field (should contain category names from Services.csv)
   const tjenesterField = get(row, ["Tjenester", "Ekspertise"]);
@@ -152,10 +155,13 @@ const projects = workRows.map((row) => {
     slug,
     title,
     excerpt,
+    solution,
     categories,
     images,
     client,
     year,
+    location,
+    industry,
     services,
     next,
     created,
