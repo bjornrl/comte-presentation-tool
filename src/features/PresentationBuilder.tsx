@@ -8,6 +8,7 @@ import Step1Areas from "./steps/Step1Areas";
 import Step2Projects from "./steps/Step2Projects";
 import Step3Format from "./steps/Step3Format";
 import Step4Draft from "./steps/Step4Draft";
+import SpikedPresentation from "./SpikedPresentation";
 // SlidesPreview is used inside Step4Draft
 
 // Mock CMS moved into useCMS fallback
@@ -542,6 +543,7 @@ export default function PresentationBuilder() {
   const [query, setQuery] = useState("");
   const [showDeck, setShowDeck] = useState(false);
   const [showReport, setShowReport] = useState(false);
+  const [showSpiked, setShowSpiked] = useState(false);
 
   const filteredProjects = useMemo(() => {
     const inCat = activeCategory
@@ -652,6 +654,7 @@ export default function PresentationBuilder() {
                 slides={slides}
                 outputType={outputType}
                 handleGenerate={handleGenerate}
+                handleSpike={() => setShowSpiked(true)}
               />
             </motion.section>
           )}
@@ -674,6 +677,13 @@ export default function PresentationBuilder() {
           slides={slides}
           cms={cms}
           onClose={() => setShowReport(false)}
+        />
+      )}
+      {showSpiked && (
+        <SpikedPresentation
+          slides={slides}
+          cms={cms}
+          onClose={() => setShowSpiked(false)}
         />
       )}
     </div>

@@ -1,4 +1,4 @@
-import { Download } from "lucide-react";
+import { Download, Sparkles } from "lucide-react";
 import StepHeader from "../../components/stepheader";
 import downloadJSON from "../../components/downloadJSON";
 import SlidesPreview from "./SlidesPreview";
@@ -8,10 +8,12 @@ export default function Step4Draft({
   slides,
   outputType,
   handleGenerate,
+  handleSpike,
 }: {
   slides: Slide[];
   outputType: "presentation" | "report";
   handleGenerate: () => void;
+  handleSpike: () => void;
 }) {
   return (
     <section className="flex flex-col items-center">
@@ -23,6 +25,12 @@ export default function Step4Draft({
           onClick={() => downloadJSON("slides.json", slides)}
         >
           <Download size={16} /> Last ned slides.json
+        </button>
+        <button
+          className="px-4 py-2 rounded-full border bg-gradient-to-r from-purple-600 to-pink-600 text-white font-bold hover:from-purple-700 hover:to-pink-700 transition-all transform hover:scale-105 flex items-center gap-2"
+          onClick={handleSpike}
+        >
+          <Sparkles size={16} /> Spike it
         </button>
         <button
           className="px-4 py-2 rounded-full border bg-black text-white"
