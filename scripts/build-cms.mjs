@@ -101,32 +101,43 @@ const [teamRows, clientRows, blogRows, workRows, categoryRows] =
     readCSV("Clients.csv"),
     readCSV("Blog.csv"),
     readCSV("Work.csv"),
-    readCSV("Categories.csv"), // optional: provides category blurbs
+    readCSV("Services.csv"), // optional: provides category blurbs
   ]);
 
 // ---- Map Work.csv
 const projects = workRows.map((row) => {
+  // Handle both old and new CSV formats
   const id =
     get(row, ["Project number", "project number", "id"]) ||
-    slugify(get(row, ["slug"]));
+    slugify(get(row, ["slug", "Slug"]));
   const title = get(row, ["title", "Title"]);
-  const excerpt = get(row, ["project", "Project"]);
-  const categories = splitList(get(row, ["categories", "Categories"]));
+  const excerpt = get(row, ["project", "Project", "Innledning"]);
+
+  // Categories: try old format first, then derive from services if needed
+  let categories = splitList(get(row, ["categories", "Categories"]));
 
   const images = [
-    asImageUrl(get(row, ["cover (image)", "cover", "Cover (image)"])),
+    asImageUrl(
+      get(row, ["cover (image)", "cover", "Cover (image)", "Cover Image"])
+    ),
     asImageUrl(get(row, ["image 1", "Image 1"])),
     asImageUrl(get(row, ["image 2", "Image 2"])),
     asImageUrl(get(row, ["image 3", "Image 3"])),
     asImageUrl(get(row, ["image 4", "Image 4"])),
   ].filter(Boolean);
 
-  const client = get(row, ["client", "Client"]);
-  const services = [
+  const client = get(row, ["client", "Client", "Kunde"]);
+
+  // Get Tjenester field (should contain category names from Services.csv)
+  const tjenesterField = get(row, ["Tjenester", "Ekspertise"]);
+
+  // Services: try old format first, then new format
+  let services = [
     ...splitList(get(row, ["services", "Services"])),
     ...splitList(get(row, ["services 2", "Services 2"])),
   ];
-  const year = get(row, ["year", "Year"]);
+
+  const year = get(row, ["year", "Year", "År"]);
   const next = [
     get(row, ["next project 1", "Next project 1"]),
     get(row, ["next project 2", "Next project 2"]),
@@ -149,8 +160,80 @@ const projects = workRows.map((row) => {
     next,
     created,
     edited,
+    _tjenester: tjenesterField, // Store temporarily for processing
   };
 });
+
+// Build category-to-services mapping from Services.csv
+const categoryToServices = new Map();
+const serviceToCategory = new Map();
+if (categoryRows && categoryRows.length > 0) {
+  for (const row of categoryRows) {
+    const categoryTitle = get(row, ["title", "Title"]).trim();
+    const expertiseList = splitList(get(row, ["expertise", "Expertise"]));
+    categoryToServices.set(categoryTitle, expertiseList);
+    // Also build reverse mapping for backward compatibility
+    for (const service of expertiseList) {
+      serviceToCategory.set(service.trim(), categoryTitle);
+    }
+  }
+}
+
+// Process Tjenester field: if it contains category names, expand to services
+// Also set categories from Tjenester field
+for (const p of projects) {
+  const tjenesterValue = p._tjenester;
+  if (tjenesterValue) {
+    const tjenesterList = splitList(tjenesterValue);
+    const foundCategories = [];
+    const foundServices = new Set();
+
+    // Check if values are category names or individual services
+    for (const item of tjenesterList) {
+      const trimmed = item.trim();
+      // Check if it's a category name
+      if (categoryToServices.has(trimmed)) {
+        foundCategories.push(trimmed);
+        // Expand category to its services
+        const servicesForCategory = categoryToServices.get(trimmed);
+        for (const service of servicesForCategory) {
+          foundServices.add(service.trim());
+        }
+      } else if (serviceToCategory.has(trimmed)) {
+        // It's an individual service, derive category
+        const category = serviceToCategory.get(trimmed);
+        if (!foundCategories.includes(category)) {
+          foundCategories.push(category);
+        }
+        foundServices.add(trimmed);
+      }
+    }
+
+    // Update project with categories and services
+    if (foundCategories.length > 0) {
+      p.categories = foundCategories;
+    }
+    if (foundServices.size > 0) {
+      p.services = Array.from(foundServices);
+    }
+  }
+  // Remove temporary field
+  delete p._tjenester;
+}
+
+// Derive categories from services if categories are still missing (backward compatibility)
+for (const p of projects) {
+  if (p.categories.length === 0 && p.services.length > 0) {
+    const derivedCategories = new Set();
+    for (const service of p.services) {
+      const category = serviceToCategory.get(service.trim());
+      if (category) {
+        derivedCategories.add(category);
+      }
+    }
+    p.categories = Array.from(derivedCategories);
+  }
+}
 
 // ---- Categories
 const catMap = new Map();
@@ -159,7 +242,7 @@ for (const p of projects)
     if (!catMap.has(c)) catMap.set(c, { id: c, title: c, blurb: "" });
   }
 
-// Merge blurbs, expertise, and stats from Categories.csv if present
+// Merge blurbs, expertise, and stats from Services.csv if present
 const catDataByTitle = new Map(
   (categoryRows || []).map((row) => [
     get(row, ["title", "Title"]).trim(),

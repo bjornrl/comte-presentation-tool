@@ -1,44 +1,6 @@
 {
   "categories": [
     {
-      "id": "Tjenestedesign",
-      "title": "Tjenestedesign",
-      "blurb": "Utforsker og forbedrer tjenester på tvers av kanaler.",
-      "expertise": [
-        "Brukerreiser",
-        "Tjenestekartlegging",
-        "Prototyping"
-      ],
-      "stats": "200+ tjenester designet"
-    },
-    {
-      "id": "Arkitektur & Urbanisme",
-      "title": "Arkitektur & Urbanisme",
-      "blurb": "Byrom, bygg og langsiktige arealstrategier.",
-      "expertise": [
-        "Byutvikling",
-        "Bymiljøanalyse",
-        "Visualiseringer",
-        "Samfunnsanalyse",
-        "Arealstrategi",
-        "Stedsutvikling",
-        "Bærekraftig design",
-        "Byrom"
-      ],
-      "stats": "50+ prosjekter"
-    },
-    {
-      "id": "Branding",
-      "title": "Branding",
-      "blurb": "Identitet, språk og visuell profil som bygger posisjon.",
-      "expertise": [
-        "Visuell identitet",
-        "Merkevarestrategi",
-        "Kommunikasjon"
-      ],
-      "stats": "100+ identiteter"
-    },
-    {
       "id": "Strategi",
       "title": "Strategi",
       "blurb": "Retning, prioriteringer og målbare effekter.",
@@ -48,6 +10,17 @@
         "Porteføljestyring"
       ],
       "stats": "80+ strategiske oppdrag"
+    },
+    {
+      "id": "Produktdesign",
+      "title": "Produktdesign",
+      "blurb": "Digitale produkter fra idé til lansering.",
+      "expertise": [
+        "UX",
+        "UI",
+        "Designsystem"
+      ],
+      "stats": "60+ produkter"
     },
     {
       "id": "Innsikt",
@@ -61,857 +34,137 @@
       "stats": "3000+ respondenter analysert"
     },
     {
-      "id": "Produktdesign",
-      "title": "Produktdesign",
-      "blurb": "Digitale produkter fra idé til lansering.",
+      "id": "Tjenestedesign",
+      "title": "Tjenestedesign",
+      "blurb": "Utforsker og forbedrer tjenester på tvers av kanaler.",
       "expertise": [
-        "UX",
-        "UI",
-        "Designsystem"
+        "Brukerreiser",
+        "Tjenestekartlegging",
+        "Prototyping"
       ],
-      "stats": "60+ produkter"
+      "stats": "200+ tjenester designet"
     }
   ],
   "projects": [
     {
-      "id": "1",
-      "slug": "tjenestedesign-prosjekt-1-2024",
-      "title": "Tjenestedesign prosjekt 1",
-      "excerpt": "Prosjektet fokuserte på tjenestedesign for Byrom Oslo. Leveransen inkluderte Måling, Pilotering.",
+      "id": "example-project-1",
+      "slug": "example-project-1",
+      "title": "Example Project 1",
+      "excerpt": "GrønnEnergi ønsket å effektivisere energiforbruket og øke bærekraften i sine kunders bygninger, men sto overfor manuelle rutiner og manglende innsikt i faktisk energibruk. Uten automatiserte målinger og analyser, ble energioptimalisering ofte basert på antakelser og periodiske manuelt innsamlede data. Dette førte til tapt besparelsespotensial og unødig høye driftskostnader.",
       "categories": [
-        "Tjenestedesign"
+        "Strategi",
+        "Produktdesign",
+        "Innsikt"
       ],
       "images": [
-        "https://source.unsplash.com/1600x900/?Tjenestedesign",
-        "https://source.unsplash.com/1600x900/?Tjenestedesign,design",
-        "https://source.unsplash.com/1600x900/?Tjenestedesign,prototype",
-        "https://source.unsplash.com/1600x900/?Tjenestedesign,team",
-        "https://source.unsplash.com/1600x900/?Tjenestedesign,workshop"
+        "https://framerusercontent.com/images/7T3BQunjPKUmwTmGb3WpWbpK4.png"
       ],
-      "client": "Byrom Oslo",
+      "client": "GrønnEnergi AS",
       "year": "2024",
       "services": [
-        "Tjenestekartlegging",
-        "Brukerreiser",
-        "Pilotering",
-        "Måling",
-        "Brukerreiser"
+        "Målbilde",
+        "KPI/OKR",
+        "Porteføljestyring",
+        "UX",
+        "UI",
+        "Designsystem",
+        "Dybdeintervjuer",
+        "Kvantitativ",
+        "Feltstudier"
       ],
       "next": [],
-      "created": "2025-10-31",
-      "edited": "2025-10-31"
+      "created": "",
+      "edited": ""
     },
     {
-      "id": "2",
-      "slug": "tjenestedesign-prosjekt-2-2020",
-      "title": "Tjenestedesign prosjekt 2",
-      "excerpt": "Prosjektet fokuserte på tjenestedesign for Nordic Rail. Leveransen inkluderte Måling, Brukerreiser.",
+      "id": "example-project-1-copy",
+      "slug": "example-project-1-copy",
+      "title": "Example Project 1 Copy",
+      "excerpt": "GrønnEnergi ønsket å effektivisere energiforbruket og øke bærekraften i sine kunders bygninger, men sto overfor manuelle rutiner og manglende innsikt i faktisk energibruk. Uten automatiserte målinger og analyser, ble energioptimalisering ofte basert på antakelser og periodiske manuelt innsamlede data. Dette førte til tapt besparelsespotensial og unødig høye driftskostnader.",
       "categories": [
+        "Strategi",
+        "Produktdesign",
+        "Innsikt"
+      ],
+      "images": [
+        "https://framerusercontent.com/images/7T3BQunjPKUmwTmGb3WpWbpK4.png"
+      ],
+      "client": "GrønnEnergi AS",
+      "year": "2024",
+      "services": [
+        "Målbilde",
+        "KPI/OKR",
+        "Porteføljestyring",
+        "UX",
+        "UI",
+        "Designsystem",
+        "Dybdeintervjuer",
+        "Kvantitativ",
+        "Feltstudier"
+      ],
+      "next": [],
+      "created": "",
+      "edited": ""
+    },
+    {
+      "id": "example-project-1-copy-copy",
+      "slug": "example-project-1-copy-copy",
+      "title": "Example Project 1 Copy Copy",
+      "excerpt": "GrønnEnergi ønsket å effektivisere energiforbruket og øke bærekraften i sine kunders bygninger, men sto overfor manuelle rutiner og manglende innsikt i faktisk energibruk. Uten automatiserte målinger og analyser, ble energioptimalisering ofte basert på antakelser og periodiske manuelt innsamlede data. Dette førte til tapt besparelsespotensial og unødig høye driftskostnader.",
+      "categories": [
+        "Strategi",
+        "Produktdesign",
+        "Innsikt"
+      ],
+      "images": [
+        "https://framerusercontent.com/images/7T3BQunjPKUmwTmGb3WpWbpK4.png"
+      ],
+      "client": "GrønnEnergi AS",
+      "year": "2024",
+      "services": [
+        "Målbilde",
+        "KPI/OKR",
+        "Porteføljestyring",
+        "UX",
+        "UI",
+        "Designsystem",
+        "Dybdeintervjuer",
+        "Kvantitativ",
+        "Feltstudier"
+      ],
+      "next": [],
+      "created": "",
+      "edited": ""
+    },
+    {
+      "id": "example-project-1-copy-copy-copy",
+      "slug": "example-project-1-copy-copy-copy",
+      "title": "Example Project 1 Copy Copy Copy",
+      "excerpt": "GrønnEnergi ønsket å effektivisere energiforbruket og øke bærekraften i sine kunders bygninger, men sto overfor manuelle rutiner og manglende innsikt i faktisk energibruk. Uten automatiserte målinger og analyser, ble energioptimalisering ofte basert på antakelser og periodiske manuelt innsamlede data. Dette førte til tapt besparelsespotensial og unødig høye driftskostnader.",
+      "categories": [
+        "Strategi",
+        "Produktdesign",
         "Tjenestedesign"
       ],
       "images": [
-        "https://source.unsplash.com/1600x900/?Tjenestedesign",
-        "https://source.unsplash.com/1600x900/?Tjenestedesign,design",
-        "https://source.unsplash.com/1600x900/?Tjenestedesign,prototype",
-        "https://source.unsplash.com/1600x900/?Tjenestedesign,team",
-        "https://source.unsplash.com/1600x900/?Tjenestedesign,workshop"
+        "https://framerusercontent.com/images/7T3BQunjPKUmwTmGb3WpWbpK4.png"
       ],
-      "client": "Nordic Rail",
-      "year": "2020",
+      "client": "GrønnEnergi AS",
+      "year": "2024",
       "services": [
-        "Pilotering",
-        "Tjenestekartlegging",
-        "Brukerreiser",
-        "Prototyping",
-        "Tjenestekartlegging"
-      ],
-      "next": [],
-      "created": "2025-10-31",
-      "edited": "2025-10-31"
-    },
-    {
-      "id": "3",
-      "slug": "tjenestedesign-prosjekt-3-2021",
-      "title": "Tjenestedesign prosjekt 3",
-      "excerpt": "Prosjektet fokuserte på tjenestedesign for Ventus Mobility. Leveransen inkluderte Måling, Prototyping.",
-      "categories": [
-        "Tjenestedesign"
-      ],
-      "images": [
-        "https://source.unsplash.com/1600x900/?Tjenestedesign",
-        "https://source.unsplash.com/1600x900/?Tjenestedesign,design",
-        "https://source.unsplash.com/1600x900/?Tjenestedesign,prototype",
-        "https://source.unsplash.com/1600x900/?Tjenestedesign,team",
-        "https://source.unsplash.com/1600x900/?Tjenestedesign,workshop"
-      ],
-      "client": "Ventus Mobility",
-      "year": "2021",
-      "services": [
+        "Målbilde",
+        "KPI/OKR",
+        "Porteføljestyring",
+        "UX",
+        "UI",
+        "Designsystem",
         "Brukerreiser",
         "Tjenestekartlegging",
-        "Prototyping",
-        "Brukerreiser",
         "Prototyping"
       ],
       "next": [],
-      "created": "2025-10-31",
-      "edited": "2025-10-31"
-    },
-    {
-      "id": "4",
-      "slug": "tjenestedesign-prosjekt-4-2020",
-      "title": "Tjenestedesign prosjekt 4",
-      "excerpt": "Prosjektet fokuserte på tjenestedesign for Havn & Fjord. Leveransen inkluderte Pilotering, Måling.",
-      "categories": [
-        "Tjenestedesign"
-      ],
-      "images": [
-        "https://source.unsplash.com/1600x900/?Tjenestedesign",
-        "https://source.unsplash.com/1600x900/?Tjenestedesign,design",
-        "https://source.unsplash.com/1600x900/?Tjenestedesign,prototype",
-        "https://source.unsplash.com/1600x900/?Tjenestedesign,team",
-        "https://source.unsplash.com/1600x900/?Tjenestedesign,workshop"
-      ],
-      "client": "Havn & Fjord",
-      "year": "2020",
-      "services": [
-        "Måling",
-        "Pilotering",
-        "Tjenestekartlegging",
-        "Prototyping",
-        "Måling"
-      ],
-      "next": [],
-      "created": "2025-10-31",
-      "edited": "2025-10-31"
-    },
-    {
-      "id": "5",
-      "slug": "tjenestedesign-prosjekt-5-2021",
-      "title": "Tjenestedesign prosjekt 5",
-      "excerpt": "Prosjektet fokuserte på tjenestedesign for Arctic Health. Leveransen inkluderte Måling, Brukerreiser.",
-      "categories": [
-        "Tjenestedesign"
-      ],
-      "images": [
-        "https://source.unsplash.com/1600x900/?Tjenestedesign",
-        "https://source.unsplash.com/1600x900/?Tjenestedesign,design",
-        "https://source.unsplash.com/1600x900/?Tjenestedesign,prototype",
-        "https://source.unsplash.com/1600x900/?Tjenestedesign,team",
-        "https://source.unsplash.com/1600x900/?Tjenestedesign,workshop"
-      ],
-      "client": "Arctic Health",
-      "year": "2021",
-      "services": [
-        "Pilotering",
-        "Prototyping",
-        "Tjenestekartlegging",
-        "Brukerreiser",
-        "Måling"
-      ],
-      "next": [],
-      "created": "2025-10-31",
-      "edited": "2025-10-31"
-    },
-    {
-      "id": "6",
-      "slug": "arkitektur-urbanisme-prosjekt-1-2020",
-      "title": "Arkitektur & Urbanisme prosjekt 1",
-      "excerpt": "Prosjektet fokuserte på arkitektur & urbanisme for Havn & Fjord. Leveransen inkluderte Medvirkning, Mulighetsstudie.",
-      "categories": [
-        "Arkitektur & Urbanisme"
-      ],
-      "images": [
-        "https://images.unsplash.com/photo-1583671399618-e0517f9f1e5e?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=804",
-        "https://source.unsplash.com/1600x900/?Arkitektur,design",
-        "https://source.unsplash.com/1600x900/?Arkitektur,prototype",
-        "https://source.unsplash.com/1600x900/?Arkitektur,team",
-        "https://source.unsplash.com/1600x900/?Arkitektur,workshop"
-      ],
-      "client": "Havn & Fjord",
-      "year": "2020",
-      "services": [
-        "Medvirkning",
-        "Stedsanalyse",
-        "Mulighetsstudie",
-        "ROM-program",
-        "Stedsanalyse"
-      ],
-      "next": [],
-      "created": "2025-10-31",
-      "edited": "2025-10-31"
-    },
-    {
-      "id": "7",
-      "slug": "arkitektur-urbanisme-prosjekt-2-2022",
-      "title": "Arkitektur & Urbanisme prosjekt 2",
-      "excerpt": "Prosjektet fokuserte på arkitektur & urbanisme for Nordic Rail. Leveransen inkluderte Mulighetsstudie, Stedsanalyse.",
-      "categories": [
-        "Arkitektur & Urbanisme"
-      ],
-      "images": [
-        "https://images.unsplash.com/photo-1581360050420-119e24ff2f71?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=1446",
-        "https://source.unsplash.com/1600x900/?Arkitektur,design",
-        "https://source.unsplash.com/1600x900/?Arkitektur,prototype",
-        "https://source.unsplash.com/1600x900/?Arkitektur,team",
-        "https://source.unsplash.com/1600x900/?Arkitektur,workshop"
-      ],
-      "client": "Nordic Rail",
-      "year": "2022",
-      "services": [
-        "Mulighetsstudie",
-        "Byutvikling",
-        "ROM-program",
-        "ROM-program",
-        "Stedsanalyse"
-      ],
-      "next": [],
-      "created": "2025-10-31",
-      "edited": "2025-10-31"
-    },
-    {
-      "id": "8",
-      "slug": "arkitektur-urbanisme-prosjekt-3-2024",
-      "title": "Arkitektur & Urbanisme prosjekt 3",
-      "excerpt": "Prosjektet fokuserte på arkitektur & urbanisme for Glimt Media. Leveransen inkluderte Stedsanalyse, Mulighetsstudie.",
-      "categories": [
-        "Arkitektur & Urbanisme"
-      ],
-      "images": [
-        "https://images.unsplash.com/photo-1573404030214-248e0e711cab?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=996",
-        "https://source.unsplash.com/1600x900/?Arkitektur,design",
-        "https://source.unsplash.com/1600x900/?Arkitektur,prototype",
-        "https://source.unsplash.com/1600x900/?Arkitektur,team",
-        "https://source.unsplash.com/1600x900/?Arkitektur,workshop"
-      ],
-      "client": "Glimt Media",
-      "year": "2024",
-      "services": [
-        "Medvirkning",
-        "Byutvikling",
-        "Mulighetsstudie",
-        "Medvirkning",
-        "ROM-program"
-      ],
-      "next": [],
-      "created": "2025-10-31",
-      "edited": "2025-10-31"
-    },
-    {
-      "id": "9",
-      "slug": "arkitektur-urbanisme-prosjekt-4-2019",
-      "title": "Arkitektur & Urbanisme prosjekt 4",
-      "excerpt": "Prosjektet fokuserte på arkitektur & urbanisme for Arctic Health. Leveransen inkluderte ROM-program, Medvirkning.",
-      "categories": [
-        "Arkitektur & Urbanisme"
-      ],
-      "images": [
-        "https://images.unsplash.com/photo-1595843102703-96f6a6580cd1?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=782",
-        "https://source.unsplash.com/1600x900/?Arkitektur,design",
-        "https://source.unsplash.com/1600x900/?Arkitektur,prototype",
-        "https://source.unsplash.com/1600x900/?Arkitektur,team",
-        "https://source.unsplash.com/1600x900/?Arkitektur,workshop"
-      ],
-      "client": "Arctic Health",
-      "year": "2019",
-      "services": [
-        "Mulighetsstudie",
-        "Byutvikling",
-        "Medvirkning",
-        "ROM-program",
-        "Medvirkning"
-      ],
-      "next": [],
-      "created": "2025-10-31",
-      "edited": "2025-10-31"
-    },
-    {
-      "id": "10",
-      "slug": "arkitektur-urbanisme-prosjekt-5-2025",
-      "title": "Arkitektur & Urbanisme prosjekt 5",
-      "excerpt": "Prosjektet fokuserte på arkitektur & urbanisme for Arctic Health. Leveransen inkluderte Stedsanalyse, Medvirkning.",
-      "categories": [
-        "Arkitektur & Urbanisme"
-      ],
-      "images": [
-        "https://images.unsplash.com/photo-1574312849288-9ec1292abe08?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=870",
-        "https://source.unsplash.com/1600x900/?Arkitektur,design",
-        "https://source.unsplash.com/1600x900/?Arkitektur,prototype",
-        "https://source.unsplash.com/1600x900/?Arkitektur,team",
-        "https://source.unsplash.com/1600x900/?Arkitektur,workshop"
-      ],
-      "client": "Arctic Health",
-      "year": "2025",
-      "services": [
-        "Mulighetsstudie",
-        "Byutvikling",
-        "ROM-program",
-        "Medvirkning",
-        "ROM-program"
-      ],
-      "next": [],
-      "created": "2025-10-31",
-      "edited": "2025-10-31"
-    },
-    {
-      "id": "11",
-      "slug": "branding-prosjekt-1-2024",
-      "title": "Branding prosjekt 1",
-      "excerpt": "Prosjektet fokuserte på branding for Havn & Fjord. Leveransen inkluderte Designsystem, Retningslinjer.",
-      "categories": [
-        "Branding"
-      ],
-      "images": [
-        "https://source.unsplash.com/1600x900/?Branding",
-        "https://source.unsplash.com/1600x900/?Branding,design",
-        "https://source.unsplash.com/1600x900/?Branding,prototype",
-        "https://source.unsplash.com/1600x900/?Branding,team",
-        "https://source.unsplash.com/1600x900/?Branding,workshop"
-      ],
-      "client": "Havn & Fjord",
-      "year": "2024",
-      "services": [
-        "Designsystem",
-        "Merkevarestrategi",
-        "Retningslinjer",
-        "Retningslinjer",
-        "Visuell identitet"
-      ],
-      "next": [],
-      "created": "2025-10-31",
-      "edited": "2025-10-31"
-    },
-    {
-      "id": "12",
-      "slug": "branding-prosjekt-2-2019",
-      "title": "Branding prosjekt 2",
-      "excerpt": "Prosjektet fokuserte på branding for Aurora Foods. Leveransen inkluderte Designsystem, Visuell identitet.",
-      "categories": [
-        "Branding"
-      ],
-      "images": [
-        "https://source.unsplash.com/1600x900/?Branding",
-        "https://source.unsplash.com/1600x900/?Branding,design",
-        "https://source.unsplash.com/1600x900/?Branding,prototype",
-        "https://source.unsplash.com/1600x900/?Branding,team",
-        "https://source.unsplash.com/1600x900/?Branding,workshop"
-      ],
-      "client": "Aurora Foods",
-      "year": "2019",
-      "services": [
-        "Visuell identitet",
-        "Retningslinjer",
-        "Navneutvikling",
-        "Navneutvikling",
-        "Retningslinjer"
-      ],
-      "next": [],
-      "created": "2025-10-31",
-      "edited": "2025-10-31"
-    },
-    {
-      "id": "13",
-      "slug": "branding-prosjekt-3-2024",
-      "title": "Branding prosjekt 3",
-      "excerpt": "Prosjektet fokuserte på branding for Ventus Mobility. Leveransen inkluderte Visuell identitet, Designsystem.",
-      "categories": [
-        "Branding"
-      ],
-      "images": [
-        "https://source.unsplash.com/1600x900/?Branding",
-        "https://source.unsplash.com/1600x900/?Branding,design",
-        "https://source.unsplash.com/1600x900/?Branding,prototype",
-        "https://source.unsplash.com/1600x900/?Branding,team",
-        "https://source.unsplash.com/1600x900/?Branding,workshop"
-      ],
-      "client": "Ventus Mobility",
-      "year": "2024",
-      "services": [
-        "Designsystem",
-        "Merkevarestrategi",
-        "Navneutvikling",
-        "Designsystem",
-        "Navneutvikling"
-      ],
-      "next": [],
-      "created": "2025-10-31",
-      "edited": "2025-10-31"
-    },
-    {
-      "id": "14",
-      "slug": "branding-prosjekt-4-2021",
-      "title": "Branding prosjekt 4",
-      "excerpt": "Prosjektet fokuserte på branding for Polaris Energi. Leveransen inkluderte Retningslinjer, Navneutvikling.",
-      "categories": [
-        "Branding"
-      ],
-      "images": [
-        "https://source.unsplash.com/1600x900/?Branding",
-        "https://source.unsplash.com/1600x900/?Branding,design",
-        "https://source.unsplash.com/1600x900/?Branding,prototype",
-        "https://source.unsplash.com/1600x900/?Branding,team",
-        "https://source.unsplash.com/1600x900/?Branding,workshop"
-      ],
-      "client": "Polaris Energi",
-      "year": "2021",
-      "services": [
-        "Retningslinjer",
-        "Navneutvikling",
-        "Designsystem",
-        "Merkevarestrategi",
-        "Retningslinjer"
-      ],
-      "next": [],
-      "created": "2025-10-31",
-      "edited": "2025-10-31"
-    },
-    {
-      "id": "15",
-      "slug": "branding-prosjekt-5-2023",
-      "title": "Branding prosjekt 5",
-      "excerpt": "Prosjektet fokuserte på branding for Ventus Mobility. Leveransen inkluderte Merkevarestrategi, Navneutvikling.",
-      "categories": [
-        "Branding"
-      ],
-      "images": [
-        "https://source.unsplash.com/1600x900/?Branding",
-        "https://source.unsplash.com/1600x900/?Branding,design",
-        "https://source.unsplash.com/1600x900/?Branding,prototype",
-        "https://source.unsplash.com/1600x900/?Branding,team",
-        "https://source.unsplash.com/1600x900/?Branding,workshop"
-      ],
-      "client": "Ventus Mobility",
-      "year": "2023",
-      "services": [
-        "Retningslinjer",
-        "Visuell identitet",
-        "Designsystem",
-        "Navneutvikling",
-        "Designsystem"
-      ],
-      "next": [],
-      "created": "2025-10-31",
-      "edited": "2025-10-31"
-    },
-    {
-      "id": "16",
-      "slug": "strategi-prosjekt-1-2019",
-      "title": "Strategi prosjekt 1",
-      "excerpt": "Prosjektet fokuserte på strategi for Polaris Energi. Leveransen inkluderte Virkemiddelkart, Målbilde.",
-      "categories": [
-        "Strategi"
-      ],
-      "images": [
-        "https://source.unsplash.com/1600x900/?Strategi",
-        "https://source.unsplash.com/1600x900/?Strategi,design",
-        "https://source.unsplash.com/1600x900/?Strategi,prototype",
-        "https://source.unsplash.com/1600x900/?Strategi,team",
-        "https://source.unsplash.com/1600x900/?Strategi,workshop"
-      ],
-      "client": "Polaris Energi",
-      "year": "2019",
-      "services": [
-        "KPI/OKR",
-        "Målbilde",
-        "Porteføljestyring",
-        "Forretningsmål",
-        "KPI/OKR"
-      ],
-      "next": [],
-      "created": "2025-10-31",
-      "edited": "2025-10-31"
-    },
-    {
-      "id": "17",
-      "slug": "strategi-prosjekt-2-2019",
-      "title": "Strategi prosjekt 2",
-      "excerpt": "Prosjektet fokuserte på strategi for Glimt Media. Leveransen inkluderte Målbilde, Virkemiddelkart.",
-      "categories": [
-        "Strategi"
-      ],
-      "images": [
-        "https://source.unsplash.com/1600x900/?Strategi",
-        "https://source.unsplash.com/1600x900/?Strategi,design",
-        "https://source.unsplash.com/1600x900/?Strategi,prototype",
-        "https://source.unsplash.com/1600x900/?Strategi,team",
-        "https://source.unsplash.com/1600x900/?Strategi,workshop"
-      ],
-      "client": "Glimt Media",
-      "year": "2019",
-      "services": [
-        "Virkemiddelkart",
-        "Målbilde",
-        "Porteføljestyring",
-        "KPI/OKR",
-        "Virkemiddelkart"
-      ],
-      "next": [],
-      "created": "2025-10-31",
-      "edited": "2025-10-31"
-    },
-    {
-      "id": "18",
-      "slug": "strategi-prosjekt-3-2019",
-      "title": "Strategi prosjekt 3",
-      "excerpt": "Prosjektet fokuserte på strategi for Ventus Mobility. Leveransen inkluderte KPI/OKR, Porteføljestyring.",
-      "categories": [
-        "Strategi"
-      ],
-      "images": [
-        "https://source.unsplash.com/1600x900/?Strategi",
-        "https://source.unsplash.com/1600x900/?Strategi,design",
-        "https://source.unsplash.com/1600x900/?Strategi,prototype",
-        "https://source.unsplash.com/1600x900/?Strategi,team",
-        "https://source.unsplash.com/1600x900/?Strategi,workshop"
-      ],
-      "client": "Ventus Mobility",
-      "year": "2019",
-      "services": [
-        "Porteføljestyring",
-        "Virkemiddelkart",
-        "KPI/OKR",
-        "Porteføljestyring",
-        "KPI/OKR"
-      ],
-      "next": [],
-      "created": "2025-10-31",
-      "edited": "2025-10-31"
-    },
-    {
-      "id": "19",
-      "slug": "strategi-prosjekt-4-2024",
-      "title": "Strategi prosjekt 4",
-      "excerpt": "Prosjektet fokuserte på strategi for Glimt Media. Leveransen inkluderte Målbilde, Virkemiddelkart.",
-      "categories": [
-        "Strategi"
-      ],
-      "images": [
-        "https://source.unsplash.com/1600x900/?Strategi",
-        "https://source.unsplash.com/1600x900/?Strategi,design",
-        "https://source.unsplash.com/1600x900/?Strategi,prototype",
-        "https://source.unsplash.com/1600x900/?Strategi,team",
-        "https://source.unsplash.com/1600x900/?Strategi,workshop"
-      ],
-      "client": "Glimt Media",
-      "year": "2024",
-      "services": [
-        "Målbilde",
-        "Forretningsmål",
-        "Porteføljestyring",
-        "Målbilde",
-        "KPI/OKR"
-      ],
-      "next": [],
-      "created": "2025-10-31",
-      "edited": "2025-10-31"
-    },
-    {
-      "id": "20",
-      "slug": "strategi-prosjekt-5-2023",
-      "title": "Strategi prosjekt 5",
-      "excerpt": "Prosjektet fokuserte på strategi for Aurora Foods. Leveransen inkluderte Forretningsmål, Porteføljestyring.",
-      "categories": [
-        "Strategi"
-      ],
-      "images": [
-        "https://source.unsplash.com/1600x900/?Strategi",
-        "https://source.unsplash.com/1600x900/?Strategi,design",
-        "https://source.unsplash.com/1600x900/?Strategi,prototype",
-        "https://source.unsplash.com/1600x900/?Strategi,team",
-        "https://source.unsplash.com/1600x900/?Strategi,workshop"
-      ],
-      "client": "Aurora Foods",
-      "year": "2023",
-      "services": [
-        "Forretningsmål",
-        "Porteføljestyring",
-        "KPI/OKR",
-        "Porteføljestyring",
-        "KPI/OKR"
-      ],
-      "next": [],
-      "created": "2025-10-31",
-      "edited": "2025-10-31"
-    },
-    {
-      "id": "21",
-      "slug": "innsikt-prosjekt-1-2023",
-      "title": "Innsikt prosjekt 1",
-      "excerpt": "Prosjektet fokuserte på innsikt for Ventus Mobility. Leveransen inkluderte Desk research, Kvantitativ.",
-      "categories": [
-        "Innsikt"
-      ],
-      "images": [
-        "https://source.unsplash.com/1600x900/?Innsikt",
-        "https://source.unsplash.com/1600x900/?Innsikt,design",
-        "https://source.unsplash.com/1600x900/?Innsikt,prototype",
-        "https://source.unsplash.com/1600x900/?Innsikt,team",
-        "https://source.unsplash.com/1600x900/?Innsikt,workshop"
-      ],
-      "client": "Ventus Mobility",
-      "year": "2023",
-      "services": [
-        "Analyse",
-        "Feltstudier",
-        "Dybdeintervjuer",
-        "Desk research",
-        "Analyse"
-      ],
-      "next": [],
-      "created": "2025-10-31",
-      "edited": "2025-10-31"
-    },
-    {
-      "id": "22",
-      "slug": "innsikt-prosjekt-2-2025",
-      "title": "Innsikt prosjekt 2",
-      "excerpt": "Prosjektet fokuserte på innsikt for Kystverket. Leveransen inkluderte Kvantitativ, Analyse.",
-      "categories": [
-        "Innsikt"
-      ],
-      "images": [
-        "https://source.unsplash.com/1600x900/?Innsikt",
-        "https://source.unsplash.com/1600x900/?Innsikt,design",
-        "https://source.unsplash.com/1600x900/?Innsikt,prototype",
-        "https://source.unsplash.com/1600x900/?Innsikt,team",
-        "https://source.unsplash.com/1600x900/?Innsikt,workshop"
-      ],
-      "client": "Kystverket",
-      "year": "2025",
-      "services": [
-        "Analyse",
-        "Dybdeintervjuer",
-        "Desk research",
-        "Dybdeintervjuer",
-        "Desk research"
-      ],
-      "next": [],
-      "created": "2025-10-31",
-      "edited": "2025-10-31"
-    },
-    {
-      "id": "23",
-      "slug": "innsikt-prosjekt-3-2020",
-      "title": "Innsikt prosjekt 3",
-      "excerpt": "Prosjektet fokuserte på innsikt for Aquila Bank. Leveransen inkluderte Feltstudier, Desk research.",
-      "categories": [
-        "Innsikt"
-      ],
-      "images": [
-        "https://source.unsplash.com/1600x900/?Innsikt",
-        "https://source.unsplash.com/1600x900/?Innsikt,design",
-        "https://source.unsplash.com/1600x900/?Innsikt,prototype",
-        "https://source.unsplash.com/1600x900/?Innsikt,team",
-        "https://source.unsplash.com/1600x900/?Innsikt,workshop"
-      ],
-      "client": "Aquila Bank",
-      "year": "2020",
-      "services": [
-        "Desk research",
-        "Kvantitativ",
-        "Feltstudier",
-        "Dybdeintervjuer",
-        "Analyse"
-      ],
-      "next": [],
-      "created": "2025-10-31",
-      "edited": "2025-10-31"
-    },
-    {
-      "id": "24",
-      "slug": "innsikt-prosjekt-4-2024",
-      "title": "Innsikt prosjekt 4",
-      "excerpt": "Prosjektet fokuserte på innsikt for Aurora Foods. Leveransen inkluderte Desk research, Feltstudier.",
-      "categories": [
-        "Innsikt"
-      ],
-      "images": [
-        "https://source.unsplash.com/1600x900/?Innsikt",
-        "https://source.unsplash.com/1600x900/?Innsikt,design",
-        "https://source.unsplash.com/1600x900/?Innsikt,prototype",
-        "https://source.unsplash.com/1600x900/?Innsikt,team",
-        "https://source.unsplash.com/1600x900/?Innsikt,workshop"
-      ],
-      "client": "Aurora Foods",
-      "year": "2024",
-      "services": [
-        "Dybdeintervjuer",
-        "Desk research",
-        "Analyse",
-        "Desk research",
-        "Analyse"
-      ],
-      "next": [],
-      "created": "2025-10-31",
-      "edited": "2025-10-31"
-    },
-    {
-      "id": "25",
-      "slug": "innsikt-prosjekt-5-2023",
-      "title": "Innsikt prosjekt 5",
-      "excerpt": "Prosjektet fokuserte på innsikt for Frame Robotics. Leveransen inkluderte Feltstudier, Dybdeintervjuer.",
-      "categories": [
-        "Innsikt"
-      ],
-      "images": [
-        "https://source.unsplash.com/1600x900/?Innsikt",
-        "https://source.unsplash.com/1600x900/?Innsikt,design",
-        "https://source.unsplash.com/1600x900/?Innsikt,prototype",
-        "https://source.unsplash.com/1600x900/?Innsikt,team",
-        "https://source.unsplash.com/1600x900/?Innsikt,workshop"
-      ],
-      "client": "Frame Robotics",
-      "year": "2023",
-      "services": [
-        "Feltstudier",
-        "Kvantitativ",
-        "Dybdeintervjuer",
-        "Analyse",
-        "Desk research"
-      ],
-      "next": [],
-      "created": "2025-10-31",
-      "edited": "2025-10-31"
-    },
-    {
-      "id": "26",
-      "slug": "produktdesign-prosjekt-1-2023",
-      "title": "Produktdesign prosjekt 1",
-      "excerpt": "Prosjektet fokuserte på produktdesign for Glimt Media. Leveransen inkluderte UI, Designsystem.",
-      "categories": [
-        "Produktdesign"
-      ],
-      "images": [
-        "https://source.unsplash.com/1600x900/?Produktdesign",
-        "https://source.unsplash.com/1600x900/?Produktdesign,design",
-        "https://source.unsplash.com/1600x900/?Produktdesign,prototype",
-        "https://source.unsplash.com/1600x900/?Produktdesign,team",
-        "https://source.unsplash.com/1600x900/?Produktdesign,workshop"
-      ],
-      "client": "Glimt Media",
-      "year": "2023",
-      "services": [
-        "UI",
-        "Prototyping",
-        "Designsystem",
-        "Prototyping",
-        "UI"
-      ],
-      "next": [],
-      "created": "2025-10-31",
-      "edited": "2025-10-31"
-    },
-    {
-      "id": "27",
-      "slug": "produktdesign-prosjekt-2-2019",
-      "title": "Produktdesign prosjekt 2",
-      "excerpt": "Prosjektet fokuserte på produktdesign for Kystverket. Leveransen inkluderte UI, UX.",
-      "categories": [
-        "Produktdesign"
-      ],
-      "images": [
-        "https://source.unsplash.com/1600x900/?Produktdesign",
-        "https://source.unsplash.com/1600x900/?Produktdesign,design",
-        "https://source.unsplash.com/1600x900/?Produktdesign,prototype",
-        "https://source.unsplash.com/1600x900/?Produktdesign,team",
-        "https://source.unsplash.com/1600x900/?Produktdesign,workshop"
-      ],
-      "client": "Kystverket",
-      "year": "2019",
-      "services": [
-        "UX",
-        "Designsystem",
-        "Brukertester",
-        "Prototyping",
-        "Brukertester"
-      ],
-      "next": [],
-      "created": "2025-10-31",
-      "edited": "2025-10-31"
-    },
-    {
-      "id": "28",
-      "slug": "produktdesign-prosjekt-3-2021",
-      "title": "Produktdesign prosjekt 3",
-      "excerpt": "Prosjektet fokuserte på produktdesign for Aquila Bank. Leveransen inkluderte Brukertester, Prototyping.",
-      "categories": [
-        "Produktdesign"
-      ],
-      "images": [
-        "https://source.unsplash.com/1600x900/?Produktdesign",
-        "https://source.unsplash.com/1600x900/?Produktdesign,design",
-        "https://source.unsplash.com/1600x900/?Produktdesign,prototype",
-        "https://source.unsplash.com/1600x900/?Produktdesign,team",
-        "https://source.unsplash.com/1600x900/?Produktdesign,workshop"
-      ],
-      "client": "Aquila Bank",
-      "year": "2021",
-      "services": [
-        "Designsystem",
-        "Brukertester",
-        "UI",
-        "UI",
-        "Designsystem"
-      ],
-      "next": [],
-      "created": "2025-10-31",
-      "edited": "2025-10-31"
-    },
-    {
-      "id": "29",
-      "slug": "produktdesign-prosjekt-4-2022",
-      "title": "Produktdesign prosjekt 4",
-      "excerpt": "Prosjektet fokuserte på produktdesign for Kystverket. Leveransen inkluderte UI, UX.",
-      "categories": [
-        "Produktdesign"
-      ],
-      "images": [
-        "https://source.unsplash.com/1600x900/?Produktdesign",
-        "https://source.unsplash.com/1600x900/?Produktdesign,design",
-        "https://source.unsplash.com/1600x900/?Produktdesign,prototype",
-        "https://source.unsplash.com/1600x900/?Produktdesign,team",
-        "https://source.unsplash.com/1600x900/?Produktdesign,workshop"
-      ],
-      "client": "Kystverket",
-      "year": "2022",
-      "services": [
-        "UX",
-        "Prototyping",
-        "UI",
-        "UI",
-        "UX"
-      ],
-      "next": [],
-      "created": "2025-10-31",
-      "edited": "2025-10-31"
-    },
-    {
-      "id": "30",
-      "slug": "produktdesign-prosjekt-5-2023",
-      "title": "Produktdesign prosjekt 5",
-      "excerpt": "Prosjektet fokuserte på produktdesign for Aurora Foods. Leveransen inkluderte UX, UI.",
-      "categories": [
-        "Produktdesign"
-      ],
-      "images": [
-        "https://source.unsplash.com/1600x900/?Produktdesign",
-        "https://source.unsplash.com/1600x900/?Produktdesign,design",
-        "https://source.unsplash.com/1600x900/?Produktdesign,prototype",
-        "https://source.unsplash.com/1600x900/?Produktdesign,team",
-        "https://source.unsplash.com/1600x900/?Produktdesign,workshop"
-      ],
-      "client": "Aurora Foods",
-      "year": "2023",
-      "services": [
-        "UI",
-        "Brukertester",
-        "Prototyping",
-        "UX",
-        "Prototyping"
-      ],
-      "next": [],
-      "created": "2025-10-31",
-      "edited": "2025-10-31"
+      "created": "",
+      "edited": ""
     }
   ],
   "blog": [
