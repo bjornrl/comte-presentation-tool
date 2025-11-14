@@ -43,7 +43,7 @@ function buildSlides(
     slides.push({ kind: "project", projectId: pid });
   slides.push({
     kind: "outro",
-    title: output === "report" ? "Takk" : "Spørsmål?",
+    title: output === "report" ? "Takk" : "Comte Bureau",
   });
   return slides;
 }
@@ -92,8 +92,27 @@ function SlideView({
     );
   if (slide.kind === "outro")
     return (
-      <div className="h-full w-full grid place-items-center p-16">
-        <div className="text-5xl font-semibold">{slide.title ?? "Takk"}</div>
+      <div className="h-full w-full p-12 flex flex-col items-center justify-center">
+        <div className="text-center mb-8">
+          <h1 className="text-5xl font-semibold mb-4">
+            {slide.title ?? "Comte Bureau"}
+          </h1>
+          <p className="text-xl text-neutral-600">
+            Vi er et tverrfaglig team som utvikler bedre løsninger gjennom
+            design, innsikt og innovasjon.
+          </p>
+        </div>
+        <div className="w-full max-w-4xl rounded-xl overflow-hidden shadow-lg">
+          {/* eslint-disable-next-line @next/next/no-img-element */}
+          <img
+            src="https://images.squarespace-cdn.com/content/v1/64e366db2607f31b2c125e32/team-photo.jpg"
+            alt="Comte Bureau team"
+            className="w-full h-auto object-cover"
+          />
+        </div>
+        <div className="mt-8 text-center text-neutral-600">
+          <p>comte.no</p>
+        </div>
       </div>
     );
   if (slide.kind === "category") {
@@ -103,7 +122,7 @@ function SlideView({
     //   "https://images.unsplash.com/photo-1506784983877-45594efa4cbe?auto=format&fit=crop&q=80&w=1740";
 
     return (
-      <div className="relative h-full w-full bg-[#eaeae5]">
+      <div className="relative h-full w-full bg-[var(--color-white)]">
         {/* top meta */}
         <div className="absolute top-6 left-10 right-10 text-sm text-neutral-800 flex items-center justify-between">
           <div>ComteBureau</div>
@@ -116,7 +135,7 @@ function SlideView({
           {/* text column */}
           <div className="flex flex-col justify-between text-left">
             <div className="space-y-4">
-              <h2 className="font-serif text-[clamp(40px,6vw,90px)] leading-[0.95]">
+              <h2 className="text-[clamp(40px,6vw,90px)] leading-[0.95]">
                 {cat?.title ?? "Kategori"}
               </h2>
               <p className="text-[clamp(32px,1.5vw,44px)] text-neutral-600 max-w-lg leading-relaxed">
@@ -171,7 +190,7 @@ function SlideView({
     // );
 
     return (
-      <div className="relative h-full w-full bg-[#eaeae5]">
+      <div className="relative h-full w-full bg-[var(--color-white)]">
         {/* top meta */}
         <div className="absolute top-6 left-10 right-10 text-sm text-neutral-800 flex items-center justify-between">
           <div>ComteBureau</div>
@@ -179,12 +198,12 @@ function SlideView({
           <div>{new Date().getFullYear()}</div>
         </div>
 
-        <div className="relative h-full w-full bg-[#eaeae5]">
+        <div className="relative h-full w-full bg-[var(--color-white)]">
           {/* top/meta etc... */}
 
           <div className="relative px-10 pt-24 pb-8 h-full flex flex-col gap-12">
             {/* headline */}
-            <h2 className="font-serif text-[clamp(36px,6vw,90px)] leading-[0.95] mb-8">
+            <h2 className="text-[clamp(36px,6vw,90px)] leading-[0.95] mb-8">
               Vi kan <span className="italic">hjelpe deg</span> med
             </h2>
 
@@ -199,14 +218,14 @@ function SlideView({
                     className={`
           flex flex-col justify-between rounded-sm p-2
           ${item ? "transition-colors hover:brightness-95" : ""}
-          ${i === 0 ? "bg-stone-100 text-[#032435]" : ""}
-          ${i === 1 ? "bg-red-600 text-[#eaeae5]" : ""}
-          ${i === 2 ? "bg-yellow-400 text-[#eaeae5]" : ""}
-          ${i === 3 ? "bg-purple-300 text-[#032435]" : ""}
-          ${i === 4 ? "bg-purple-300 text-[#032435]" : ""}
-          ${i === 5 ? "bg-stone-100 text-[#032435]" : ""}
-          ${i === 6 ? "bg-[#032435] text-[#eaeae5]" : ""}
-          ${i === 7 ? "bg-orange-300 text-[#032435]" : ""}
+          ${i === 0 ? "bg-stone-100 text-[var(--color-black)]" : ""}
+          ${i === 1 ? "bg-red-600 text-[var(--color-white)]" : ""}
+          ${i === 2 ? "bg-yellow-400 text-[var(--color-white)]" : ""}
+          ${i === 3 ? "bg-purple-300 text-[var(--color-black)]" : ""}
+          ${i === 4 ? "bg-purple-300 text-[var(--color-black)]" : ""}
+          ${i === 5 ? "bg-stone-100 text-[var(--color-black)]" : ""}
+          ${i === 6 ? "bg-[var(--color-black)] text-[var(--color-white)]" : ""}
+          ${i === 7 ? "bg-orange-300 text-[var(--color-black)]" : ""}
         `}
                   >
                     {item ? (
@@ -243,52 +262,68 @@ function SlideView({
   }
 
   if (slide.kind === "stats") {
-    // const cat = (cms.categories as any[]).find(
-    //   (c: any) => c.id === slide.categoryId
-    // );
-    return (
-      // <div className="h-full w-full p-16 flex flex-col justify-center items-center">
-      //   <div className="text-5xl font-semibold text-center">
-      //     {cat?.stats || ""}
-      //   </div>
-      // </div>
+    const cat = cms.categories.find(
+      (c: any) => c.id === slide.categoryId
+    ) as any;
 
-      <div className="flex flex-col h-full">
+    // Parse stats from category (should be an array of strings like "50+ prosjekter")
+    const statsArray = Array.isArray(cat?.stats)
+      ? cat.stats
+      : cat?.stats
+      ? [cat.stats]
+      : [];
+
+    // Parse each stat to extract number and text
+    const parsedStats = statsArray.map((stat: string) => {
+      const match = stat.match(/^(\d+[+\-]?)\s+(.+)$/);
+      if (match) {
+        return { number: match[1], text: match[2] };
+      }
+      return { number: null, text: stat };
+    });
+
+    return (
+      <div className="flex flex-row justify-between p-12 gap-48 h-full">
         {/* Title section */}
         <div
           id="title"
-          className="h-1/3 flex items-center justify-center text-[clamp(2rem,5vw,5rem)] font-semibold"
+          className="h-1/3 w-full flex flex-col justify-start text-left text-[clamp(2rem,5vw,5rem)] font-semibold"
         >
-          Stats
+          <h2 className="text-[clamp(2rem,5vw,5rem)] font-semibold leading-[0.95] mt-12">
+            {cat?.statsTitle ?? "Over 20 years of experience"}
+          </h2>
+          {cat?.statsDescription && (
+            <p className="text-neutral-600 text-lg w-1/2 mt-12">
+              {cat.statsDescription}
+            </p>
+          )}
         </div>
 
         {/* Grid with lines */}
         <div
           className="
-      grid grid-cols-3 grid-rows-2 w-full flex-1
-      divide-x divide-y divide-[#032435]/20
+      divide-y divide-[var(--color-black)]/20 w-full flex flex-col justify-center
     "
         >
-          {[
-            { label: "69", sub: "projects done" },
-            { label: "350", sub: "people inteviewed" },
-            { label: "21", sub: "years of experience within the field" },
-            { label: "34", sub: "collaborators worked with" },
-            { label: "15", sub: "pitches to members of congress" },
-            { label: "45+", sub: "news articles" },
-          ].map((item, i) => (
-            <div
-              key={i}
-              className="flex flex-col items-center justify-center text-center leading-none p-4"
-            >
-              <p className="font-semibold text-[clamp(1.5rem,6vw,6rem)] leading-none">
-                {item.label}
-              </p>
-              <p className="mt-2 text-[clamp(0.8rem,2vw,1.25rem)] text-neutral-600">
-                {item.sub}
-              </p>
-            </div>
-          ))}
+          {parsedStats.map(
+            (item: { number: string | null; text: string }, i: number) => (
+              <div
+                key={i}
+                className="flex flex-col text-left items-start justify-center text-center leading-none p-4"
+              >
+                {item.number ? (
+                  <>
+                    <p className="text-[clamp(1.5rem,8vw,10rem)] text-left">
+                      {item.number}
+                    </p>
+                    <p className="mt-2 text-neutral-600">{item.text}</p>
+                  </>
+                ) : (
+                  <p className="text-7xl text-left">{item.text}</p>
+                )}
+              </div>
+            )
+          )}
         </div>
       </div>
     );
@@ -299,58 +334,116 @@ function SlideView({
       <div className="h-full w-full p-12 grid grid-cols-2 gap-6 items-center">
         <div className="col-span-6">
           <h2
-            className="text-6xl font-bold"
-            style={{ fontFamily: "'Instrument Serif', serif" }}
+            className="text-6xl font-semibold text-neutral-900"
+            style={{ fontFamily: "var(--font-family)" }}
           >
             {proj?.title}
           </h2>
         </div>
         <div className="col-span-6 grid grid-cols-2 mt-3 text-lg gap-3">
-          <div className="flex flex-col justify-between text-left">
-            <div
-              className="text-neutral-700"
-              dangerouslySetInnerHTML={{ __html: proj?.excerpt || "" }}
-            />
-            {proj?.solution && (
-              <div
-                className="text-neutral-700"
-                dangerouslySetInnerHTML={{ __html: proj.solution }}
-              />
-            )}
-            <div className="flex flex-row h-full justify-between w-full mt-4">
-              <div className="flex flex-col text-left h-full justify-end w-full mt-4">
-                <ul>
-                  <li className="text-7xl">
-                    <strong>aaa</strong>
-                  </li>
-                  <li>ddd</li>
-                </ul>
-                <ul>
-                  <li className="text-7xl">
-                    <strong>aaa</strong>
-                  </li>
-                  <li>ddd</li>
-                </ul>
+          <div className="flex flex-col text-left">
+            {/* Bullet points for presentation */}
+            {proj?.bulletPoints && proj.bulletPoints.length > 0 ? (
+              <div className="space-y-3 text-neutral-900 text-lg list-disc list-inside mb-4">
+                {proj.bulletPoints.map((point: string, i: number) => (
+                  <p key={i} className="text-lg leading-relaxed">
+                    {point}
+                  </p>
+                ))}
               </div>
-              <div className="flex flex-col h-full justify-end w-full mt-4">
+            ) : (
+              <>
+                <div
+                  className="text-neutral-700 mb-4"
+                  dangerouslySetInnerHTML={{ __html: proj?.excerpt || "" }}
+                />
+                {proj?.solution && (
+                  <div
+                    className="text-neutral-700 mt-4 mb-4"
+                    dangerouslySetInnerHTML={{ __html: proj.solution }}
+                  />
+                )}
+              </>
+            )}
+            {/* Client info and stats - always visible at bottom */}
+            <div className="flex flex-row justify-between gap-4 mt-auto pt-4">
+              {/* Stats */}
+              <div className="flex flex-col justify-end gap-8 pt-2">
+                {proj?.stat1 &&
+                  (() => {
+                    // Extract number and rest of text
+                    const match = proj.stat1.match(/^(\d+[+\-]?)\s*(.*)$/);
+                    const number = match ? match[1] : null;
+                    const rest = match ? match[2] : proj.stat1;
+                    return (
+                      <div className="flex flex-col">
+                        {number && (
+                          <p className="text-9xl font-bold text-neutral-900">
+                            {number}
+                          </p>
+                        )}
+                        <p
+                          className={`${
+                            number ? "text-lg" : "text-3xl font-bold"
+                          } text-neutral-700`}
+                        >
+                          {rest}
+                        </p>
+                      </div>
+                    );
+                  })()}
+                {proj?.stat2 &&
+                  (() => {
+                    // Extract number (with + or -) and rest of text
+                    const match = proj.stat2.match(/^(\d+[+\-]?)\s+(.+)$/);
+                    const number = match ? match[1] : null;
+                    const rest = match ? match[2] : proj.stat2;
+                    return (
+                      <div className="flex flex-col">
+                        {number && (
+                          <p className="text-9xl font-bold text-neutral-900">
+                            {number}
+                          </p>
+                        )}
+                        <p
+                          className={`${
+                            number ? "text-lg" : "text-3xl font-bold"
+                          } text-neutral-700`}
+                        >
+                          {rest}
+                        </p>
+                      </div>
+                    );
+                  })()}
+              </div>
+              {/* Client info */}
+              <div className="flex flex-col text-right justify-end gap-2 text-sm text-neutral-600">
                 {proj?.client && (
-                  <p className="text-right italic text-sm">
-                    Klient: <strong>{proj.client}</strong>
+                  <p>
+                    Klient:{" "}
+                    <strong className="text-neutral-900">{proj.client}</strong>
                   </p>
                 )}
                 {proj?.location && (
-                  <p className="text-right italic text-sm">
-                    Lokasjon: <strong>{proj.location}</strong>
+                  <p>
+                    Lokasjon:{" "}
+                    <strong className="text-neutral-900">
+                      {proj.location}
+                    </strong>
                   </p>
                 )}
                 {proj?.year && (
-                  <p className="text-right italic text-sm">
-                    År: <strong>{proj.year}</strong>
+                  <p>
+                    År:{" "}
+                    <strong className="text-neutral-900">{proj.year}</strong>
                   </p>
                 )}
                 {proj?.industry && (
-                  <p className="text-right italic text-sm">
-                    Industri: <strong>{proj.industry}</strong>
+                  <p>
+                    Industri:{" "}
+                    <strong className="text-neutral-900">
+                      {proj.industry}
+                    </strong>
                   </p>
                 )}
               </div>
@@ -359,10 +452,10 @@ function SlideView({
           {(proj?.images ?? []).slice(0, 1).map((src: string, i: number) => (
             <div
               key={i}
-              className="aspect-[4/3] bg-neutral-200 rounded-xl overflow-hidden"
+              className="w-full h-full bg-neutral-200 rounded-xl overflow-hidden"
             >
               {/* eslint-disable-next-line @next/next/no-img-element */}
-              <img src={src} alt="" className="w-full h-full object-cover" />
+              <img src={src} alt="" className="w-full h-auto object-contain" />
             </div>
           ))}
         </div>
@@ -396,10 +489,10 @@ function DeckOverlay({
     return () => window.removeEventListener("keydown", onKey);
   }, [onClose, total]);
   return (
-    <div className="fixed inset-0 z-50 bg-[#032435]/95 text-[#eaeae5]">
+    <div className="fixed inset-0 z-50 bg-[var(--color-black)]/95 text-[var(--color-white)]">
       <div className="absolute top-3 left-3 flex items-center gap-2">
         <button
-          className="px-3 py-2 rounded-full border border-[#eaeae5]/30"
+          className="px-3 py-2 rounded-full border border-[var(--color-white)]/30"
           onClick={onClose}
         >
           <X size={16} />
@@ -407,7 +500,7 @@ function DeckOverlay({
         </button>
       </div>
       <div className="h-full w-full grid place-items-center">
-        <div className="w-[95vw] h-[90vh] bg-[#eaeae5] text-neutral-900 rounded-sm shadow-2xl overflow-hidden">
+        <div className="w-full h-full bg-[var(--color-white)] text-neutral-900 rounded-sm shadow-2xl overflow-hidden">
           <SlideView slide={slides[index]} cms={cms} />
         </div>
       </div>
@@ -440,7 +533,7 @@ function ReportOverlay({
     URL.revokeObjectURL(a.href);
   };
   return (
-    <div className="fixed inset-0 z-50 bg-[#eaeae5]">
+    <div className="fixed inset-0 z-50 bg-[var(--color-white)]">
       <div className="flex items-center justify-between p-3 border-b">
         <div className="flex items-center gap-2 text-sm">
           <button className="px-3 py-2 rounded-full border" onClick={onClose}>
@@ -468,7 +561,7 @@ function ReportOverlay({
         {slides.map((s, i) => (
           <div
             key={i}
-            className="bg-[#eaeae5] w-[210mm] h-[297mm] shadow rounded-xl overflow-hidden print:shadow-none print:rounded-none"
+            className="bg-[var(--color-white)] w-[210mm] h-[297mm] shadow rounded-xl overflow-hidden print:shadow-none print:rounded-none"
           >
             <div className="p-16">
               <SlideView slide={s} cms={cms} />
@@ -484,7 +577,7 @@ function ReportOverlay({
 
 // ===== Self-contained HTML export for reports =====
 function renderSelfContainedHTML(slides: Slide[], cms: any) {
-  const styles = `*{box-sizing:border-box} body{margin:0;background:#f5f5f5;font-family:system-ui,-apple-system,Segoe UI,Roboto} .page{width:210mm;height:297mm;background:#eaeae5;margin:8mm auto;padding:16mm;page-break-after:always;border-radius:12px;box-shadow:0 5px 30px rgba(0,0,0,.08)} @media print{body{background:#eaeae5} .page{margin:0;box-shadow:none;border-radius:0}}`;
+  const styles = `:root{--font-family:'Instrument Sans',system-ui,-apple-system,Segoe UI,Roboto,sans-serif;--color-white:#eaeae5;--color-black:#032435} *{box-sizing:border-box} body{margin:0;background:#f5f5f5;font-family:var(--font-family)} .page{width:210mm;height:297mm;background:var(--color-white);margin:8mm auto;padding:16mm;page-break-after:always;border-radius:12px;box-shadow:0 5px 30px rgba(0,0,0,.08)} @media print{body{background:var(--color-white)} .page{margin:0;box-shadow:none;border-radius:0}}`;
   const slideHTML = slides
     .map((s) => `<div class="page">${renderSlideHTML(s, cms)}</div>`)
     .join("");
@@ -501,9 +594,9 @@ function renderSlideHTML(slide: Slide, cms: any): string {
     }</div></div>`;
   }
   if (slide.kind === "outro")
-    return `<div style="display:grid;place-items:center;height:100%"><div style="font-size:48px;font-weight:600">${
-      slide.title ?? "Takk"
-    }</div></div>`;
+    return `<div style="display:flex;flex-direction:column;align-items:center;justify-content:center;height:100%;padding:48px;text-align:center"><h1 style="font-size:48px;font-weight:600;margin-bottom:16px">${
+      slide.title ?? "Comte Bureau"
+    }</h1><p style="font-size:20px;color:#525252;margin-bottom:32px">Vi er et tverrfaglig team som utvikler bedre løsninger gjennom design, innsikt og innovasjon.</p><div style="width:100%;max-width:800px;border-radius:12px;overflow:hidden;box-shadow:0 10px 30px rgba(0,0,0,0.1)"><img src="https://images.squarespace-cdn.com/content/v1/64e366db2607f31b2c125e32/team-photo.jpg" alt="Comte Bureau team" style="width:100%;height:auto;object-fit:cover"/></div><p style="margin-top:32px;color:#525252">comte.no</p></div>`;
   if (slide.kind === "category") {
     const cat = cms.categories.find((c: any) => c.id === slide.categoryId);
     return `<div><div style="font-size:28px;font-weight:600">${
@@ -524,10 +617,24 @@ function renderSlideHTML(slide: Slide, cms: any): string {
     return `<div><div style="font-size:28px;font-weight:600;margin-bottom:24px">Vi kan hjelpe deg med</div><div style="display:grid;grid-template-columns:1fr 1fr;gap:16px">${items}</div></div>`;
   }
   if (slide.kind === "stats") {
-    const cat = cms.categories.find((c: any) => c.id === slide.categoryId);
-    return `<div style="display:grid;place-items:center;height:100%"><div style="font-size:48px;font-weight:600;text-align:center">${
-      cat?.stats || ""
-    }</div></div>`;
+    const cat = cms.categories.find(
+      (c: any) => c.id === slide.categoryId
+    ) as any;
+    const statsArray = Array.isArray(cat?.stats)
+      ? cat.stats
+      : cat?.stats
+      ? [cat.stats]
+      : [];
+    const statsHTML = statsArray
+      .map((stat: string) => {
+        const match = stat.match(/^(\d+[+\-]?)\s+(.+)$/);
+        if (match) {
+          return `<div style="margin-bottom:16px"><div style="font-size:48px;font-weight:600">${match[1]}</div><div style="font-size:18px;color:#666;margin-top:8px">${match[2]}</div></div>`;
+        }
+        return `<div style="font-size:48px;font-weight:600;margin-bottom:16px">${stat}</div>`;
+      })
+      .join("");
+    return `<div style="display:flex;flex-direction:column;justify-content:center;height:100%;padding:48px">${statsHTML}</div>`;
   }
   if (slide.kind === "project") {
     const proj = cms.projects.find((p: any) => p.id === slide.projectId);
@@ -594,7 +701,7 @@ export default function PresentationBuilder() {
           <div className="flex items-center gap-3">
             {step > 1 && (
               <button
-                className="inline-flex items-center gap-2 px-3 py-2 rounded-full border bg-[#eaeae5]"
+                className="inline-flex items-center gap-2 px-3 py-2 rounded-full border bg-[var(--color-white)]"
                 onClick={() => setStep((s) => (s > 1 ? ((s - 1) as any) : s))}
                 aria-label="Tilbake"
               >

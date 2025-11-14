@@ -1,17 +1,6 @@
 {
   "categories": [
     {
-      "id": "Tjenestedesign",
-      "title": "Tjenestedesign",
-      "blurb": "Utforsker og forbedrer tjenester på tvers av kanaler.",
-      "expertise": [
-        "Brukerreiser",
-        "Tjenestekartlegging",
-        "Prototyping"
-      ],
-      "stats": "200+ tjenester designet"
-    },
-    {
       "id": "Arkitektur og Urbanisme",
       "title": "Arkitektur og Urbanisme",
       "blurb": "Byrom, bygg og langsiktige arealstrategier.",
@@ -25,7 +14,30 @@
         "Bærekraftig design",
         "Byrom"
       ],
-      "stats": "50+ prosjekter"
+      "stats": [
+        "50+ prosjekter",
+        "200+ innbyggere involvert",
+        "15+ byer"
+      ],
+      "statsDescription": "Vi har jobbet med byutvikling og arealstrategier i flere norske byer, med fokus på bærekraftig utvikling og medvirkning."
+    },
+    {
+      "id": "Demografisk utvikling",
+      "title": "Demografisk utvikling",
+      "blurb": "Forstår og planlegger for endringer i befolkning og samfunnsstruktur.",
+      "expertise": [
+        "Befolkningsanalyse",
+        "Framtidsscenarioer",
+        "Samfunnsplanlegging",
+        "Migrasjonsanalyse",
+        "Aldringsanalyse"
+      ],
+      "stats": [
+        "40+ analyser",
+        "25+ kommuner",
+        "10+ års erfaring"
+      ],
+      "statsDescription": "Våre demografiske analyser hjelper kommuner og regioner med å forstå og planlegge for fremtidige endringer i befolkningen."
     },
     {
       "id": "Innovasjon i offentlig sektor",
@@ -39,7 +51,68 @@
         "Effektmåling",
         "Offentlige anskaffelser"
       ],
-      "stats": "70+ oppdrag i stat og kommune"
+      "stats": [
+        "70+ oppdrag i stat og kommune",
+        "150+ workshops",
+        "30+ tjenester utviklet"
+      ],
+      "statsDescription": "Gjennom samskaping og innsikt har vi utviklet nye tjenester og forbedret eksisterende i offentlig sektor."
+    },
+    {
+      "id": "Helse og omsorg",
+      "title": "Helse og omsorg",
+      "blurb": "Forbedrer pasient- og pårørendeopplevelser samt arbeidsflyt i helse- og omsorgstjenester.",
+      "expertise": [
+        "Helsesektorinnsikt",
+        "Tjenesteforløp",
+        "Journalløsninger",
+        "Samhandling",
+        "Velferdsteknologi",
+        "Kvalitetsforbedring"
+      ],
+      "stats": [
+        "30+ forbedringsprosjekter",
+        "20+ sykehus",
+        "500+ pasienter intervjuet"
+      ],
+      "statsDescription": "Vi har jobbet med å forbedre pasientopplevelser og arbeidsflyt i helse- og omsorgstjenester gjennom design og innovasjon."
+    },
+    {
+      "id": "Grønt skifte",
+      "title": "Grønt skifte",
+      "blurb": "Støtter omstilling til en mer bærekraftig og sirkulær virksomhet.",
+      "expertise": [
+        "Bærekraftsstrategi",
+        "Klimaveikart",
+        "Sirkulærøkonomi",
+        "ESG-rapportering",
+        "Atferdsdesign",
+        "Mobilitet"
+      ],
+      "stats": [
+        "25+ omstillingsprosjekter",
+        "40% CO2-reduksjon",
+        "15+ bedrifter"
+      ],
+      "statsDescription": "Våre prosjekter har bidratt til betydelig reduksjon i klimagassutslipp og støttet bedrifter i omstilling til sirkulærøkonomi."
+    },
+    {
+      "id": "Arbeid og inkludering",
+      "title": "Arbeid og inkludering",
+      "blurb": "Skaper bedre arbeidsmuligheter og inkluderende arbeidsplasser.",
+      "expertise": [
+        "Arbeidsinkludering",
+        "Kompetanseutvikling",
+        "Rekruttering",
+        "Arbeidsplassdesign",
+        "Mangfold og inkludering"
+      ],
+      "stats": [
+        "35+ prosjekter",
+        "200+ personer i arbeid",
+        "10+ organisasjoner"
+      ],
+      "statsDescription": "Gjennom våre prosjekter har vi hjulpet hundrevis av personer inn i arbeid og støttet organisasjoner med inkluderende praksis."
     }
   ],
   "projects": [
@@ -49,9 +122,14 @@
       "title": "Samskaping av fremtiden for Den Gamle Veterinærhøgskolen",
       "excerpt": "Den gamle veterinærhøgskolen på Adamstuen i Oslo er en av Oslo kommunes største eiendomskjøp noen sinne. Tomten, de gamle byggene og nybygg skal skape et grønt, varmt og skapende sted i sentrum av byen. Vi har støttet kommunen og Linstow AS med å involvere innbyggere, naboer og interessenter for å finne ut hvordan Linstow og Oslo kommune kan oppnå denne visjonen sammen.",
       "solution": "Gjennom 2024 ledet vi en todelt medvirknings- og samskapingsprosess. Vi startet med offentlig utstilling og fire workshops med ulike innbyggergrupper, oversatte innsikt til personas og tematiske behov, og fasiliterte syv samskapingsworkshops med Oslo kommune, Linstow og offentlige aktører. Vi brukte scenarioverktøy og samfunnsfloker for å utvikle forslag på tvers av sektorer.",
+      "bulletPoints": [
+        "Innsamling av innspill fra 200+ innbyggere og samarbeid med 15 offentlige aktører",
+        "28 forslag til flerbruk og innhold i bygg",
+        "5 fremtidsscenarioer for området mot 2040"
+      ],
       "categories": [
-        "Tjenestedesign",
-        "Arkitektur og Urbanisme"
+        "Arkitektur og Urbanisme",
+        "Innovasjon i offentlig sektor"
       ],
       "images": [
         "https://images.squarespace-cdn.com/content/v1/64e366db2607f31b2c125e32/1754488681564-0KCDQ9ASY8AJ85PGTCT8/DSCF0450.JPG",
@@ -64,10 +142,56 @@
       "year": "2024",
       "location": "Adamstuen, Oslo",
       "industry": "Bygg- og byutvikling",
+      "stat1": "200+ innbyggere",
+      "stat2": "15 offentlige aktører",
       "services": [
-        "Brukerreiser",
-        "Tjenestekartlegging",
-        "Prototyping",
+        "Byutvikling",
+        "Bymiljøanalyse",
+        "Visualiseringer",
+        "Samfunnsanalyse",
+        "Arealstrategi",
+        "Stedsutvikling",
+        "Bærekraftig design",
+        "Byrom",
+        "Medvirkning",
+        "Prosessforbedring",
+        "Endringsledelse",
+        "Policy- og regelverksforståelse",
+        "Effektmåling",
+        "Offentlige anskaffelser"
+      ],
+      "next": [],
+      "created": "",
+      "edited": ""
+    },
+    {
+      "id": "nardovegen-sit",
+      "slug": "nardovegen-sit",
+      "title": "En studentbolig som motvirker ensomhet",
+      "excerpt": "Sammen med SiT utforsket vi hvordan arkitektur kan redusere ensomhet blant studenter. Prosjektet viste hvordan sosial design og fellesarealer kan styrke tilhørighet og trivsel i studentboliger.",
+      "solution": "Vi designet fleksible og multifunksjonelle fellesområder i de nye studentboligene i Nardovegen, med fokus på deltakelse, sosial kontakt og eierskap til rommene. Gjennom workshops med studenter og ansatte utviklet vi konsept og en håndbok for brukermedvirkning som nå brukes i SiTs videre byggeprosjekter.",
+      "bulletPoints": [
+        "Nytt konsept for sosiale og fleksible fellesarealer",
+        "Designhåndbok for brukermedvirkning",
+        "Modellen påvirker nye studentboligprosjekter hos SiT"
+      ],
+      "categories": [
+        "Arkitektur og Urbanisme"
+      ],
+      "images": [
+        "https://www.comte.no/_next/image?url=%2Fimages%2FA4%20-%20139.png&w=3840&q=75",
+        "https://www.comte.no/_next/image?url=%2Fimages%2FA4%20-%2031.png&w=3840&q=75",
+        "https://www.comte.no/_next/image?url=%2Fimages%2FA4%20-%20111.png&w=3840&q=75",
+        "https://www.comte.no/_next/image?url=%2Fimages%2FA4%20-%20113.png&w=3840&q=75",
+        "https://www.comte.no/_next/image?url=%2Fimages%2FA4%20-%20136.png&w=3840&q=75"
+      ],
+      "client": "Studentsamskipnaden i Trondheim (SiT)",
+      "year": "2023",
+      "location": "Trondheim",
+      "industry": "Utdanning og bolig",
+      "stat1": "",
+      "stat2": "",
+      "services": [
         "Byutvikling",
         "Bymiljøanalyse",
         "Visualiseringer",
@@ -82,52 +206,19 @@
       "edited": ""
     },
     {
-      "id": "nardovegen-sit",
-      "slug": "nardovegen-sit",
-      "title": "En studentbolig som motvirker ensomhet",
-      "excerpt": "Sammen med SiT utforsket vi hvordan arkitektur kan redusere ensomhet blant studenter. Prosjektet viste hvordan sosial design og fellesarealer kan styrke tilhørighet og trivsel i studentboliger.",
-      "solution": "Vi designet fleksible og multifunksjonelle fellesområder i de nye studentboligene i Nardovegen, med fokus på deltakelse, sosial kontakt og eierskap til rommene. Gjennom workshops med studenter og ansatte utviklet vi konsept og en håndbok for brukermedvirkning som nå brukes i SiTs videre byggeprosjekter.",
-      "categories": [
-        "Arkitektur og Urbanisme",
-        "Tjenestedesign"
-      ],
-      "images": [
-        "https://www.comte.no/_next/image?url=%2Fimages%2FA4%20-%20139.png&w=3840&q=75",
-        "https://www.comte.no/_next/image?url=%2Fimages%2FA4%20-%2031.png&w=3840&q=75",
-        "https://www.comte.no/_next/image?url=%2Fimages%2FA4%20-%20111.png&w=3840&q=75",
-        "https://www.comte.no/_next/image?url=%2Fimages%2FA4%20-%20113.png&w=3840&q=75",
-        "https://www.comte.no/_next/image?url=%2Fimages%2FA4%20-%20136.png&w=3840&q=75"
-      ],
-      "client": "Studentsamskipnaden i Trondheim (SiT)",
-      "year": "2023",
-      "location": "Trondheim",
-      "industry": "Utdanning og bolig",
-      "services": [
-        "Byutvikling",
-        "Bymiljøanalyse",
-        "Visualiseringer",
-        "Samfunnsanalyse",
-        "Arealstrategi",
-        "Stedsutvikling",
-        "Bærekraftig design",
-        "Byrom",
-        "Brukerreiser",
-        "Tjenestekartlegging",
-        "Prototyping"
-      ],
-      "next": [],
-      "created": "",
-      "edited": ""
-    },
-    {
       "id": "hjemveien",
       "slug": "hjemveien",
       "title": "Hjemveien: Fra 186 til 10 personer i kø for kommunal bolig",
       "excerpt": "Sammen med Sarpsborg kommune utviklet vi Hjemveien – en ny måte å støtte innbyggere i kommunale boliger. Tjenesten ble nominert til både Innovasjonsprisen og Østfoldprisen.",
       "solution": "Vi utviklet Hjemveien – et veiledningsverktøy og en samtalemetodikk som hjelper brukerne å forstå og navigere i boligtjenestene. Mappen samler informasjon på ett sted, gir lik oppfølging og frigjør tid for ansatte. Den leder brukerne mot Startlån og overgangen til egen bolig.",
+      "bulletPoints": [
+        "Køen redusert fra 186 til 10 personer",
+        "Nominert til Innovasjonsprisen og Østfoldprisen",
+        "Fremhevet av OECD som forbildeprosjekt"
+      ],
       "categories": [
-        "Tjenestedesign",
-        "Innovasjon i offentlig sektor"
+        "Innovasjon i offentlig sektor",
+        "Arbeid og inkludering"
       ],
       "images": [
         "https://www.comte.no/_next/image?url=%2Fimages%2Fboligsosialt.jpg&w=3840&q=75",
@@ -137,16 +228,109 @@
       "year": "2022",
       "location": "Fullført",
       "industry": "Offentlig sektor, Bolig og velferd",
+      "stat1": "Nominert til Innovasjonsprisen",
+      "stat2": "",
       "services": [
-        "Brukerreiser",
-        "Tjenestekartlegging",
-        "Prototyping",
+        "Medvirkning",
+        "Prosessforbedring",
+        "Endringsledelse",
+        "Policy- og regelverksforståelse",
+        "Effektmåling",
+        "Offentlige anskaffelser",
+        "Arbeidsinkludering",
+        "Kompetanseutvikling",
+        "Rekruttering",
+        "Arbeidsplassdesign",
+        "Mangfold og inkludering"
+      ],
+      "next": [],
+      "created": "",
+      "edited": ""
+    },
+    {
+      "id": "statsbygg-arkkvalitet",
+      "slug": "statsbygg-arkkvalitet",
+      "title": "Økt fokus på arkitektonisk kvalitet",
+      "excerpt": "Statsbygg ønsket å løfte arkitektonisk kvalitet som et tydeligere og mer operativt kriterium i sine byggeprosjekter. Vi hjalp dem med å utvikle et felles språk og praktiske verktøy som gjør kvalitetsvurderinger mer konkrete.",
+      "solution": "Gjennom tverrfaglige arbeidsverksteder utviklet vi et felles språk, strukturerte vurderingskriterier og prosessverktøy for kvalitetsdiskusjoner. Disse ble testet, videreutviklet og integrert i Statsbyggs prosesser.",
+      "bulletPoints": [],
+      "categories": [
+        "Innovasjon i offentlig sektor"
+      ],
+      "images": [],
+      "client": "Statsbygg",
+      "year": "2023",
+      "location": "Oslo",
+      "industry": "Offentlig sektor, Bygg og eiendom",
+      "stat1": "",
+      "stat2": "",
+      "services": [
         "Medvirkning",
         "Prosessforbedring",
         "Endringsledelse",
         "Policy- og regelverksforståelse",
         "Effektmåling",
         "Offentlige anskaffelser"
+      ],
+      "next": [],
+      "created": "",
+      "edited": ""
+    },
+    {
+      "id": "pbe-fri",
+      "slug": "pbe-fri",
+      "title": "FRI: Funksjon for radikal innovasjon",
+      "excerpt": "Vi støttet PBE i utviklingen av FRI – en struktur og metode for å gjøre innovasjon mulig i en regelstyrt organisasjon. Målet var å skape mer rom for idéutvikling, testing og nytenking.",
+      "solution": "Vi utviklet en hybrid modell med ansattdrevne innovasjonsløp, støtteapparat, fasiliteringsformater og dedikerte arenaer som «FRI-time» og «FRI-uke».",
+      "bulletPoints": [],
+      "categories": [
+        "Innovasjon i offentlig sektor"
+      ],
+      "images": [],
+      "client": "Plan- og bygningsetaten i Oslo",
+      "year": "2022",
+      "location": "Pågående",
+      "industry": "Offentlig sektor",
+      "stat1": "",
+      "stat2": "",
+      "services": [
+        "Medvirkning",
+        "Prosessforbedring",
+        "Endringsledelse",
+        "Policy- og regelverksforståelse",
+        "Effektmåling",
+        "Offentlige anskaffelser"
+      ],
+      "next": [],
+      "created": "",
+      "edited": ""
+    },
+    {
+      "id": "living-as-a-service",
+      "slug": "living-as-a-service",
+      "title": "Teaching Living as a Service",
+      "excerpt": "Et tverrfaglig masterkurs som utforsket nye boligløsninger og tjenester, i samarbeid mellom arkitektur, tjenestedesign og boliginnovasjon.",
+      "solution": "Studentene utviklet konsepter basert på innsikt, prototyper og samskaping, i samarbeid med OBOS Living Lab.",
+      "bulletPoints": [],
+      "categories": [
+        "Arkitektur og Urbanisme"
+      ],
+      "images": [],
+      "client": "AHO + OBOS Living Lab",
+      "year": "2020",
+      "location": "Fullført",
+      "industry": "Utdanning og bolig",
+      "stat1": "",
+      "stat2": "",
+      "services": [
+        "Byutvikling",
+        "Bymiljøanalyse",
+        "Visualiseringer",
+        "Samfunnsanalyse",
+        "Arealstrategi",
+        "Stedsutvikling",
+        "Bærekraftig design",
+        "Byrom"
       ],
       "next": [],
       "created": "",

@@ -1,4 +1,3 @@
-import { Images } from "lucide-react";
 import StepHeader from "../../components/stepheader";
 import Pill from "../../components/pill";
 import { Card, cx } from "../../components/ui";
@@ -35,7 +34,7 @@ export default function Step2Projects({
         />
         <Pill>{selectedProjects.length} valgt</Pill>
       </div>
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-1">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-1 items-stretch">
         {filteredProjects.map((p: any) => {
           const on = selectedProjects.includes(p.id);
           return (
@@ -50,12 +49,25 @@ export default function Step2Projects({
                 )
               }
             >
-              <div className="flex items-start gap-3">
-                <div>
-                  <div className="font-semibold">{p.title}</div>
-                  <p className="text-neutral-600 text-sm line-clamp-3">
-                    {p.excerpt}
-                  </p>
+              <div className="flex flex-col h-full p-1">
+                <div className="flex-1 flex justify-between flex-col">
+                  <div className="font-semibold">
+                    <div
+                      className={cx(
+                        "w-4 h-4 rounded-full grid place-items-center border",
+                        on ? "bg-black text-white" : "bg-white"
+                      )}
+                    >
+                      {/* <ImageIcon size={18} /> */}
+                    </div>
+                    {p.title}{" "}
+                    {p.client && (
+                      <p className="text-neutral-600 text-sm mt-1">
+                        {p.client}
+                      </p>
+                    )}
+                  </div>
+
                   <div className="mt-2 flex gap-2 flex-wrap">
                     {p.categories.map((cid: string) => {
                       const cat = categories.find((c: any) => c.id === cid);
@@ -69,14 +81,6 @@ export default function Step2Projects({
                       );
                     })}
                   </div>
-                </div>
-                <div
-                  className={cx(
-                    "w-30 h-10 rounded-full grid place-items-center border",
-                    on ? "bg-black text-white" : "bg-white"
-                  )}
-                >
-                  <Images size={18} />
                 </div>
               </div>
             </Card>

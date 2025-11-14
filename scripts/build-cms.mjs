@@ -77,6 +77,22 @@ function splitList(cell = "") {
     .map((s) => s.trim())
     .filter(Boolean);
 }
+function extractBulletPoints(html = "") {
+  // Extract text from <li> tags in HTML, return first 3
+  if (!html) return [];
+  const liMatches = html.match(/<li[^>]*>(.*?)<\/li>/gi);
+  if (!liMatches) return [];
+  return liMatches
+    .slice(0, 3)
+    .map((li) => {
+      // Remove HTML tags and clean up
+      return li
+        .replace(/<[^>]+>/g, "")
+        .replace(/&nbsp;/g, " ")
+        .trim();
+    })
+    .filter(Boolean);
+}
 function asImageUrl(s) {
   if (!s) return null;
   if (/^https?:\/\//i.test(s)) return s.trim();
@@ -113,6 +129,8 @@ const projects = workRows.map((row) => {
   const title = get(row, ["title", "Title"]);
   const excerpt = get(row, ["project", "Project", "Innledning"]);
   const solution = get(row, ["Løsningen"]);
+  const results = get(row, ["Resultater"]);
+  const bulletPoints = extractBulletPoints(results);
 
   // Categories: try old format first, then derive from services if needed
   let categories = splitList(get(row, ["categories", "Categories"]));
@@ -130,6 +148,8 @@ const projects = workRows.map((row) => {
   const client = get(row, ["client", "Client", "Kunde"]);
   const location = get(row, ["Lokasjon", "Location", "location"]);
   const industry = get(row, ["Industri", "Industry", "industry"]);
+  const stat1 = get(row, ["Stat 1", "stat 1"]);
+  const stat2 = get(row, ["Stat 2", "stat 2"]);
 
   // Get Tjenester field (should contain category names from Services.csv)
   const tjenesterField = get(row, ["Tjenester", "Ekspertise"]);
@@ -156,12 +176,15 @@ const projects = workRows.map((row) => {
     title,
     excerpt,
     solution,
+    bulletPoints,
     categories,
     images,
     client,
     year,
     location,
     industry,
+    stat1,
+    stat2,
     services,
     next,
     created,
@@ -242,23 +265,39 @@ for (const p of projects) {
 }
 
 // ---- Categories
-const catMap = new Map();
+// First, create categories from Services.csv (all categories should be available)
+const catDataByTitle = new Map(
+  (categoryRows || []).map((row) => {
+    const title = get(row, ["title", "Title"]).trim();
+    const stat1 = get(row, ["Stat 1", "stat 1"]).trim();
+    const stat2 = get(row, ["Stat 2", "stat 2"]).trim();
+    const stat3 = get(row, ["Stat 3", "stat 3"]).trim();
+    const stats = [stat1, stat2, stat3].filter(Boolean);
+    const statsDescription = get(row, ["Stats Description", "stats description", "StatsDescription"]).trim();
+    return [
+      title,
+      {
+        id: title,
+        title: title,
+        blurb: get(row, ["blurb", "Blurb"]).trim(),
+        expertise: splitList(get(row, ["expertise", "Expertise"])),
+        stats: stats.length > 0 ? stats : [get(row, ["stats", "Stats"]).trim()].filter(Boolean), // Fallback to old Stats column
+        statsDescription: statsDescription,
+      },
+    ];
+  })
+);
+
+// Also add categories found in projects (for backward compatibility)
+const catMap = new Map(catDataByTitle);
 for (const p of projects)
   for (const c of p.categories) {
-    if (!catMap.has(c)) catMap.set(c, { id: c, title: c, blurb: "" });
+    if (!catMap.has(c)) {
+      catMap.set(c, { id: c, title: c, blurb: "" });
+    }
   }
 
-// Merge blurbs, expertise, and stats from Services.csv if present
-const catDataByTitle = new Map(
-  (categoryRows || []).map((row) => [
-    get(row, ["title", "Title"]).trim(),
-    {
-      blurb: get(row, ["blurb", "Blurb"]).trim(),
-      expertise: splitList(get(row, ["expertise", "Expertise"])),
-      stats: get(row, ["stats", "Stats"]).trim(),
-    },
-  ])
-);
+// Convert to array, prioritizing Services.csv data
 const categories = [...catMap.values()].map((c) => {
   const catData = catDataByTitle.get(c.title) || {};
   return {

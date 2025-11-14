@@ -1,7 +1,7 @@
 @import "tailwindcss";
 
 :root {
-  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+  font-family: var(--font-family);
   line-height: 1.5;
   font-weight: 400;
 
@@ -13,6 +13,13 @@
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+
+  /* Custom color variables - edit these to change all colors at once */
+  --color-white: #eaeae5;
+  --color-black: #032435;
+  
+  /* Custom font variable - edit this to change all fonts at once */
+  --font-family: 'Instrument Sans', system-ui, Avenir, Helvetica, Arial, sans-serif;
 }
 
 a {

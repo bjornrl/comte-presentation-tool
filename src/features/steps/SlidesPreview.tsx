@@ -43,7 +43,7 @@ export default function SlidesPreview({ slides }: { slides: Slide[] }) {
           return (
             <div key={i} className={base}>
               <div className="text-sm opacity-60">Ekspertise</div>
-              <div className="mt-2 text-sm">
+              <div className="mt-2 text-sm font-bold text-left">
                 {(cat?.expertise || [])
                   .slice(0, 2)
                   .map((e: string, idx: number) => (
@@ -73,7 +73,7 @@ export default function SlidesPreview({ slides }: { slides: Slide[] }) {
               <div className="text-sm opacity-60">Prosjekt</div>
               <div className="mt-2 font-semibold">{proj?.title}</div>
               <p className="text-neutral-600 text-sm line-clamp-3">
-                {proj?.excerpt}
+                {proj?.client}
               </p>
             </div>
           );
