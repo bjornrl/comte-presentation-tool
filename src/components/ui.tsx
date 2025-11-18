@@ -22,8 +22,9 @@ export function Card({
       <button
         onClick={onClick}
         className={cx(
-          "text-left w-full h-full border border-red-300 bg-red transition appearance-none focus:outline-none hover:cursor-pointer",
-          selected ? "bg-gray-200" : hoverColor
+          "text-left w-full h-full border border-red-300 bg-white transition appearance-none focus:outline-none hover:cursor-pointer",
+          selected ? "bg-blue-200" : "",
+          hoverColor
         )}
       >
         {children}

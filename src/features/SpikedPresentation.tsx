@@ -4,6 +4,11 @@ import { X, Sparkles } from "lucide-react";
 import useCMS from "../components/useCMS";
 import type { Slide } from "../components/buildSlides";
 
+// Fallback image for presentations when no images are available
+// Oslo cityscape by Oscar Daniel Rangel from Unsplash
+// Photo: https://unsplash.com/photos/city-buildings-under-white-clouds-and-blue-sky-during-daytime-rzcc40puU7Q
+const FALLBACK_IMAGE = "https://images.unsplash.com/photo-1613575831056-0acd5da8f6e8?w=2000&q=80&auto=format&fit=crop";
+
 function SpikedSlideView({
   slide,
   cms,
@@ -217,7 +222,10 @@ function SpikedSlideView({
 
           {/* Right side - Images */}
           <div className="col-span-5 flex flex-col gap-4">
-            {(proj?.images ?? []).slice(0, 2).map((src: string, i: number) => (
+            {((proj?.images ?? []).length > 0
+              ? (proj?.images ?? []).slice(0, 2)
+              : [FALLBACK_IMAGE]
+            ).map((src: string, i: number) => (
               <motion.div
                 key={i}
                 initial={{ opacity: 0, scale: 0.8 }}
@@ -279,7 +287,7 @@ export default function SpikedPresentation({
     <div className="fixed inset-0 z-50 bg-gradient-to-br from-purple-900 via-pink-800 to-orange-900">
       <div className="absolute top-3 left-3 flex items-center gap-2 z-10">
         <button
-          className="px-4 py-2 rounded-full border-2 border-white/50 bg-white/10 backdrop-blur-sm text-white hover:bg-white/20 transition-all"
+          className="px-4 py-2 rounded-full text-white transition-all"
           onClick={onClose}
         >
           <X size={18} />

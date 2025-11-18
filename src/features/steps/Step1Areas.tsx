@@ -48,9 +48,9 @@ export default function Step1Areas({
               hoverColor={hoverColor}
             >
               <div className="flex flex-row items-start gap-3 p-4 min-h-20">
-                <div className="w-8 h-8 rounded-full bg-black text-white grid place-items-center">
+                {/* <div className="w-1/8 h-auto aspect-square rounded-full bg-black text-white grid place-items-center">
                   <ArrowRight size={18} />
-                </div>
+                </div> */}
                 <div>
                   <div className="text-[clamp(25px,8vw,25px)] font-semibold min-h-20">
                     {c.title}

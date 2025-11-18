@@ -9,6 +9,7 @@ import Step2Projects from "./steps/Step2Projects";
 import Step3Format from "./steps/Step3Format";
 import Step4Draft from "./steps/Step4Draft";
 import SpikedPresentation from "./SpikedPresentation";
+import NumberTicker from "../components/fancy/text/basic-number-ticker";
 // SlidesPreview is used inside Step4Draft
 
 // Mock CMS moved into useCMS fallback
@@ -17,6 +18,13 @@ import SpikedPresentation from "./SpikedPresentation";
 export type OutputType = "presentation" | "report";
 
 import type { Slide } from "../components/buildSlides";
+
+// ===== Constants =====
+// Fallback image for presentations when no images are available
+// Oslo cityscape by Oscar Daniel Rangel from Unsplash
+// Photo: https://unsplash.com/photos/city-buildings-under-white-clouds-and-blue-sky-during-daytime-rzcc40puU7Q
+const FALLBACK_IMAGE =
+  "https://images.unsplash.com/photo-1613575831056-0acd5da8f6e8?w=2000&q=80&auto=format&fit=crop";
 
 // ===== Helpers =====
 
@@ -105,7 +113,7 @@ function SlideView({
         <div className="w-full max-w-4xl rounded-xl overflow-hidden shadow-lg">
           {/* eslint-disable-next-line @next/next/no-img-element */}
           <img
-            src="https://images.squarespace-cdn.com/content/v1/64e366db2607f31b2c125e32/team-photo.jpg"
+            src="/cms/images/comte-team/comte-team.jpeg"
             alt="Comte Bureau team"
             className="w-full h-auto object-cover"
           />
@@ -237,14 +245,14 @@ function SlideView({
 
                         {/* main value (expertise name) */}
                         <div className="flex flex-row justify-between items-end">
-                          <p className="font-semibold leading-[0.9] text-left text-[clamp(25px,6vw,14px)] break-words">
+                          <p className="font-semibold leading-[0.9] text-left text-4xl break-words">
                             {item}
                           </p>
 
                           {/* optional placeholder for something small */}
-                          <p className="text-right text-sm opacity-70">
+                          {/* <p className="text-right text-sm opacity-70">
                             8 prosjekter{" "}
-                          </p>
+                          </p> */}
                         </div>
                       </>
                     ) : null}
@@ -275,23 +283,21 @@ function SlideView({
 
     // Parse each stat to extract number and text
     const parsedStats = statsArray.map((stat: string) => {
-      const match = stat.match(/^(\d+[+\-]?)\s+(.+)$/);
+      // Match number with optional trailing sign/symbol (+, -, %, etc.) followed by text
+      const match = stat.match(/^(\d+)([+\-%]?)\s+(.+)$/);
       if (match) {
-        return { number: match[1], text: match[2] };
+        return { number: match[1], sign: match[2], text: match[3] };
       }
-      return { number: null, text: stat };
+      return { number: null, sign: null, text: stat };
     });
 
     return (
       <div className="flex flex-row justify-between p-12 gap-48 h-full">
         {/* Title section */}
-        <div
-          id="title"
-          className="h-1/3 w-full flex flex-col justify-start text-left text-[clamp(2rem,5vw,5rem)] font-semibold"
-        >
-          <h2 className="text-[clamp(2rem,5vw,5rem)] font-semibold leading-[0.95] mt-12">
+        <div id="title" className="h-1/3 w-full flex flex-col text-left">
+          <p className="text-[clamp(2rem,6vw,7rem)] leading-[0.95] mt-12">
             {cat?.statsTitle ?? "Over 20 years of experience"}
-          </h2>
+          </p>
           {cat?.statsDescription && (
             <p className="text-neutral-600 text-lg w-1/2 mt-12">
               {cat.statsDescription}
@@ -306,20 +312,39 @@ function SlideView({
     "
         >
           {parsedStats.map(
-            (item: { number: string | null; text: string }, i: number) => (
+            (
+              item: {
+                number: string | null;
+                sign: string | null;
+                text: string;
+              },
+              i: number
+            ) => (
               <div
                 key={i}
                 className="flex flex-col text-left items-start justify-center text-center leading-none p-4"
               >
                 {item.number ? (
                   <>
-                    <p className="text-[clamp(1.5rem,8vw,10rem)] text-left">
-                      {item.number}
+                    <p className="text-[clamp(1.5rem,8vw,10rem)] text-left leading-none">
+                      <NumberTicker
+                        from={0}
+                        target={parseInt(item.number) || 0}
+                        autoStart={true}
+                        transition={{
+                          duration: 3.5,
+                          type: "tween",
+                          ease: "easeInOut",
+                        }}
+                        onComplete={() => console.log("complete")}
+                        onStart={() => console.log("start")}
+                      />
+                      {item.sign && <span>{item.sign}</span>}
                     </p>
-                    <p className="mt-2 text-neutral-600">{item.text}</p>
+                    <p className="mt-2 text-lg text-neutral-600">{item.text}</p>
                   </>
                 ) : (
-                  <p className="text-7xl text-left">{item.text}</p>
+                  <p className="text-sm text-left">{item.text}</p>
                 )}
               </div>
             )
@@ -344,9 +369,9 @@ function SlideView({
           <div className="flex flex-col text-left">
             {/* Bullet points for presentation */}
             {proj?.bulletPoints && proj.bulletPoints.length > 0 ? (
-              <div className="space-y-3 text-neutral-900 text-lg list-disc list-inside mb-4">
+              <div className="space-y-3 text-neutral-900 text-lg mb-4">
                 {proj.bulletPoints.map((point: string, i: number) => (
-                  <p key={i} className="text-lg leading-relaxed">
+                  <p key={i} className="text-lg leading-none">
                     {point}
                   </p>
                 ))}
@@ -379,7 +404,22 @@ function SlideView({
                       <div className="flex flex-col">
                         {number && (
                           <p className="text-9xl font-bold text-neutral-900">
-                            {number}
+                            <NumberTicker
+                              from={0}
+                              target={
+                                parseInt(number.replace(/[^0-9]/g, "")) || 0
+                              }
+                              autoStart={true}
+                              transition={{
+                                duration: 2.5,
+                                type: "tween",
+                                ease: "easeInOut",
+                              }}
+                              onComplete={() => console.log("complete")}
+                              onStart={() => console.log("start")}
+                            />
+                            {number.includes("+") && "+"}
+                            {number.includes("-") && "-"}
                           </p>
                         )}
                         <p
@@ -402,7 +442,22 @@ function SlideView({
                       <div className="flex flex-col">
                         {number && (
                           <p className="text-9xl font-bold text-neutral-900">
-                            {number}
+                            <NumberTicker
+                              from={0}
+                              target={
+                                parseInt(number.replace(/[^0-9]/g, "")) || 0
+                              }
+                              autoStart={true}
+                              transition={{
+                                duration: 2.5,
+                                type: "tween",
+                                ease: "easeInOut",
+                              }}
+                              onComplete={() => console.log("complete")}
+                              onStart={() => console.log("start")}
+                            />
+                            {number.includes("+") && "+"}
+                            {number.includes("-") && "-"}
                           </p>
                         )}
                         <p
@@ -449,7 +504,10 @@ function SlideView({
               </div>
             </div>
           </div>
-          {(proj?.images ?? []).slice(0, 1).map((src: string, i: number) => (
+          {((proj?.images ?? []).length > 0
+            ? (proj?.images ?? []).slice(0, 1)
+            : [FALLBACK_IMAGE]
+          ).map((src: string, i: number) => (
             <div
               key={i}
               className="w-full h-full bg-neutral-200 rounded-xl overflow-hidden"
@@ -490,15 +548,12 @@ function DeckOverlay({
   }, [onClose, total]);
   return (
     <div className="fixed inset-0 z-50 bg-[var(--color-black)]/95 text-[var(--color-white)]">
-      <div className="absolute top-3 left-3 flex items-center gap-2">
-        <button
-          className="px-3 py-2 rounded-full border border-[var(--color-white)]/30"
-          onClick={onClose}
-        >
+      {/* <div className="absolute top-3 left-3 flex items-center gap-2">
+        <button className="px-3 py-2 rounded-full" onClick={onClose}>
           <X size={16} />
           Lukk
         </button>
-      </div>
+      </div> */}
       <div className="h-full w-full grid place-items-center">
         <div className="w-full h-full bg-[var(--color-white)] text-neutral-900 rounded-sm shadow-2xl overflow-hidden">
           <SlideView slide={slides[index]} cms={cms} />
@@ -536,7 +591,7 @@ function ReportOverlay({
     <div className="fixed inset-0 z-50 bg-[var(--color-white)]">
       <div className="flex items-center justify-between p-3 border-b">
         <div className="flex items-center gap-2 text-sm">
-          <button className="px-3 py-2 rounded-full border" onClick={onClose}>
+          <button className="px-3 py-2 rounded-full" onClick={onClose}>
             <X size={16} /> Lukk
           </button>
           <button
@@ -638,8 +693,11 @@ function renderSlideHTML(slide: Slide, cms: any): string {
   }
   if (slide.kind === "project") {
     const proj = cms.projects.find((p: any) => p.id === slide.projectId);
-    const imgs = (proj?.images ?? [])
-      .slice(0, 2)
+    const images =
+      (proj?.images ?? []).length > 0
+        ? (proj?.images ?? []).slice(0, 2)
+        : [FALLBACK_IMAGE];
+    const imgs = images
       .map(
         (src: string) =>
           `<div style="background:#eee;border-radius:12px;overflow:hidden;aspect-ratio:4/3"><img src="${src}" style="width:100%;height:100%;object-fit:cover"/></div>`

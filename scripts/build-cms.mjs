@@ -98,6 +98,68 @@ function asImageUrl(s) {
   if (/^https?:\/\//i.test(s)) return s.trim();
   return `/cms/${s.trim()}`;
 }
+
+// Extract filename from URL for local image lookup
+function extractFilenameFromUrl(url) {
+  if (!url || !url.trim()) return null;
+  
+  try {
+    // Handle Next.js image URLs: /_next/image?url=%2Fimages%2Ffilename.png&w=3840&q=75
+    if (url.includes("_next/image?url=")) {
+      const urlMatch = url.match(/url=([^&]+)/);
+      if (urlMatch) {
+        const decoded = decodeURIComponent(urlMatch[1]);
+        return path.basename(decoded);
+      }
+    }
+    
+    // Handle regular URLs
+    const urlObj = new URL(url);
+    const pathname = urlObj.pathname;
+    const filename = path.basename(pathname);
+    return decodeURIComponent(filename);
+  } catch (e) {
+    // If URL parsing fails, try to extract filename manually
+    const parts = url.split("/");
+    const lastPart = parts[parts.length - 1];
+    return decodeURIComponent(lastPart.split("?")[0]);
+  }
+}
+
+// Check for local image and return path, or fall back to URL
+async function asWorkImageUrl(url, slug) {
+  if (!url) return null;
+  
+  // If it's already a local path (starts with /), return as-is
+  if (url.startsWith("/")) return url;
+  
+  // If it's a URL, check for local version first
+  if (/^https?:\/\//i.test(url)) {
+    const filename = extractFilenameFromUrl(url);
+    if (filename && slug) {
+      const localPath = path.join(root, "public", "cms", "images", slug, filename);
+      if (await exists(localPath)) {
+        // Local file exists - use it instead of URL
+        return `/cms/images/${slug}/${filename}`;
+      }
+    }
+    // Fall back to original URL if local file doesn't exist
+    return url.trim();
+  }
+  
+  // If it's just a filename (not a URL and not starting with /), check local folder
+  const trimmed = url.trim();
+  if (slug && trimmed && !trimmed.includes("/") && !trimmed.includes("\\")) {
+    // Looks like a filename - check if it exists locally
+    const localPath = path.join(root, "public", "cms", "images", slug, trimmed);
+    if (await exists(localPath)) {
+      return `/cms/images/${slug}/${trimmed}`;
+    }
+  }
+  
+  // Otherwise treat as local path
+  return `/cms/${trimmed}`;
+}
 function slugify(s, fallback = "") {
   const txt = (s || fallback || "")
     .toString()
@@ -121,7 +183,7 @@ const [teamRows, clientRows, blogRows, workRows, categoryRows] =
   ]);
 
 // ---- Map Work.csv
-const projects = workRows.map((row) => {
+const projects = await Promise.all(workRows.map(async (row) => {
   // Handle both old and new CSV formats
   const id =
     get(row, ["Project number", "project number", "id"]) ||
@@ -135,15 +197,35 @@ const projects = workRows.map((row) => {
   // Categories: try old format first, then derive from services if needed
   let categories = splitList(get(row, ["categories", "Categories"]));
 
-  const images = [
-    asImageUrl(
-      get(row, ["cover (image)", "cover", "Cover (image)", "Cover Image"])
-    ),
-    asImageUrl(get(row, ["image 1", "Image 1"])),
-    asImageUrl(get(row, ["image 2", "Image 2"])),
-    asImageUrl(get(row, ["image 3", "Image 3"])),
-    asImageUrl(get(row, ["image 4", "Image 4"])),
-  ].filter(Boolean);
+  const slug = slugify(get(row, ["slug", "Slug"]), title || id);
+  
+  // Helper to find image URL - check both image column and alt column
+  const findImageUrl = (baseName) => {
+    let url = get(row, [baseName, baseName.toLowerCase()]);
+    if (!url || !url.includes("http")) {
+      // Try alt column (sometimes URLs end up there due to CSV parsing issues)
+      const altUrl = get(row, [`${baseName}:alt`, `${baseName}:alt`.toLowerCase()]);
+      if (altUrl && altUrl.includes("http")) {
+        url = altUrl;
+      }
+    }
+    return url;
+  };
+  
+  // Check for local images first, then fall back to URLs
+  const imageUrls = [
+    findImageUrl("cover (image)") || findImageUrl("cover") || findImageUrl("Cover (image)") || findImageUrl("Cover Image"),
+    findImageUrl("image 1") || findImageUrl("Image 1"),
+    findImageUrl("image 2") || findImageUrl("Image 2"),
+    findImageUrl("image 3") || findImageUrl("Image 3"),
+    findImageUrl("image 4") || findImageUrl("Image 4"),
+  ];
+  
+  const images = await Promise.all(
+    imageUrls.map(url => asWorkImageUrl(url, slug))
+  );
+  
+  const filteredImages = images.filter(Boolean);
 
   const client = get(row, ["client", "Client", "Kunde"]);
   const location = get(row, ["Lokasjon", "Location", "location"]);
@@ -166,7 +248,6 @@ const projects = workRows.map((row) => {
     get(row, ["next project 2", "Next project 2"]),
     get(row, ["next project 3", "Next project 3"]),
   ].filter(Boolean);
-  const slug = slugify(get(row, ["slug", "Slug"]), title || id);
   const created = get(row, ["created", "Created"]);
   const edited = get(row, ["edited", "Edited"]);
 
@@ -178,7 +259,7 @@ const projects = workRows.map((row) => {
     solution,
     bulletPoints,
     categories,
-    images,
+    images: filteredImages,
     client,
     year,
     location,
@@ -191,7 +272,7 @@ const projects = workRows.map((row) => {
     edited,
     _tjenester: tjenesterField, // Store temporarily for processing
   };
-});
+}));
 
 // Build category-to-services mapping from Services.csv
 const categoryToServices = new Map();

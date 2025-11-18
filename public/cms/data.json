@@ -189,8 +189,8 @@
       "year": "2023",
       "location": "Trondheim",
       "industry": "Utdanning og bolig",
-      "stat1": "",
-      "stat2": "",
+      "stat1": "150+ studenter involvert",
+      "stat2": "5 workshops",
       "services": [
         "Byutvikling",
         "Bymiljøanalyse",
@@ -221,7 +221,7 @@
         "Arbeid og inkludering"
       ],
       "images": [
-        "https://www.comte.no/_next/image?url=%2Fimages%2Fboligsosialt.jpg&w=3840&q=75",
+        "/cms/images/hjemveien/boligsosialt.jpg",
         "https://www.comte.no/_next/image?url=%2Fimages%2Fboligsosialt%202.jpg&w=3840&q=75"
       ],
       "client": "Sarpsborg kommune",
@@ -257,13 +257,18 @@
       "categories": [
         "Innovasjon i offentlig sektor"
       ],
-      "images": [],
+      "images": [
+        "https://static1.squarespace.com/static/64e366db2607f31b2c125e32/64e366dc2607f31b2c125e74/651fe5398be289327249d0d4/1733842174613/Cover%2B%288%29.jpg",
+        "https://images.squarespace-cdn.com/content/v1/64e366db2607f31b2c125e32/1693483014139-NFFTUPN48NZH2H48A6ZF/IMG20220426080159.jpg",
+        "https://www.yumpu.com/no/image/facebook/31591278.jpg",
+        "https://images.squarespace-cdn.com/content/v1/5c372196f407b455445225dc/44b74aae-545c-49d6-96b7-fc68c0492151/guide%2Btil%2Bworkshop%2Bdesign%2Bcomte%2Bbureau.jpg"
+      ],
       "client": "Statsbygg",
       "year": "2023",
       "location": "Oslo",
       "industry": "Offentlig sektor, Bygg og eiendom",
-      "stat1": "",
-      "stat2": "",
+      "stat1": "8 workshops",
+      "stat2": "20+ fagmiljøer",
       "services": [
         "Medvirkning",
         "Prosessforbedring",
@@ -286,12 +291,15 @@
       "categories": [
         "Innovasjon i offentlig sektor"
       ],
-      "images": [],
+      "images": [
+        "https://images.squarespace-cdn.com/content/v1/64e366db2607f31b2c125e32/9d2cb34d-6898-4614-badd-828cfe9d92fd/presenterte-resultater.png",
+        "https://images.squarespace-cdn.com/content/v1/64e366db2607f31b2c125e32/ebc3e858-7b50-46d9-ad95-ac3ec4c941ef/Workshop%2Bfor%2Bstudenter%2Bom%2Bny%2Bhelsestasjon.jpg"
+      ],
       "client": "Plan- og bygningsetaten i Oslo",
       "year": "2022",
       "location": "Pågående",
       "industry": "Offentlig sektor",
-      "stat1": "",
+      "stat1": "50+ ansatte deltok",
       "stat2": "",
       "services": [
         "Medvirkning",
@@ -315,13 +323,556 @@
       "categories": [
         "Arkitektur og Urbanisme"
       ],
-      "images": [],
+      "images": [
+        "/cms/images/living-as-a-service/1*JXqniViG90iQ2Q_YImFUcA.jpeg"
+      ],
       "client": "AHO + OBOS Living Lab",
       "year": "2020",
       "location": "Fullført",
       "industry": "Utdanning og bolig",
-      "stat1": "",
+      "stat1": "8 konsepter utviklet",
       "stat2": "",
+      "services": [
+        "Byutvikling",
+        "Bymiljøanalyse",
+        "Visualiseringer",
+        "Samfunnsanalyse",
+        "Arealstrategi",
+        "Stedsutvikling",
+        "Bærekraftig design",
+        "Byrom"
+      ],
+      "next": [],
+      "created": "",
+      "edited": ""
+    },
+    {
+      "id": "luster-helse-omsorg",
+      "slug": "luster-helse-omsorg",
+      "title": "Helse og omsorg i Luster kommune 2030",
+      "excerpt": "Vi hjalp Luster kommune med et kunnskapsgrunnlag for fremtidige helse- og omsorgstjenester. Gjennom innsikt og tjenestedesign utviklet vi strategier som støtter bærekraftige tjenester og smartere investeringer.",
+      "solution": "Vi gjennomførte intervjuer, observasjoner og workshops for å identifisere forbedringsområder og utvikle strategiske retninger. Fire mulighetsrom ble definert som grunnlag for framtidig planlegging av helse- og omsorgstjenestene.",
+      "bulletPoints": [
+        "Felles forståelse av utfordringsbildet",
+        "Fire strategiske mulighetsrom",
+        "Bedre grunnlag for byggeinvesteringer og tjenesteutvikling"
+      ],
+      "categories": [
+        "Helse og omsorg",
+        "Innovasjon i offentlig sektor"
+      ],
+      "images": [
+        "/cms/IMG_3791+%281%29.jpg",
+        "/cms/images/luster-helse-omsorg/IMG_3804+2.jpg",
+        "/cms/IMG_3790.jpg"
+      ],
+      "client": "Luster kommune + HRP AS",
+      "year": "2024",
+      "location": "Pågående",
+      "industry": "Offentlig sektor, Helse og omsorg",
+      "stat1": "4 strategiske mulighetsrom",
+      "stat2": "",
+      "services": [
+        "Helsesektorinnsikt",
+        "Tjenesteforløp",
+        "Journalløsninger",
+        "Samhandling",
+        "Velferdsteknologi",
+        "Kvalitetsforbedring",
+        "Medvirkning",
+        "Prosessforbedring",
+        "Endringsledelse",
+        "Policy- og regelverksforståelse",
+        "Effektmåling",
+        "Offentlige anskaffelser"
+      ],
+      "next": [],
+      "created": "",
+      "edited": ""
+    },
+    {
+      "id": "dialogverktoy-industri",
+      "slug": "dialogverktoy-industri",
+      "title": "Dialogverktøy for fremtidens industri",
+      "excerpt": "Vi utviklet et dialogverktøy som hjelper kommuner og industriaktører å sette felles retning tidlig i nye industrietableringer – for mer bærekraftige, inkluderende og stedstilpassede prosesser.",
+      "solution": "Vi utviklet et digitalt verktøy som kartlegger ambisjoner innen ni temaer knyttet til industrietablering. Det hjelper aktører å identifisere felles mål, diskutere utfordringer og konkretisere neste steg – med utgangspunkt i New European Bauhaus.",
+      "bulletPoints": [
+        "Digitalt dialogverktøy med ni bærekrafttemaer",
+        "Styrket samarbeid mellom kommune og industri",
+        "Bedre grunnlag for grønne og stedstilpassede etableringer"
+      ],
+      "categories": [
+        "Innovasjon i offentlig sektor",
+        "Grønt skifte"
+      ],
+      "images": [
+        "/cms/Dialogverktøy 1.png",
+        "/cms/Dialogverktøy 2.png",
+        "/cms/unnamed (1).jpg",
+        "/cms/Kopi av DSCF0356.JPG",
+        "/cms/Kopi av DSCF0342.JPG"
+      ],
+      "client": "DOGA og Siva",
+      "year": "2024",
+      "location": "Norge",
+      "industry": "Industri, Offentlig sektor",
+      "stat1": "Ni tematiske vurderingsområder",
+      "stat2": "Brukertestet gjennom intervjuer og prototyper",
+      "services": [
+        "Medvirkning",
+        "Prosessforbedring",
+        "Endringsledelse",
+        "Policy- og regelverksforståelse",
+        "Effektmåling",
+        "Offentlige anskaffelser",
+        "Bærekraftsstrategi",
+        "Klimaveikart",
+        "Sirkulærøkonomi",
+        "ESG-rapportering",
+        "Atferdsdesign",
+        "Mobilitet"
+      ],
+      "next": [],
+      "created": "",
+      "edited": ""
+    },
+    {
+      "id": "hackathon-gront-skifte",
+      "slug": "hackathon-gront-skifte",
+      "title": "Hackathon for det grønne skiftet",
+      "excerpt": "Vi arrangerte et internasjonalt hackathon for å utvikle løsninger for elektrifisering av byggeplasser og tunge kjøretøy. Over to dager samlet vi eksperter, kommuner og europeiske fagnettverk for å utvikle konkrete konsepter for det grønne skiftet.",
+      "solution": "Vi gjennomførte en design-drevet hackathonprosess med fire team. Deltakerne utviklet konsepter for kunnskapsdeling, sambruk av ladeinfrastruktur, innovasjonskonkurranser og spillbasert anskaffelsesdialog.",
+      "bulletPoints": [
+        "Kunnskapstårnet – AI-drevet delingsverktøy",
+        "HITCH – plattform for deling av ladeinfrastruktur",
+        "FlexCharge Challenge – stimulering av smarte ladeløsninger"
+      ],
+      "categories": [
+        "Grønt skifte",
+        "Innovasjon i offentlig sektor"
+      ],
+      "images": [
+        "/cms/Dialogverktøy 1.png",
+        "/cms/Dialogverktøy 2.png",
+        "/cms/unnamed (1).jpg",
+        "/cms/Kopi av DSCF0356.JPG",
+        "/cms/Kopi av DSCF0342.JPG"
+      ],
+      "client": "Oslo kommune + Big Buyers (EU)",
+      "year": "2025",
+      "location": "Oslo",
+      "industry": "Transport, Bygg og anlegg, Offentlig sektor",
+      "stat1": "3 europeiske nettverk samlet",
+      "stat2": "4 konsepter utviklet",
+      "services": [
+        "Bærekraftsstrategi",
+        "Klimaveikart",
+        "Sirkulærøkonomi",
+        "ESG-rapportering",
+        "Atferdsdesign",
+        "Mobilitet",
+        "Medvirkning",
+        "Prosessforbedring",
+        "Endringsledelse",
+        "Policy- og regelverksforståelse",
+        "Effektmåling",
+        "Offentlige anskaffelser"
+      ],
+      "next": [],
+      "created": "",
+      "edited": ""
+    },
+    {
+      "id": "pa-lik-linje",
+      "slug": "pa-lik-linje",
+      "title": "På lik linje – overgangen til egen bolig",
+      "excerpt": "Vi utforsket hvordan unge med nevrodivergens kan få bedre støtte i overgangen til å bo på egenhånd. Prosjektet utviklet tiltak som både støtter målgruppen og unge generelt i overgangen til egen bolig.",
+      "solution": "Vi utviklet to tiltak: «Helt mitt» – en digital plattform som samler informasjon og støtte knyttet til det å flytte hjemmefra, og rollen «Boligfadder» – en tillitsperson som følger den unge gjennom hele boligreisen.",
+      "bulletPoints": [
+        "Digital plattform for selvstendiggjøring",
+        "Boligfadder-modell for trygg oppfølging",
+        "Forventede gevinster for både samfunn og individ"
+      ],
+      "categories": [
+        "Helse og omsorg",
+        "Innovasjon i offentlig sektor"
+      ],
+      "images": [
+        "/cms/images/pa-lik-linje/Heltmitt_homepage.png",
+        "/cms/images/pa-lik-linje/Tjenestereise_Heltmitt.png"
+      ],
+      "client": "Asker kommune + Rambøll",
+      "year": "2024",
+      "location": "Pågående",
+      "industry": "Offentlig sektor, Bolig og velferd",
+      "stat1": "To hovedtiltak utviklet",
+      "stat2": "",
+      "services": [
+        "Helsesektorinnsikt",
+        "Tjenesteforløp",
+        "Journalløsninger",
+        "Samhandling",
+        "Velferdsteknologi",
+        "Kvalitetsforbedring",
+        "Medvirkning",
+        "Prosessforbedring",
+        "Endringsledelse",
+        "Policy- og regelverksforståelse",
+        "Effektmåling",
+        "Offentlige anskaffelser"
+      ],
+      "next": [],
+      "created": "",
+      "edited": ""
+    },
+    {
+      "id": "sunt-kosthold-barnehage",
+      "slug": "sunt-kosthold-barnehage",
+      "title": "Sunt og bærekraftig kosthold i barnehagen",
+      "excerpt": "Vi utviklet fire løsninger som styrker kosthold, bærekraft og arbeidsmiljø i barnehager – med Hårstadmarka barnehager som pilot. Løsningene skal nå skaleres nasjonalt.",
+      "solution": "Vi utviklet fire tiltak: rekruttering av måltidsassistenter, en paviljong for matlaging og deltakelse, et planleggingssystem for måltider og en modell for samordnet varelevering fra seks til én leveranse.",
+      "bulletPoints": [
+        "Måltidsassistenter frigjør tid for pedagogisk arbeid",
+        "Paviljong for læring, matglede og deltakelse",
+        "Planleggingssystem for bedre måltidsflyt"
+      ],
+      "categories": [
+        "Helse og omsorg",
+        "Innovasjon i offentlig sektor"
+      ],
+      "images": [
+        "/cms/images/sunt-kosthold-barnehage/paviljong.png",
+        "/cms/maltidsassistent.png",
+        "/cms/planleggingssystem.png",
+        "/cms/vareleveranse.png",
+        "/cms/barna-mat.png"
+      ],
+      "client": "Trondheim kommune + NAV + Stimulab",
+      "year": "2024",
+      "location": "Trondheim",
+      "industry": "Barnehage, Offentlig sektor",
+      "stat1": "Fra 6 til 1 vareleveranse",
+      "stat2": "4 løsninger utviklet",
+      "services": [
+        "Helsesektorinnsikt",
+        "Tjenesteforløp",
+        "Journalløsninger",
+        "Samhandling",
+        "Velferdsteknologi",
+        "Kvalitetsforbedring",
+        "Medvirkning",
+        "Prosessforbedring",
+        "Endringsledelse",
+        "Policy- og regelverksforståelse",
+        "Effektmåling",
+        "Offentlige anskaffelser"
+      ],
+      "next": [],
+      "created": "",
+      "edited": ""
+    },
+    {
+      "id": "helsefremmende-oppvekst",
+      "slug": "helsefremmende-oppvekst",
+      "title": "Å skape en helsefremmende oppvekst",
+      "excerpt": "Vi støttet prosjektet «Helsefremmende oppvekst» for skoler og barnehager i Viken. Målet var å samle erfaringer og spre beste praksis som styrker barns helse og trivsel.",
+      "solution": "Vi utviklet fire roller og tiltak som nye fylker kunne ta videre. Prosjektet ga også metodiske erfaringer som viser hvorfor designmetodikk, medvirkning og eierskap er avgjørende i folkehelsearbeid.",
+      "bulletPoints": [
+        "Fire roller og tiltak overført til nye fylker",
+        "Styrket metodikk for medvirkning",
+        "Økt innsikt i helsefremmende arbeid"
+      ],
+      "categories": [
+        "Helse og omsorg",
+        "Innovasjon i offentlig sektor"
+      ],
+      "images": [
+        "/cms/images/helsefremmende-oppvekst/selma.png",
+        "/cms/medvirkning.png",
+        "/cms/oppstartsprosess.png",
+        "/cms/skole-barnehage.png",
+        "/cms/folkehelse.png"
+      ],
+      "client": "Viken fylkeskommune",
+      "year": "2023",
+      "location": "Viken",
+      "industry": "Oppvekst, Utdanning, Offentlig sektor",
+      "stat1": "4 roller og tiltak",
+      "stat2": "1 animasjonsfilm utviklet",
+      "services": [
+        "Helsesektorinnsikt",
+        "Tjenesteforløp",
+        "Journalløsninger",
+        "Samhandling",
+        "Velferdsteknologi",
+        "Kvalitetsforbedring",
+        "Medvirkning",
+        "Prosessforbedring",
+        "Endringsledelse",
+        "Policy- og regelverksforståelse",
+        "Effektmåling",
+        "Offentlige anskaffelser"
+      ],
+      "next": [],
+      "created": "",
+      "edited": ""
+    },
+    {
+      "id": "designsprint-samhandling",
+      "slug": "designsprint-samhandling",
+      "title": "Designsprint for samhandling",
+      "excerpt": "I en femdagers designsprint samlet vi ledere fra ti avdelinger i Bydel Frogner – inkludert NAV – for å finne nye måter å samhandle på og bryte ned siloer.",
+      "solution": "Vi utviklet «SAMSTERK» – en samhandlingsplattform med «Kombo», en digital assistent som hjelper ansatte samarbeide bedre. En prototype ble laget og kan videreutvikles av bydelen.",
+      "bulletPoints": [
+        "SAMSTERK – ny plattform for samhandling",
+        "Kombo – digital assistent for ressursavklaringer",
+        "Felles innsikt og kompetanseløft på tvers av avdelinger"
+      ],
+      "categories": [
+        "Innovasjon i offentlig sektor"
+      ],
+      "images": [
+        "/cms/samsterk.png",
+        "/cms/kombo.png",
+        "/cms/workshop.png",
+        "/cms/testing.png",
+        "/cms/metodebok.png"
+      ],
+      "client": "Bydel Frogner",
+      "year": "2023",
+      "location": "Oslo",
+      "industry": "Offentlig sektor",
+      "stat1": "10 avdelinger involvert",
+      "stat2": "5-dagers designsprint",
+      "services": [
+        "Medvirkning",
+        "Prosessforbedring",
+        "Endringsledelse",
+        "Policy- og regelverksforståelse",
+        "Effektmåling",
+        "Offentlige anskaffelser"
+      ],
+      "next": [],
+      "created": "",
+      "edited": ""
+    },
+    {
+      "id": "statsbygg-arkkvalitet",
+      "slug": "statsbygg-arkkvalitet",
+      "title": "Økt fokus på arkitektonisk kvalitet i Statsbygg",
+      "excerpt": "Vi hjalp Statsbygg med å konkretisere og operasjonalisere arkitektonisk kvalitet i bygg- og eiendomsporteføljen.",
+      "solution": "Gjennom samskaping med faggrupper, innsiktsarbeid og utvikling av verktøy, styrket vi dialogen rundt kvalitet og integrerte dette som parameter i prosesser.",
+      "bulletPoints": [
+        "Felles forståelse for kvalitet",
+        "Verktøy for kvalitetsvurdering",
+        "Integrering i beslutningsprosesser"
+      ],
+      "categories": [
+        "Arkitektur og Urbanisme",
+        "Innovasjon i offentlig sektor"
+      ],
+      "images": [
+        "/cms/images/statsbygg-arkkvalitet/cover-statsbygg.jpg",
+        "/cms/img1-statsbygg.jpg",
+        "/cms/img2-statsbygg.jpg",
+        "/cms/img3-statsbygg.jpg",
+        "/cms/img4-statsbygg.jpg"
+      ],
+      "client": "Statsbygg",
+      "year": "2023",
+      "location": "Oslo",
+      "industry": "Bygg og eiendom",
+      "stat1": "Faggrupper involvert: bredt",
+      "stat2": "Verktøy implementert",
+      "services": [
+        "Byutvikling",
+        "Bymiljøanalyse",
+        "Visualiseringer",
+        "Samfunnsanalyse",
+        "Arealstrategi",
+        "Stedsutvikling",
+        "Bærekraftig design",
+        "Byrom",
+        "Medvirkning",
+        "Prosessforbedring",
+        "Endringsledelse",
+        "Policy- og regelverksforståelse",
+        "Effektmåling",
+        "Offentlige anskaffelser"
+      ],
+      "next": [],
+      "created": "",
+      "edited": ""
+    },
+    {
+      "id": "obos-mobilitet",
+      "slug": "obos-mobilitet",
+      "title": "Nye løsninger for bærekraftig mobilitet i boligprosjekter",
+      "excerpt": "Vi undersøkte hvordan boligbygg og nabolag kan integrere mikromobilitet og bærekraftige transportløsninger for beboere.",
+      "solution": "Gjennom intervjuer, observasjoner og eksperimenter testet vi løsninger for sykkelparkering, lastesykler og mikromobilitet – og viste at vaner kan endres raskt.",
+      "bulletPoints": [
+        "Integrasjon av lastesykler og mikromobilitet",
+        "Design og flyt for sykkelparkering",
+        "Grønne vaner fremmes gjennom bygg og bymiljø"
+      ],
+      "categories": [
+        "Grønt skifte",
+        "Innovasjon i offentlig sektor"
+      ],
+      "images": [
+        "/cms/images/obos-mobilitet/cover-mobility.jpg",
+        "/cms/images/obos-mobilitet/img1-mobility.jpg",
+        "/cms/img2-mobility.jpg",
+        "/cms/img3-mobility.jpg",
+        "/cms/img4-mobility.jpg"
+      ],
+      "client": "OBOS Living Lab + Beta mobility",
+      "year": "2024",
+      "location": "Norge",
+      "industry": "Bolig og byutvikling",
+      "stat1": "Testbrukere involvert",
+      "stat2": "Konsepter utviklet",
+      "services": [
+        "Bærekraftsstrategi",
+        "Klimaveikart",
+        "Sirkulærøkonomi",
+        "ESG-rapportering",
+        "Atferdsdesign",
+        "Mobilitet",
+        "Medvirkning",
+        "Prosessforbedring",
+        "Endringsledelse",
+        "Policy- og regelverksforståelse",
+        "Effektmåling",
+        "Offentlige anskaffelser"
+      ],
+      "next": [],
+      "created": "",
+      "edited": ""
+    },
+    {
+      "id": "oslo-science-city",
+      "slug": "oslo-science-city",
+      "title": "Å skape et verdensledende innovasjonsdistrikt",
+      "excerpt": "Vi ledet en mulighetsstudie for Norges nye innovasjonsdistrikt – fra Majorstuen via Blindern til Ullevål – der over 100 organisasjoner samlet seg om visjon og strategi.",
+      "solution": "Vi ledet en samskapningsprosess med aktører, utviklet innsikt og behovsanalyser og leverte et vedtatt konsept for innovasjonsdistriktet.",
+      "bulletPoints": [
+        "Visjon og strategi for innovasjonsdistrikt",
+        "Samskapte scenarier og møteplasser",
+        "Styrket sammenheng mellom kunnskapsmiljø og næringsliv"
+      ],
+      "categories": [
+        "Arkitektur og Urbanisme",
+        "Innovasjon i offentlig sektor"
+      ],
+      "images": [
+        "/cms/cover-innovationdistrict.jpg",
+        "/cms/img1-innovation.jpg",
+        "/cms/img2-innovation.jpg",
+        "/cms/img3-innovation.jpg",
+        "/cms/img4-innovation.jpg"
+      ],
+      "client": "Oslo kommune + BIG Architects + A-lab + Cevitas + Menon",
+      "year": "2021",
+      "location": "Oslo",
+      "industry": "Byutvikling, Kunnskapssenter",
+      "stat1": "100+ organisasjoner",
+      "stat2": "3 gravitasjonsområder definert",
+      "services": [
+        "Byutvikling",
+        "Bymiljøanalyse",
+        "Visualiseringer",
+        "Samfunnsanalyse",
+        "Arealstrategi",
+        "Stedsutvikling",
+        "Bærekraftig design",
+        "Byrom",
+        "Medvirkning",
+        "Prosessforbedring",
+        "Endringsledelse",
+        "Policy- og regelverksforståelse",
+        "Effektmåling",
+        "Offentlige anskaffelser"
+      ],
+      "next": [],
+      "created": "",
+      "edited": ""
+    },
+    {
+      "id": "usbl-sosial-baerekraft",
+      "slug": "usbl-sosial-baerekraft",
+      "title": "Sosial bærekraft i boligutvikling",
+      "excerpt": "Vi samarbeidet med USBL for å utvikle brukersentrerte prosesser og verktøy som styrker sosial og miljømessig bærekraft i boligprosjekter.",
+      "solution": "I ett pilotprosjekt utviklet vi metodebok, verktøy og prosess for USBL som gir bedre beslutningsgrunnlag og gjør investeringene mer menneskesentrerte.",
+      "bulletPoints": [
+        "Verktøykasse for brukerinvolvering",
+        "Metodebok for sosial bærekraft",
+        "Pilot i boligprosjekt med testet prosess"
+      ],
+      "categories": [
+        "Arkitektur og Urbanisme",
+        "Grønt skifte"
+      ],
+      "images": [
+        "/cms/images/usbl-sosial-baerekraft/cover-usbl.jpg",
+        "/cms/images/usbl-sosial-baerekraft/img1-usbl.jpg",
+        "/cms/images/usbl-sosial-baerekraft/img2-usbl.jpg",
+        "/cms/img3-usbl.jpg",
+        "/cms/img4-usbl.jpg"
+      ],
+      "client": "USBL + Comte Bureau",
+      "year": "2024",
+      "location": "Norge",
+      "industry": "Bolig og nabolag",
+      "stat1": "Pilotprosjekt fullført",
+      "stat2": "Verktøy bok utviklet",
+      "services": [
+        "Byutvikling",
+        "Bymiljøanalyse",
+        "Visualiseringer",
+        "Samfunnsanalyse",
+        "Arealstrategi",
+        "Stedsutvikling",
+        "Bærekraftig design",
+        "Byrom",
+        "Bærekraftsstrategi",
+        "Klimaveikart",
+        "Sirkulærøkonomi",
+        "ESG-rapportering",
+        "Atferdsdesign",
+        "Mobilitet"
+      ],
+      "next": [],
+      "created": "",
+      "edited": ""
+    },
+    {
+      "id": "oslo-bygg-kf-aktivitetshus",
+      "slug": "oslo-bygg-kf-aktivitetshus",
+      "title": "Konsept for nye aktivitetshus for ungdom",
+      "excerpt": "Vi samarbeidet med Oslo Bygg KF for å utvikle konsept for et nytt aktivitetshus for ungdom – med vekt på egenorganisert aktivitet og brukermedvirkning.",
+      "solution": "Gjennom workshops med ungdom, ide-og konseptutvikling, laget vi et anbefalt konsept som skiller behov mellom aldersgruppen, og inkluderer ungdom med psykiske funksjonsnedsettelser.",
+      "bulletPoints": [
+        "Konseptskisse for aktivitetshus",
+        "Målrettede program for 10-14 og 14-19 år",
+        "Inkluderende design for ulik bakgrunn og behov"
+      ],
+      "categories": [
+        "Arkitektur og Urbanisme"
+      ],
+      "images": [
+        "/cms/cover-aktivitetshus.jpg",
+        "/cms/img1-aktivitetshus.jpg",
+        "/cms/img2-aktivitetshus.jpg",
+        "/cms/img3-aktivitetshus.jpg",
+        "/cms/img4-aktivitetshus.jpg"
+      ],
+      "client": "Oslo Bygg KF",
+      "year": "2025",
+      "location": "Oslo",
+      "industry": "Ungdom, Offentlig sektor, Fritid",
+      "stat1": "Ungdomsavdelinger involvert",
+      "stat2": "Aldersgrupper definert",
       "services": [
         "Byutvikling",
         "Bymiljøanalyse",
