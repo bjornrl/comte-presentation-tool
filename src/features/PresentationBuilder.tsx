@@ -356,8 +356,11 @@ function SlideView({
   if (slide.kind === "project") {
     const proj = cms.projects.find((p: any) => p.id === slide.projectId) as any;
     return (
-      <div className="h-full w-full p-12 grid grid-cols-2 gap-6 items-center">
-        <div className="col-span-6">
+      <div className="h-[100vh] w-full p-12 grid grid-cols-2 grid-rows-4 gap-1 items-center">
+        <div
+          id="headline"
+          className="col-span-2 row-span-1 h-full flex items-center justify-center"
+        >
           <h2
             className="text-6xl font-semibold text-neutral-900"
             style={{ fontFamily: "var(--font-family)" }}
@@ -365,13 +368,16 @@ function SlideView({
             {proj?.title}
           </h2>
         </div>
-        <div className="col-span-6 grid grid-cols-2 mt-3 text-lg gap-3">
-          <div className="flex flex-col text-left">
+        <div
+          id="content"
+          className="col-span-2 row-span-3 grid grid-cols-2 mt-3 text-lg gap-3 h-full"
+        >
+          <div id="text-content" className="flex flex-col text-left">
             {/* Bullet points for presentation */}
             {proj?.bulletPoints && proj.bulletPoints.length > 0 ? (
               <div className="space-y-3 text-neutral-900 text-lg mb-4">
                 {proj.bulletPoints.map((point: string, i: number) => (
-                  <p key={i} className="text-lg leading-none">
+                  <p key={i} className="text-lg leading-none overflow-hidden">
                     {point}
                   </p>
                 ))}
@@ -510,10 +516,11 @@ function SlideView({
           ).map((src: string, i: number) => (
             <div
               key={i}
-              className="w-full h-full bg-neutral-200 rounded-xl overflow-hidden"
+              id="image"
+              className="w-full h-full bg-green-500 rounded-xl overflow-hidden"
             >
               {/* eslint-disable-next-line @next/next/no-img-element */}
-              <img src={src} alt="" className="w-full h-auto object-contain" />
+              <img src={src} alt="" className="w-full h-full object-cover" />
             </div>
           ))}
         </div>

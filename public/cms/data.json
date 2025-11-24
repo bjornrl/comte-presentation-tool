@@ -179,7 +179,7 @@
         "Arkitektur og Urbanisme"
       ],
       "images": [
-        "https://www.comte.no/_next/image?url=%2Fimages%2FA4%20-%20139.png&w=3840&q=75",
+        "/cms/images/nardovegen-sit/A4 - 139.png",
         "https://www.comte.no/_next/image?url=%2Fimages%2FA4%20-%2031.png&w=3840&q=75",
         "https://www.comte.no/_next/image?url=%2Fimages%2FA4%20-%20111.png&w=3840&q=75",
         "https://www.comte.no/_next/image?url=%2Fimages%2FA4%20-%20113.png&w=3840&q=75",
@@ -252,7 +252,7 @@
       "slug": "statsbygg-arkkvalitet",
       "title": "Økt fokus på arkitektonisk kvalitet",
       "excerpt": "Statsbygg ønsket å løfte arkitektonisk kvalitet som et tydeligere og mer operativt kriterium i sine byggeprosjekter. Vi hjalp dem med å utvikle et felles språk og praktiske verktøy som gjør kvalitetsvurderinger mer konkrete.",
-      "solution": "Gjennom tverrfaglige arbeidsverksteder utviklet vi et felles språk, strukturerte vurderingskriterier og prosessverktøy for kvalitetsdiskusjoner. Disse ble testet, videreutviklet og integrert i Statsbyggs prosesser.",
+      "solution": "",
       "bulletPoints": [],
       "categories": [
         "Innovasjon i offentlig sektor"
@@ -406,7 +406,7 @@
         "Grønt skifte"
       ],
       "images": [
-        "/cms/Dialogverktøy 1.png",
+        "/cms/images/dialogverktoy-industri/Dialogverktøy 1.png",
         "/cms/Dialogverktøy 2.png",
         "/cms/unnamed (1).jpg",
         "/cms/Kopi av DSCF0356.JPG",
@@ -452,7 +452,7 @@
         "Innovasjon i offentlig sektor"
       ],
       "images": [
-        "/cms/Dialogverktøy 1.png",
+        "/cms/images/hackathon-gront-skifte/Dialogverktøy 1.png",
         "/cms/Dialogverktøy 2.png",
         "/cms/unnamed (1).jpg",
         "/cms/Kopi av DSCF0356.JPG",
@@ -632,7 +632,7 @@
         "Innovasjon i offentlig sektor"
       ],
       "images": [
-        "/cms/samsterk.png",
+        "/cms/images/designsprint-samhandling/samsterk.png",
         "/cms/kombo.png",
         "/cms/workshop.png",
         "/cms/testing.png",
@@ -766,7 +766,7 @@
         "Innovasjon i offentlig sektor"
       ],
       "images": [
-        "/cms/cover-innovationdistrict.jpg",
+        "/cms/images/oslo-science-city/cover-innovationdistrict.jpg",
         "/cms/img1-innovation.jpg",
         "/cms/img2-innovation.jpg",
         "/cms/img3-innovation.jpg",
@@ -861,7 +861,7 @@
         "Arkitektur og Urbanisme"
       ],
       "images": [
-        "/cms/cover-aktivitetshus.jpg",
+        "/cms/images/oslo-bygg-kf-aktivitetshus/cover-aktivitetshus.jpg",
         "/cms/img1-aktivitetshus.jpg",
         "/cms/img2-aktivitetshus.jpg",
         "/cms/img3-aktivitetshus.jpg",
