@@ -24,6 +24,46 @@
   /* Custom font variable - edit this to change all fonts at once */
   --font-family: 'Instrument Sans', system-ui, Avenir, Helvetica, Arial, sans-serif;
   --radius: 0.625rem;
+  
+  /* Mobile typography variables */
+  --mobile-text-xs: 0.75rem;      /* 12px */
+  --mobile-text-sm: 0.875rem;     /* 14px */
+  --mobile-text-base: 1rem;       /* 16px */
+  --mobile-text-lg: 1.125rem;     /* 18px */
+  --mobile-text-xl: 1.25rem;      /* 20px */
+  --mobile-text-2xl: 1.5rem;      /* 24px */
+  --mobile-text-3xl: 1.875rem;    /* 30px */
+  --mobile-text-4xl: 2.25rem;     /* 36px */
+  --mobile-text-5xl: 3rem;        /* 48px */
+  
+  /* Mobile spacing variables */
+  --mobile-padding-xs: 0.5rem;    /* 8px */
+  --mobile-padding-sm: 0.75rem;   /* 12px */
+  --mobile-padding-base: 1rem;    /* 16px */
+  --mobile-padding-md: 1.25rem;   /* 20px */
+  --mobile-padding-lg: 1.5rem;    /* 24px */
+  --mobile-padding-xl: 2rem;      /* 32px */
+  
+  /* Mobile gap variables */
+  --mobile-gap-xs: 0.5rem;        /* 8px */
+  --mobile-gap-sm: 0.75rem;       /* 12px */
+  --mobile-gap-base: 1rem;        /* 16px */
+  --mobile-gap-md: 1.25rem;       /* 20px */
+  --mobile-gap-lg: 1.5rem;        /* 24px */
+  
+  /* Mobile heading sizes */
+  --mobile-h1: 2rem;              /* 32px */
+  --mobile-h2: 1.75rem;           /* 28px */
+  --mobile-h3: 1.5rem;            /* 24px */
+  
+  /* Mobile stat number sizes */
+  --mobile-stat-large: 2.5rem;    /* 40px */
+  --mobile-stat-medium: 2rem;     /* 32px */
+  
+  /* Mobile border radius */
+  --mobile-radius-sm: 0.5rem;     /* 8px */
+  --mobile-radius-base: 0.75rem;   /* 12px */
+  --mobile-radius-lg: 1rem;        /* 16px */
   --background: oklch(1 0 0);
   --foreground: oklch(0.145 0 0);
   --card: oklch(1 0 0);

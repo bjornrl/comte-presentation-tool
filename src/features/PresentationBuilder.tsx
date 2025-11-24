@@ -1,6 +1,6 @@
 import { useEffect, useMemo, useRef, useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import { ChevronLeft, X, Download, Printer } from "lucide-react";
+import { ChevronLeft, X, Download, Printer, ChevronRight } from "lucide-react";
 // StepHeader is used inside step components
 import Pill from "../components/pill";
 import useCMS from "../components/useCMS";
@@ -10,6 +10,7 @@ import Step3Format from "./steps/Step3Format";
 import Step4Draft from "./steps/Step4Draft";
 import SpikedPresentation from "./SpikedPresentation";
 import NumberTicker from "../components/fancy/text/basic-number-ticker";
+import MobileSlideView from "./MobileSlideView";
 // SlidesPreview is used inside Step4Draft
 
 // Mock CMS moved into useCMS fallback
@@ -77,6 +78,37 @@ function buildSlides(
 
 // Utility to download JSON (used in Step 4)
 
+// Hook to detect mobile screen size based on viewport width (not device type)
+// Uses screen width < 1024px to determine mobile layout (covers tablets and phones)
+function useIsMobile() {
+  const [isMobile, setIsMobile] = useState(false);
+
+  useEffect(() => {
+    // Use matchMedia to detect screen size
+    // Using 1023px to cover most mobile devices and tablets in portrait
+    const mediaQuery = window.matchMedia("(max-width: 1023px)");
+
+    const updateIsMobile = () => {
+      setIsMobile(mediaQuery.matches);
+    };
+
+    // Set initial value
+    updateIsMobile();
+
+    // Listen for changes (modern browsers)
+    if (mediaQuery.addEventListener) {
+      mediaQuery.addEventListener("change", updateIsMobile);
+      return () => mediaQuery.removeEventListener("change", updateIsMobile);
+    } else {
+      // Fallback for older browsers
+      mediaQuery.addListener(updateIsMobile);
+      return () => mediaQuery.removeListener(updateIsMobile);
+    }
+  }, []);
+
+  return isMobile;
+}
+
 // ===== Minimal slide renderer (shared by deck + report) =====
 function SlideView({
   slide,
@@ -85,6 +117,12 @@ function SlideView({
   slide: Slide;
   cms: ReturnType<typeof useCMS>;
 }) {
+  const isMobile = useIsMobile();
+
+  // Use mobile component on mobile screen sizes
+  if (isMobile) {
+    return <MobileSlideView slide={slide} cms={cms} />;
+  }
   if (slide.kind === "cover")
     return (
       <div className="h-full w-full grid place-items-center p-16">
@@ -541,9 +579,11 @@ function DeckOverlay({
   onClose: () => void;
 }) {
   const [index, setIndex] = useState(0);
+  const isMobile = useIsMobile();
   const total = slides.length;
   const go = (delta: number) =>
     setIndex((i) => Math.max(0, Math.min(total - 1, i + delta)));
+
   useEffect(() => {
     const onKey = (e: KeyboardEvent) => {
       if (e.key === "Escape") onClose();
@@ -553,16 +593,89 @@ function DeckOverlay({
     window.addEventListener("keydown", onKey);
     return () => window.removeEventListener("keydown", onKey);
   }, [onClose, total]);
+
+  // Handle tap/click with left/right zones for mobile
+  const handleTap = (
+    e: React.MouseEvent<HTMLDivElement> | React.TouchEvent<HTMLDivElement>
+  ) => {
+    if (!isMobile) {
+      // Desktop: tap anywhere goes forward
+      if (index < total - 1) {
+        go(1);
+      }
+      return;
+    }
+
+    // Mobile: left half goes back, right half goes forward
+    const target = "touches" in e ? e.touches[0] : e;
+    const rect = e.currentTarget.getBoundingClientRect();
+    const clickX = target.clientX - rect.left;
+    const screenWidth = rect.width;
+    const leftHalf = screenWidth / 2;
+
+    if (clickX < leftHalf) {
+      // Left half: go back
+      if (index > 0) {
+        go(-1);
+      }
+    } else {
+      // Right half: go forward
+      if (index < total - 1) {
+        go(1);
+      }
+    }
+  };
+
   return (
     <div className="fixed inset-0 z-50 bg-[var(--color-black)]/95 text-[var(--color-white)]">
-      {/* <div className="absolute top-3 left-3 flex items-center gap-2">
-        <button className="px-3 py-2 rounded-full" onClick={onClose}>
-          <X size={16} />
-          Lukk
+      {/* Mobile back button */}
+      {isMobile && index > 0 && (
+        <button
+          onClick={() => go(-1)}
+          className="absolute top-4 left-4 z-10 px-4 py-2 bg-white/90 hover:bg-white text-neutral-900 rounded-full flex items-center gap-2 shadow-lg transition-all"
+          style={{ fontSize: "var(--mobile-text-base)" }}
+        >
+          <ChevronLeft size={20} />
+          <span>Back</span>
         </button>
-      </div> */}
+      )}
+
+      {/* Mobile forward button */}
+      {isMobile && index < total - 1 && (
+        <button
+          onClick={() => go(1)}
+          className="absolute top-4 right-4 z-10 px-4 py-2 bg-white/90 hover:bg-white text-neutral-900 rounded-full flex items-center gap-2 shadow-lg transition-all"
+          style={{ fontSize: "var(--mobile-text-base)" }}
+        >
+          <span>Next</span>
+          <ChevronRight size={20} />
+        </button>
+      )}
+
       <div className="h-full w-full grid place-items-center">
-        <div className="w-full h-full bg-[var(--color-white)] text-neutral-900 rounded-sm shadow-2xl overflow-hidden">
+        <div
+          className="w-full h-full bg-[var(--color-white)] text-neutral-900 rounded-sm shadow-2xl overflow-hidden cursor-pointer"
+          onClick={handleTap}
+          onTouchStart={(e) => {
+            // Store touch start position for mobile
+            if (isMobile) {
+              const touch = e.touches[0];
+              const rect = e.currentTarget.getBoundingClientRect();
+              const touchX = touch.clientX - rect.left;
+              const screenWidth = rect.width;
+              const leftHalf = screenWidth / 2;
+
+              // Prevent default if we're in the left half (to allow back navigation)
+              if (touchX < leftHalf && index > 0) {
+                e.preventDefault();
+              }
+            }
+          }}
+          onTouchEnd={(e) => {
+            e.preventDefault();
+            handleTap(e);
+          }}
+        >
           <SlideView slide={slides[index]} cms={cms} />
         </div>
       </div>
