@@ -1,4 +1,3 @@
-import { ArrowRight } from "lucide-react";
 import StepHeader from "../../components/stepheader";
 import { Card } from "../../components/ui";
 
