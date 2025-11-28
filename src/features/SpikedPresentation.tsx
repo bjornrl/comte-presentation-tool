@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { motion, AnimatePresence } from "framer-motion";
+import { motion } from "framer-motion";
 import { X, Sparkles } from "lucide-react";
 import useCMS from "../components/useCMS";
 import type { Slide } from "../components/buildSlides";
@@ -7,7 +7,8 @@ import type { Slide } from "../components/buildSlides";
 // Fallback image for presentations when no images are available
 // Oslo cityscape by Oscar Daniel Rangel from Unsplash
 // Photo: https://unsplash.com/photos/city-buildings-under-white-clouds-and-blue-sky-during-daytime-rzcc40puU7Q
-const FALLBACK_IMAGE = "https://images.unsplash.com/photo-1613575831056-0acd5da8f6e8?w=2000&q=80&auto=format&fit=crop";
+const FALLBACK_IMAGE =
+  "https://images.unsplash.com/photo-1613575831056-0acd5da8f6e8?w=2000&q=80&auto=format&fit=crop";
 
 function SpikedSlideView({
   slide,
@@ -31,14 +32,14 @@ function SpikedSlideView({
             transition={{ duration: 0.5 }}
             className="text-center"
           >
-            <h1 
+            <h1
               className="text-8xl font-black mb-6 tracking-tight"
               style={{ transform: "rotate(-2deg)" }}
             >
               {slide.title}
             </h1>
             {slide.subtitle && (
-              <p 
+              <p
                 className="text-3xl font-light mt-4"
                 style={{ transform: "rotate(1deg)" }}
               >
@@ -61,7 +62,7 @@ function SpikedSlideView({
             transition={{ type: "spring", stiffness: 200, damping: 15 }}
             className="text-center text-white"
           >
-            <h2 
+            <h2
               className="text-9xl font-black mb-8"
               style={{ transform: "rotate(-3deg)" }}
             >
@@ -87,19 +88,19 @@ function SpikedSlideView({
           animate={{ x: 0, opacity: 1 }}
           className="max-w-4xl"
         >
-          <div 
+          <div
             className="inline-block px-6 py-2 bg-yellow-400 text-black text-sm font-bold mb-6"
             style={{ transform: "rotate(-2deg)" }}
           >
             KATEGORI
           </div>
-          <h2 
+          <h2
             className="text-7xl font-black mb-6 text-gray-900 leading-tight"
             style={{ transform: "rotate(1deg)" }}
           >
             {cat?.title ?? "Kategori"}
           </h2>
-          <p 
+          <p
             className="text-2xl text-gray-700 leading-relaxed max-w-2xl"
             style={{ transform: "rotate(-0.5deg)" }}
           >
@@ -111,12 +112,14 @@ function SpikedSlideView({
   }
 
   if (slide.kind === "expertise") {
-    const cat = cms.categories.find((c: any) => c.id === slide.categoryId);
+    const cat = cms.categories.find(
+      (c: any) => c.id === slide.categoryId
+    ) as any;
     const expertiseList = (cat?.expertise || []) as string[];
     return (
       <div className="h-full w-full bg-black text-white p-16 overflow-auto">
         <div className="mb-12">
-          <h2 
+          <h2
             className="text-6xl font-black mb-4"
             style={{ transform: "rotate(-1deg)" }}
           >
@@ -144,7 +147,9 @@ function SpikedSlideView({
                 e.currentTarget.style.transform = "rotate(0deg)";
               }}
               onMouseLeave={(e) => {
-                e.currentTarget.style.transform = `rotate(${i % 2 === 0 ? "-1" : "1"}deg)`;
+                e.currentTarget.style.transform = `rotate(${
+                  i % 2 === 0 ? "-1" : "1"
+                }deg)`;
               }}
             >
               <p className="text-3xl font-bold">{item}</p>
@@ -156,7 +161,9 @@ function SpikedSlideView({
   }
 
   if (slide.kind === "stats") {
-    const cat = cms.categories.find((c: any) => c.id === slide.categoryId);
+    const cat = cms.categories.find(
+      (c: any) => c.id === slide.categoryId
+    ) as any;
     return (
       <div className="h-full w-full bg-gradient-to-br from-orange-400 via-red-500 to-pink-600 p-16 flex items-center justify-center">
         <motion.div
@@ -165,7 +172,7 @@ function SpikedSlideView({
           transition={{ type: "spring", stiffness: 100 }}
           className="text-center text-white"
         >
-          <div 
+          <div
             className="text-9xl font-black mb-8"
             style={{ transform: "rotate(-5deg)" }}
           >
@@ -177,20 +184,20 @@ function SpikedSlideView({
   }
 
   if (slide.kind === "project") {
-    const proj = cms.projects.find((p: any) => p.id === slide.projectId);
+    const proj = cms.projects.find((p: any) => p.id === slide.projectId) as any;
     return (
       <div className="h-full w-full bg-white p-12 overflow-auto">
         <div className="grid grid-cols-12 gap-6 h-full">
           {/* Left side - Text */}
           <div className="col-span-7 flex flex-col justify-between">
             <div>
-              <div 
+              <div
                 className="inline-block px-4 py-1 bg-black text-white text-xs font-bold mb-4"
                 style={{ transform: "rotate(-2deg)" }}
               >
                 PROSJEKT
               </div>
-              <h2 
+              <h2
                 className="text-6xl font-black mb-6 text-gray-900 leading-tight"
                 style={{ transform: "rotate(0.5deg)" }}
               >
@@ -203,14 +210,14 @@ function SpikedSlideView({
               />
             </div>
             <div className="grid grid-cols-2 gap-4">
-              <div 
+              <div
                 className="p-4 bg-yellow-200"
                 style={{ transform: "rotate(-1deg)" }}
               >
                 <p className="text-xs uppercase mb-2">Klient</p>
                 <p className="text-xl font-bold">{proj?.client}</p>
               </div>
-              <div 
+              <div
                 className="p-4 bg-pink-200"
                 style={{ transform: "rotate(1deg)" }}
               >
@@ -239,15 +246,13 @@ function SpikedSlideView({
                   e.currentTarget.style.transform = "rotate(0deg)";
                 }}
                 onMouseLeave={(e) => {
-                  e.currentTarget.style.transform = `rotate(${i % 2 === 0 ? "-2" : "2"}deg)`;
+                  e.currentTarget.style.transform = `rotate(${
+                    i % 2 === 0 ? "-2" : "2"
+                  }deg)`;
                 }}
               >
                 {/* eslint-disable-next-line @next/next/no-img-element */}
-                <img
-                  src={src}
-                  alt=""
-                  className="w-full h-full object-cover"
-                />
+                <img src={src} alt="" className="w-full h-full object-cover" />
               </motion.div>
             ))}
           </div>
@@ -329,4 +334,3 @@ export default function SpikedPresentation({
     </div>
   );
 }
-
