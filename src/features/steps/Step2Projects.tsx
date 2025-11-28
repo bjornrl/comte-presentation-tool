@@ -2,6 +2,31 @@ import StepHeader from "../../components/stepheader";
 import Pill from "../../components/pill";
 import { Card, cx } from "../../components/ui";
 
+// Color palette for category tags
+const TAG_COLORS = [
+  { bg: "bg-blue-100", text: "text-blue-800", border: "border-blue-300" },
+  { bg: "bg-green-100", text: "text-green-800", border: "border-green-300" },
+  { bg: "bg-purple-100", text: "text-purple-800", border: "border-purple-300" },
+  { bg: "bg-pink-100", text: "text-pink-800", border: "border-pink-300" },
+  { bg: "bg-yellow-100", text: "text-yellow-800", border: "border-yellow-300" },
+  { bg: "bg-orange-100", text: "text-orange-800", border: "border-orange-300" },
+  { bg: "bg-red-100", text: "text-red-800", border: "border-red-300" },
+  { bg: "bg-indigo-100", text: "text-indigo-800", border: "border-indigo-300" },
+  { bg: "bg-teal-100", text: "text-teal-800", border: "border-teal-300" },
+  { bg: "bg-cyan-100", text: "text-cyan-800", border: "border-cyan-300" },
+];
+
+// Get color for a category ID (consistent color for same ID)
+function getTagColor(categoryId: string) {
+  // Simple hash function to convert string to number
+  let hash = 0;
+  for (let i = 0; i < categoryId.length; i++) {
+    hash = categoryId.charCodeAt(i) + ((hash << 5) - hash);
+  }
+  const index = Math.abs(hash) % TAG_COLORS.length;
+  return TAG_COLORS[index];
+}
+
 export default function Step2Projects({
   categories,
   filteredProjects,
@@ -71,10 +96,11 @@ export default function Step2Projects({
                   <div className="mt-2 flex gap-2 flex-wrap">
                     {p.categories.map((cid: string) => {
                       const cat = categories.find((c: any) => c.id === cid);
+                      const color = getTagColor(cid);
                       return (
                         <span
                           key={cid}
-                          className="text-xs px-2 py-1 rounded-full border"
+                          className={`text-xs px-2 py-1 rounded-full border ${color.bg} ${color.text} ${color.border}`}
                         >
                           {cat?.title ?? cid}
                         </span>

@@ -415,7 +415,7 @@ function SlideView({
             {proj?.bulletPoints && proj.bulletPoints.length > 0 ? (
               <div className="space-y-3 text-neutral-900 text-lg mb-4">
                 {proj.bulletPoints.map((point: string, i: number) => (
-                  <p key={i} className="text-lg leading-none overflow-hidden">
+                  <p key={i} className="text-xl leading-none">
                     {point}
                   </p>
                 ))}
